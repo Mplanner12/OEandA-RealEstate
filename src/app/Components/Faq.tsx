@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { IoArrowBackOutline, IoArrowForwardOutline } from "react-icons/io5";
 
 interface FAQItem {
   id: number;
@@ -35,17 +36,27 @@ const faqItems: FAQItem[] = [
 ];
 
 const FAQ: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(0);
+  const [activeIndex, setActiveIndex] = useState<any>(0);
+
+  const nextSlide = () => {
+    setActiveIndex((prevIndex: number) => (prevIndex + 1) % faqItems.length);
+  };
+
+  const prevSlide = () => {
+    setActiveIndex((prevIndex: number) =>
+      prevIndex === 0 ? faqItems.length - 1 : prevIndex - 1
+    );
+  };
 
   const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
-    <section className="faq-section py-12 px-[1.25rem] bg-white">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center md:items-start md:gap-x-[4rem] justify-start">
+    <section className="faq-section py-12 pt-[1rem] px-[1rem] bg-white">
+      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center md:items-start md:gap-x-[1.5rem] justify-start">
         <div className="w-full h-full md:w-1/2 mb-8 md:mb-0 flex flex-col items-center md:items-start justify-start">
-          <h2 className="w-full text-[2.5rem] text-start font-bold mb-6">
+          <h2 className="w-full text-[2.5rem] md:text-[2.25rem] md:w-[35rem] text-start font-bold mb-6">
             Frequently Asked Questions
           </h2>
           <p className="w-full md:w-[18.5rem] flex justify-start text-gray-500 text-start mb-10">
@@ -53,7 +64,54 @@ const FAQ: React.FC = () => {
             questions.
           </p>
         </div>
-        <div className="space-y-4">
+        {/* Carousel for mobile */}
+        <div className="md:hidden w-full h-full flex flex-col items-center justify-center">
+          {faqItems.map((item, index) => (
+            <div
+              key={item.id}
+              className={`border rounded-lg transition-shadow py-[0.85rem] px-[1.25rem] duration-300 ${
+                activeIndex === index ? "block" : "hidden"
+              }`}
+            >
+              <div className="flex justify-between items-center w-full p-4 text-left">
+                <span className="font-semibold text-[1.3rem]">
+                  {item.question}
+                </span>
+              </div>
+              <div className="w-full md:w-[45rem] p-4 text-gray-600">
+                {item.answer}
+              </div>
+            </div>
+          ))}
+          <div className="md:hidden mt-6 mb-[1.25rem] w-full pt-[1rem] border-t border-zinc-500 flex justify-start md:justify-between items-center mx-[2rem] md:px-[2rem]">
+            <div className="w-full md:hidden flex justify-start items-center">
+              <button className="w-fit p-[1.25rem] text-sm bg-red-600 text-white rounded-lg">
+                View All FAQ’s
+              </button>
+            </div>
+            <div className="w-full h-full flex justify-center items-center">
+              <button
+                onClick={prevSlide}
+                className="p-2 bg-white hover:bg-black active:bg-black border border-gray-400 rounded-full"
+              >
+                <IoArrowBackOutline className="w-6 h-6 text-gray-500 hover:text-white active:text-white" />
+              </button>
+              <p className="text-gray-500 px-[0.25rem] md:pl-[1rem]">
+                {activeIndex + 1} of {faqItems.length}
+              </p>
+              <div className="flex gap-x-2">
+                <button
+                  onClick={nextSlide}
+                  className="p-2 bg-white hover:bg-black active:bg-black border border-gray-400 rounded-full"
+                >
+                  <IoArrowForwardOutline className="w-6 h-6 text-gray- hover:text-white active:text-white500" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* FAQ for larger screens */}
+        <div className="hidden md:block space-y-4 w-full mt-[2.5rem] h-full">
           {faqItems.map((item, index) => (
             <div
               key={item.id}

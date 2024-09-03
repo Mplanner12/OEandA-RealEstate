@@ -58,7 +58,7 @@ const CustomersSay: React.FC = () => {
     },
   ];
   return (
-    <div className="w-full h-full flex flex-col justify-start items-center md:px-[2rem] mb-[6rem]">
+    <div className="w-full h-full flex flex-col justify-start items-center md:px-[2rem] mb-[5rem]">
       <div className="mt-0 md:mt-0 md:w-full md:pl-12 p-[1.5rem] flex flex-col justify-start items-start">
         <img
           className="hidden md:inline my-[1.5rem]"
@@ -105,8 +105,10 @@ const CustomersSay: React.FC = () => {
                   </div>
                 ))}
               </div>
-              <h3 className="text-xl font-semibold">{testimonial.title}</h3>
-              <p className="text-gray-500 mt-2 h-[8rem] w-[15rem] md:w-[21rem] overflow-hidden">
+              <h3 className="text-xl font-semibold h-[3rem] md:h-full mb-3">
+                {testimonial.title}
+              </h3>
+              <p className="text-gray-500 mt-2 h-[13rem] md:h-[8rem] w-[13rem] md:w-[21rem] overflow-hidden">
                 {testimonial.text}
               </p>
               <div className="mt-4 flex items-center">
@@ -161,7 +163,6 @@ const CustomersSay: React.FC = () => {
           </button>
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };

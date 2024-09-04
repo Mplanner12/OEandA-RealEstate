@@ -19,7 +19,7 @@ const ProfessionalAffiliations: React.FC = () => {
           />
           <div
             id="blackbox"
-            className="absolute w-[19rem] 2xl:h-[20rem] md:w-[22rem] sm:top-[9rem] sm:left-[7rem] bg-gradient-to-br from-neutral-600 to-black bg-opacity-60 text-white px-[1.5rem] py-[1.25rem] md:pt-[6rem] md:pb-[3rem] rounded"
+            className="absolute w-[19rem] lg:h-[21rem] 2xl:h-[23rem] md:w-[22rem] sm:top-[9rem] sm:left-[7rem] bg-gradient-to-br from-neutral-600 to-black bg-opacity-60 text-white px-[1.5rem] py-[1.25rem] md:pt-[6rem] md:pb-[3rem] rounded"
           >
             <h3 className="text-lg font-bold">Ora Egbunike & Associates</h3>
             <p className="text-sm text-neutral-200 font-light pt-[0.5rem]">

@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import React from "react";
 
 const WhoWeAre: React.FC = () => {
@@ -25,9 +26,12 @@ const WhoWeAre: React.FC = () => {
           employee wellness, productivity and sustained competitive edge.
         </p>
         <div className="w-full h-full flex justify-start items-center">
-          <button className="bg-red-700 text-white px-[2rem] py-[1rem] rounded-lg mt-[1.5rem]">
+          <Link
+            href={"/AboutUs"}
+            className="bg-red-700 text-white px-[2rem] py-[1rem] rounded-lg mt-[1.5rem]"
+          >
             See More
-          </button>
+          </Link>
         </div>
       </div>
     </div>

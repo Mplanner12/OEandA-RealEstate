@@ -131,7 +131,7 @@ const FAQ: React.FC = () => {
                 </span>
               </button>
               {activeIndex === index && (
-                <div className="w-full md:w-[45rem] p-4 text-gray-600">
+                <div className="w-full md:w-[35rem] p-4 text-gray-600">
                   {item.answer}
                 </div>
               )}

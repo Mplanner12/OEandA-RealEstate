@@ -6,7 +6,7 @@ const MissionVisionSection: React.FC = () => {
   const [isMissionActive, setIsMissionActive] = useState(true);
 
   return (
-    <section className="bg-white py-16 hidden md:block">
+    <section className="bg-white py-16 md:px-[4rem] hidden md:block">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 gap-x-[5rem]">
         {/* Image Section */}
         <div className="relative bg-stone-300 rounded-lg mb-12 md:mb-0 md:w-1/2">

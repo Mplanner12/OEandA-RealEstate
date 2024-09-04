@@ -3,7 +3,7 @@ import { FaGraduationCap, FaRegStar, FaUser, FaUsers } from "react-icons/fa6";
 
 const ValuesSection = () => {
   return (
-    <div className="container mx-auto py-12 flex flex-col md:flex-row justify-between items-center gap-x-[4rem] px-[1.25rem] md:px-0">
+    <div className="container mx-auto py-12 flex flex-col md:flex-row justify-between items-center gap-x-[4rem] px-[1.25rem] md:px-[4rem]">
       <div className="text-center md:text-left mb-8">
         <h2 className="text-3xl font-bold mb-4">Our Values</h2>
         <p className="text-gray-500 md:w-[28rem] text-start">

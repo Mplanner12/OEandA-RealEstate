@@ -27,7 +27,7 @@ const teamMembers = [
 
 const MeetTheTeam: React.FC = () => {
   return (
-    <section className="py-12 px-4">
+    <section className="py-12 px-4 md:px-[4rem]">
       <div className="text-center">
         <div className="w-full h-full hidden md:flex justify-start">
           <img

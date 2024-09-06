@@ -26,7 +26,7 @@ const MissionVisionSection: React.FC = () => {
             </div>
           </div>
           {/* Find The Best Deal Badge */}
-          <div className="absolute bottom-[-1rem] left-[6.5rem] 2xl:left-[8rem] bg-white rounded-lg shadow-lg p-4 flex items-center space-x-2">
+          <div className="absolute bottom-[-1rem] left-[8.5rem] 2xl:left-[12rem] bg-white rounded-lg shadow-lg p-4 flex items-center space-x-2">
             <img src="/AboutIcon3.png" alt="Best Deal" className="h-8 w-8" />
             <div>
               <h4 className="text-red-500 font-semibold">Find the best deal</h4>

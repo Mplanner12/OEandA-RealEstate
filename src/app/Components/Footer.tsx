@@ -5,7 +5,7 @@ import { TbMailPlus } from "react-icons/tb";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black md:bg-zinc-900 w-full h-full flex flex-col justify-start items-start py-[3.25rem]">
+    <footer className="bg-neutral-900 w-full h-full flex flex-col justify-start items-start py-[3.25rem] pt-[0.5rem] lg:pb-[3.25rem]">
       <div className="py-[3.25rem] px-[0.85rem] md:px-[3rem] border-y-[0.5px] border-zinc-900 w-full h-full flex flex-col md:flex-row justify-center items-center gap-x-[1rem]">
         <div className="w-full md:w-3/4 h-full flex flex-col justify-center items-start">
           <div className="text-white text-4xl font-bold">
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
           </button>
         </div>
       </div>
-      <div className="w-full md:w-fit h-full bg-black md:bg-zinc-900 text-white py-12">
+      <div className="w-full md:w-fit h-full bg-neutral-900 text-white py-12">
         <div className="container mx-auto px-1 md:px-[1.5rem] flex flex-col md:flex-row justify-between">
           {/* Logo and Newsletter */}
           <div className="w-full mb-8 md:mb-0 px-4 flex flex-col items-start">
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
               <img src="/Logo.png" alt="Logo" className="h-8 mr-2" />
               <span className="text-xl font-bold">OEandA</span>
             </div>
-            <div className="w-full md:w-fit flex items-center bg-neutral-900 rounded-lg px-4 py-2">
+            <div className="w-full md:w-fit flex items-center bg-neutral-950 rounded-lg px-4 py-2">
               <TbMailPlus size={20} className="text-neutral-400 mr-[0.5rem]" />
               <input
                 type="email"

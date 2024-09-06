@@ -19,7 +19,7 @@ const Header: React.FC = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
   return (
-    <header className="bg-zinc-900 text-white p-4">
+    <header className="bg-neutral-900 text-white p-4">
       {/* Small Screen */}
       <div className="flex justify-between items-center lg:hidden pl-[1rem]">
         <div className="flex items-center">
@@ -50,7 +50,7 @@ const Header: React.FC = () => {
             <Link href="/" className="hover:text-gray-400">
               Home
             </Link>
-            <Link href="/about" className="hover:text-gray-400">
+            <Link href="/AboutUs" className="hover:text-gray-400">
               About Us
             </Link>
             <div className="relative">
@@ -85,7 +85,7 @@ const Header: React.FC = () => {
             <Link href="/blog" className="hover:text-gray-400">
               Blog
             </Link>
-            <Link href="/contact" className="hover:text-gray-400">
+            <Link href="/ContactUs" className="hover:text-gray-400">
               Contact Us
             </Link>
             <button className="bg-neutral-900 ml-4 p-3 px-6 border border-zinc-900 rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">
@@ -111,7 +111,7 @@ const Header: React.FC = () => {
           <Link href="/" className="hover:text-gray-400">
             Home
           </Link>
-          <Link href="/about" className="hover:text-gray-400">
+          <Link href="/AboutUs" className="hover:text-gray-400">
             About Us
           </Link>
           <div className="relative">
@@ -147,7 +147,10 @@ const Header: React.FC = () => {
             Blog
           </Link>
           <div className="flex justify-start items-center space-x-10">
-            <Link href="/contact" className="hover:text-gray-400 ml-[2.25rem]">
+            <Link
+              href="/ContactUs"
+              className="hover:text-gray-400 ml-[2.25rem]"
+            >
               Contact Us
             </Link>
             <div className="bg-neutral-900 ml-4 p-2 px-3 border border-zinc-900 rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">

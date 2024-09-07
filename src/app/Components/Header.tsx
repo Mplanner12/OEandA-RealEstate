@@ -54,15 +54,16 @@ const Header: React.FC = () => {
               About Us
             </Link>
             <div className="relative">
-              <button
+              <Link
+                href={"/Properties"}
                 className="flex items-center justify-center space-x-2 hover:text-gray-400"
                 onClick={toggleDropdown}
               >
                 <span>Properties</span>
-                <RiArrowDropDownLine size={26} />
-              </button>
+                {/* <RiArrowDropDownLine size={26} /> */}
+              </Link>
               {/* Dropdown Menu */}
-              {isDropdownOpen && (
+              {/* {isDropdownOpen && (
                 <div className="absolute left-0 mt-2 py-2 w-48 bg-white text-black rounded-md shadow-lg">
                   <Link
                     href="/properties/residential"
@@ -77,7 +78,7 @@ const Header: React.FC = () => {
                     Commercial
                   </Link>
                 </div>
-              )}
+              )} */}
             </div>
             <Link href="/services" className="hover:text-gray-400">
               Services
@@ -115,15 +116,16 @@ const Header: React.FC = () => {
             About Us
           </Link>
           <div className="relative">
-            <button
+            <Link
+              href={"/Properties"}
               className="flex items-center space-x-2 hover:text-gray-400"
               onClick={toggleDropdown}
             >
               <span>Properties</span>
-              <RiArrowDropDownLine size={26} />
-            </button>
+              {/* <RiArrowDropDownLine size={26} /> */}
+            </Link>
             {/* Dropdown Menu */}
-            {isDropdownOpen && (
+            {/* {isDropdownOpen && (
               <div className="absolute left-0 mt-2 py-2 w-48 bg-white text-black rounded-md shadow-lg">
                 <Link
                   href="/properties/residential"
@@ -138,7 +140,7 @@ const Header: React.FC = () => {
                   Commercial
                 </Link>
               </div>
-            )}
+            )} */}
           </div>
           <Link href="/services" className="hover:text-gray-400">
             Services

@@ -48,8 +48,8 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Navigation Links  sm*/}
-          <div className="md:hidden w-full h-full flex justify-center items-center gap-x-2 mt-[2rem]">
-            <div className="w-[1/2] h-full flex pr-[1.5rem] flex-col justify-start items-center gap-y-[2rem]">
+          <div className="md:hidden w-full h-full flex justify-center items-start gap-x-2 mt-[2rem]">
+            <div className="w-[1/2] h-full flex pl-[0.85rem] pr-[1.5rem] flex-col justify-start items-center gap-y-[2rem]">
               <div>
                 <h3 className="text-lg font-normal mb-4 text-neutral-400">
                   Home
@@ -192,15 +192,15 @@ const Footer: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="w-full pb-[1.5rem] px-[1rem] flex flex-col items-center border-b border-zinc-800">
+              <div className="w-full pb-[1.5rem] px-[1rem] flex flex-col items-center">
                 <h3 className="w-fit text-lg font-light text-neutral-400 mb-4">
                   Services
                 </h3>
-                <ul className="w-fit flex flex-col items-end">
+                <ul className="w-fit flex flex-col items-end text-center">
                   <li className="mb-2 w-fit">
                     <a
                       href="#valuation"
-                      className="text-white hover:text-gray-400 font-extralight"
+                      className="text-white text-center hover:text-gray-400 font-extralight"
                     >
                       Valuation Mastery
                     </a>
@@ -208,7 +208,7 @@ const Footer: React.FC = () => {
                   <li className="mb-2 w-fit">
                     <a
                       href="#marketing"
-                      className="text-white hover:text-gray-400 font-extralight"
+                      className="text-white text-center w-full hover:text-gray-400 font-extralight"
                     >
                       Strategic Marketing
                     </a>
@@ -229,7 +229,7 @@ const Footer: React.FC = () => {
                       Closing Success
                     </a>
                   </li>
-                  <li>
+                  <li className="pb-10 border-b border-zinc-800">
                     <a
                       href="#management"
                       className="w-fit text-white hover:text-gray-400 font-extralight"

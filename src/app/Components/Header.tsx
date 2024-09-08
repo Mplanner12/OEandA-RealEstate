@@ -7,7 +7,9 @@ import Link from "next/link";
 import { FaXmark } from "react-icons/fa6";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
-const Header: React.FC = () => {
+const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
+  onSearch,
+}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -163,6 +165,12 @@ const Header: React.FC = () => {
                 type="text"
                 placeholder="Property Search"
                 className="w-[8rem] text-sm bg-neutral-900 ml-4 p-2 px-1 border border-zinc-900 rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition"
+                onChange={(e) => {
+                  // Check if onSearch is provided before calling
+                  if (onSearch) {
+                    onSearch(e.target.value);
+                  }
+                }}
               />
             </div>
           </div>

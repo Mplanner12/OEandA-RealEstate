@@ -15,12 +15,11 @@ const properties = [
   },
   {
     id: 2,
-    title:
-      "2  UNITS OF WELL SPACIOUS AND NEAT 3 BEDROOM SEMI DETACHED  FLAT IN A CALM AND SERENE ENVIRONMENT",
+    title: "SEMI DETACHED FLAT IN A CALM AND SERENE ENVIRONMENT",
     slug: "Urban Oasis - Life in the Heart of the City",
     location: "LUGBE:EL-SALEM ESTATE, PYKASSA",
     description:
-      "Immerse yourself in the energy of the city. This modern apartment in the heart...",
+      "2  Units of well spacious and neat 3 Bedroom. This modern apartment in the heart...",
     price: "₦50 MILLION ",
     imageUrl: "/2Units.jpeg",
   },
@@ -48,12 +47,12 @@ const FeaturedProperties: React.FC<FeaturedPropertiesProps> = ({
   );
 
   return (
-    <div className="lg:px-[2rem] mt-[2rem] lg:mt-[5rem]">
+    <div className="bg-neutral-950 lg:px-[2rem] mt-[0.5rem] py-[3rem] lg:mt-[5rem]">
       <div className="mt-0 md:mt-0 md:w-full md:pl-12 p-[1.5rem] flex flex-col justify-start items-start">
         <img className="inline my-[0.15rem]" src="/AbstractDesign.png" alt="" />
         <div className="w-full flex justify-between items-center">
           <div className="w-full h-full">
-            <h2 className="text-[2.25rem] md:text-[2.5rem] font-bold mt-3 md:mt-2">
+            <h2 className="text-[2.25rem] text-white md:text-[2.5rem] font-bold mt-3 md:mt-2">
               Featured Properties
             </h2>
             <p className="text-neutral-400 text-sm mt-4 lg:w-[60rem]">
@@ -78,10 +77,12 @@ const FeaturedProperties: React.FC<FeaturedPropertiesProps> = ({
                 className="w-full h-48 object-cover rounded-md"
               />
               <div className="mt-4 w-full flex flex-col justify-start items-start">
-                <div className="rounded-full font-light mt-[0.4rem] mb-[0.85rem] w-fit p-[0.3rem] px-[0.5rem] border lg:ml-[0.25rem] border-neutral-800 bg-neutral-900 text-xs">
+                <div className="rounded-full font-light mt-[0.4rem] text-white mb-[0.85rem] w-fit p-[0.3rem] px-[0.5rem] border lg:ml-[0.25rem] border-neutral-800 bg-neutral-900 text-xs">
                   {property.location}
                 </div>
-                <h3 className="text-lg font-bold">{property.title}</h3>
+                <h3 className="text-lg font-bold text-white h-[5rem]">
+                  {property.title}
+                </h3>
                 <p className="text-gray-400 text-sm font-extralight">
                   {property.description}
                 </p>

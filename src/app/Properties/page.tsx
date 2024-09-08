@@ -9,10 +9,13 @@ import SocialLinks from "../Components/SocialLinks";
 
 const PropertyPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const handleSearch = (term: any) => {
+    setSearchTerm(term);
+  };
 
   return (
     <div className="w-full h-full">
-      <Header />
+      <Header onSearch={handleSearch} />
       <div className="bg-neutral-950 w-full h-full text-white flex flex-col justify-start items-center">
         <div className="w-full h-full flex flex-col justify-start items-center lg:py-2">
           <div className="lg:p-[4.5rem] px-[1.25rem] pt-[3.5rem] lg:pb-[4rem] border-b border-neutral-800 lg:pt-[5rem] bg-gradient-to-r from-neutral-900 to-neutral-950 w-full h-full flex flex-col justify-start items-start">

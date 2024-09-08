@@ -1,10 +1,19 @@
+"use client";
 import React from "react";
 import { TiTick } from "react-icons/ti";
+import { motion } from "framer-motion";
 
 const AfricanFuture: React.FC = () => {
   return (
     <section className="bg-zinc-50 py-[4.75rem] w-full h-full flex flex-col justify-start items-center">
-      <div className="w-full h-full flex flex-col justify-start items-center">
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.8 }}
+        viewport={{ once: true }}
+        className="w-full h-full flex flex-col justify-start items-center"
+      >
+        {" "}
         <h1 className="text-[2.75rem] font-bold text-neutral-900 lg:w-[33rem] text-center">
           Welcome to the Future of Trade in Africa
         </h1>
@@ -13,8 +22,14 @@ const AfricanFuture: React.FC = () => {
           collaboration in Africa, AATC offers state-of-the-art facilities and
           services that cater to the needs of businesses of all sizes.
         </p>
-      </div>
-      <div className="w-full h-full gap-x-[3.5rem] px-[3.75rem] mb-[4rem] mt-[5.85rem] flex justify-center items-center">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.0, delay: 0.2 }}
+        viewport={{ once: true }} // Only animate once when in view
+        className="w-full h-full gap-x-[3.5rem] px-[3.75rem] mb-[4rem] mt-[5.85rem] flex justify-center items-center"
+      >
         <div className="w-2/4 h-full flex flex-col justify-center items-center">
           <p className="w-full h-full flex justify-start items-start text-xs text-zinc-900">
             KEY FEATURE
@@ -50,12 +65,30 @@ const AfricanFuture: React.FC = () => {
           </div>
         </div>
         <div className="w-[40%] h-full flex justify-end items-center">
-          <img className="w-full h-full" src="/FutureImg1.png" alt="" />
+          <video
+            src="video1.mp4"
+            controls
+            muted
+            autoPlay
+            className="w-full h-full"
+          ></video>
         </div>
-      </div>
-      <div className="w-full h-full gap-x-[9.5rem] px-[3.75rem] pl-[2rem] mb-[4rem] flex justify-center items-center mt-10">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.0, delay: 0.8 }}
+        viewport={{ once: true }}
+        className="w-full h-full gap-x-[9.5rem] px-[3.75rem] pl-[2rem] mb-[4rem] flex justify-center items-center mt-10"
+      >
         <div className="w-[40%] h-full flex justify-center items-center">
-          <img className="w-full h-full" src="/FutureImg2.png" alt="" />
+          <video
+            src="video2.mp4"
+            controls
+            muted
+            autoPlay
+            className="w-full h-full"
+          ></video>
         </div>
         <div className="w-[38%] h-full pl-[2.25rem] flex justify-end flex-col items-center">
           <p className="w-full h-full flex justify-start items-start text-xs text-zinc-900">
@@ -89,8 +122,14 @@ const AfricanFuture: React.FC = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="w-full h-full gap-x-[3.5rem] px-[3.75rem] mb-[4rem] flex justify-center items-center mt-10">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.0, delay: 0.6 }}
+        viewport={{ once: true }}
+        className="w-full h-full gap-x-[3.5rem] px-[3.75rem] mb-[4rem] flex justify-center items-center mt-10"
+      >
         <div className="w-2/4 h-full flex flex-col justify-center items-start">
           <p className="w-full h-full flex justify-start items-start text-xs text-zinc-900">
             KEY FEATURE
@@ -125,12 +164,30 @@ const AfricanFuture: React.FC = () => {
           </div>
         </div>
         <div className="w-[40%] h-full flex justify-center items-center">
-          <img className="w-full h-full" src="/FutureImg3.png" alt="" />
+          <video
+            src="video3.mp4"
+            controls
+            muted
+            autoPlay
+            className="w-full h-full"
+          ></video>
         </div>
-      </div>
-      <div className="w-full h-full gap-x-[9.5rem] px-[3.75rem] pl-[2rem] mb-[4rem] flex justify-center items-center mt-10">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.0, delay: 0.4 }}
+        viewport={{ once: true }}
+        className="w-full h-full gap-x-[9.5rem] px-[3.75rem] pl-[2rem] mb-[4rem] flex justify-center items-center mt-10"
+      >
         <div className="w-[40%] h-full flex justify-start items-center">
-          <img className="w-full h-full" src="/FutureImg4.png" alt="" />
+          <video
+            src="video4.mp4"
+            controls
+            muted
+            autoPlay
+            className="w-full h-full"
+          ></video>
         </div>
         <div className="w-[38%] pl-[2.25rem] h-full flex flex-col justify-center items-center">
           <p className="w-full h-full flex justify-start items-start text-xs text-zinc-900">
@@ -167,7 +224,7 @@ const AfricanFuture: React.FC = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -6,12 +6,12 @@ const teamMembers = [
   {
     name: "AbdulMalik Ora Egbunike ",
     position: "Principal Consultant",
-    imageUrl: "/TeamM1.png", // Replace with the correct image path
+    imageUrl: "/AbdulM.jpg", // Replace with the correct image path
   },
   {
     name: "Alhaji Shehuluqman Sambo",
     position: "Company Secretary/Legal Advisor",
-    imageUrl: "/TeamM2.png", // Replace with the correct image path
+    imageUrl: "/AlhajiS.jpg", // Replace with the correct image path
   },
   {
     name: "Cyprian Nnadozie Konkwo ",
@@ -21,17 +21,17 @@ const teamMembers = [
   {
     name: "Engr. Arowosafe M. Olayinka",
     position: "Facilities Management Co-ordinator",
-    imageUrl: "/TeamM4.png", // Replace with the correct image path
+    imageUrl: "/EngrA.jpg", // Replace with the correct image path
   },
   {
     name: "AkinBayo Akintokun ",
     position: "Facility Manager, ADB",
-    imageUrl: "/TeamM4.png", // Replace with the correct image path
+    imageUrl: "/AkinB.jpg", // Replace with the correct image path
   },
   {
     name: "Adikpe Linda Odije",
     position: "Estate Surveyor",
-    imageUrl: "/TeamM4.png", // Replace with the correct image path
+    imageUrl: "/Adikpe.jpg", // Replace with the correct image path
   },
   {
     name: "Obodoechina Emeka",
@@ -41,7 +41,7 @@ const teamMembers = [
   {
     name: "Paul Okwuayanga ",
     position: "Regional Manager, Lagos",
-    imageUrl: "/TeamM4.png", // Replace with the correct image path
+    imageUrl: "/PaulO.jpg", // Replace with the correct image path
   },
 ];
 

@@ -17,11 +17,12 @@ const WhoWeAre: React.FC = () => {
           Who We Are
         </h1>
         <p className="text-gray-800 text-[1.25rem] tracking-wide lg:tracking-normal leading-9 mt-[1.25rem]">
-          Ora Egbunike & Associates is a leading integrated facilities
-          management consultancy firm providing hands-on solutions to complex
-          business challenges faced by organizations and helping them in meeting
-          specific needs. Our value offerings are bespoke, designed and founded
-          upon extensive research and analysis of customer needs with the aim of
+          Ora Egbunike & Associates is a leading firm of chartered surveyors,
+          certified Facilities managers and integrated property investment
+          consultants providing hands- on solutions to complex business
+          challenges faced by organisations and helping them in meeting specific
+          needs. Our value offerings are bespoke, designed and founded upon
+          extensive research and analysis of customer needs with the aim of
           improving organizational performance, facilities synergy/efficiency,
           employee wellness, productivity and sustained competitive edge.
         </p>

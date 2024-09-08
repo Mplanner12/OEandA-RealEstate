@@ -18,7 +18,8 @@ const faqItems: FAQItem[] = [
   {
     id: 2,
     question: "Where is the location of ORA EGBUNIKE & ASSOCIATES?",
-    answer: "ORA EGBUNIKE & ASSOCIATES is located in [Insert Location Here].",
+    answer:
+      "ORA EGBUNIKE & ASSOCIATES is located in No. 2 Wahab Dosumu Close, Iya Abubakar Crescent, Off Alex Ekwueme Way, Jabi, Abuja., FCT-Abuja, Nigeria",
   },
   {
     id: 3,

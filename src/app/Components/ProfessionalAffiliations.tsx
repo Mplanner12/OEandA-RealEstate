@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import React from "react";
 
 const ProfessionalAffiliations: React.FC = () => {
@@ -33,9 +34,12 @@ const ProfessionalAffiliations: React.FC = () => {
           <h4 className="text-sm text-red-600 font-bold uppercase">
             Professional Affiliations
           </h4>
-          <h2 className="text-[2.25rem] md:text-[2.5rem] font-bold mt-4">
+          <Link
+            href={"/AboutUs"}
+            className="text-[2.25rem] md:text-[2.5rem] font-bold mt-4"
+          >
             Meet our Professionals
-          </h2>
+          </Link>
           <p className="text-gray-800 mt-4">
             All our teams are professional and competent in their fields and
             will help you realize your dream building with excellent results.

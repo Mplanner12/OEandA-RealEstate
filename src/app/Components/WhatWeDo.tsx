@@ -17,11 +17,14 @@ const WhatWeDo = () => {
           <img className="w-full " src="/factoryImg.png" alt="Image" />
           <div className="w-full h-full flex flex-col justify-start items-center mt-[1.5rem] px-[0.85rem]">
             <h1 className="w-full text-[2rem] text-neutral-800 text-start font-bold">
-              Industrial
+              DEVELOPMENT APPRAISAL{" "}
             </h1>
-            <p className="text-neutral-800 text-[1.35rem] leading-9 mt-[1rem]">
-              Industrial development is our main line of business. We do Factory
-              Construction, Warehouse and others
+            <p className="text-neutral-800 lg:h-[33rem] text-[1.35rem] leading-9 mt-[1rem]">
+              We draw from our immense bank of experience and market knowledge
+              to advise developers on what we know will work best. From the
+              choice of external and interior fittings, to the phasing of fund
+              releases, our attention to detail maximizes value for our clients
+              while keeping risk to a minimum.
             </p>
           </div>
         </div>
@@ -29,11 +32,15 @@ const WhatWeDo = () => {
           <img className="w-full " src="/factoryImg.png" alt="Image" />
           <div className="w-full h-full flex flex-col justify-start items-center mt-[1.5rem] px-[0.85rem]">
             <h1 className="w-full text-[2rem] text-neutral-800 text-start font-bold">
-              Commercial
+              ASSET RECOVERY/ RECEIVER MANAGER
             </h1>
-            <p className="text-neutral-800 text-[1.35rem] leading-9 mt-[1rem]">
-              Industrial development is our main line of business. We do Factory
-              Construction, Warehouse and others
+            <p className="text-neutral-800 lg:h-[33rem] text-[1.35rem] leading-9 mt-[1rem]">
+              Changes in legislations, regulations and market conditions create
+              a challenging environment for businesses leading to breaches
+              and/or defaults in financial commitments by obligors. Our legal
+              team Understands the policies and regulatory requirements and
+              through detailed specific situations. We maximize value and
+              structure the best settlement recovery outcomes.
             </p>
           </div>
         </div>
@@ -41,11 +48,16 @@ const WhatWeDo = () => {
           <img className="w-full " src="/factoryImg.png" alt="Image" />
           <div className="w-full h-full flex flex-col justify-start items-center mt-[1.5rem] px-[0.85rem]">
             <h1 className="w-full text-[2rem] text-neutral-800 text-start font-bold">
-              Residential
+              PROJECT MANAGEMENT
             </h1>
-            <p className="text-neutral-800 text-[1.35rem] leading-9 mt-[1rem]">
-              Industrial development is our main line of business. We do Factory
-              Construction, Warehouse and others
+            <p className="text-neutral-800 lg:h-[33rem] text-[1.35rem] leading-9 mt-[1rem]">
+              We provide project management services through the property life
+              cycle. Our firm can help at every stage, by supporting your
+              investment, acquisition and development decisions. From full
+              project management, contract administration and development
+              monitoring to the management of teams, selection of procurement,
+              we use our construction and management expertise to ensure
+              projects are delivered safely and securely.
             </p>
           </div>
         </div>

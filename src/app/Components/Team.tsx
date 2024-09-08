@@ -4,23 +4,43 @@ import { PiPaperPlaneTiltFill } from "react-icons/pi";
 
 const teamMembers = [
   {
-    name: "Ayotilewa",
-    position: "Founder",
+    name: "AbdulMalik Ora Egbunike ",
+    position: "Principal Consultant",
     imageUrl: "/TeamM1.png", // Replace with the correct image path
   },
   {
-    name: "Ayotilewa",
-    position: "Chief Real Estate Officer",
+    name: "Alhaji Shehuluqman Sambo",
+    position: "Company Secretary/Legal Advisor",
     imageUrl: "/TeamM2.png", // Replace with the correct image path
   },
   {
-    name: "Ayotilewa",
-    position: "Head of Property Management",
+    name: "Cyprian Nnadozie Konkwo ",
+    position: "Managing Partner",
     imageUrl: "/TeamM3.png", // Replace with the correct image path
   },
   {
-    name: "Ayotilewa",
-    position: "Legal Counsel",
+    name: "Engr. Arowosafe M. Olayinka",
+    position: "Facilities Management Co-ordinator",
+    imageUrl: "/TeamM4.png", // Replace with the correct image path
+  },
+  {
+    name: "AkinBayo Akintokun ",
+    position: "Facility Manager, ADB",
+    imageUrl: "/TeamM4.png", // Replace with the correct image path
+  },
+  {
+    name: "Adikpe Linda Odije",
+    position: "Estate Surveyor",
+    imageUrl: "/TeamM4.png", // Replace with the correct image path
+  },
+  {
+    name: "Obodoechina Emeka",
+    position: "Principal Estate Surveyor",
+    imageUrl: "/TeamM4.png", // Replace with the correct image path
+  },
+  {
+    name: "Paul Okwuayanga ",
+    position: "Regional Manager, Lagos",
     imageUrl: "/TeamM4.png", // Replace with the correct image path
   },
 ];
@@ -55,8 +75,12 @@ const MeetTheTeam: React.FC = () => {
               alt={member.name}
               className="w-full h-full mb-[2.5rem] rounded-lg object-cover"
             />
-            <h3 className="mt-4 text-xl font-semibold">{member.name}</h3>
-            <p className="text-gray-500 mb-[0.5rem]">{member.position}</p>
+            <h3 className="mt-4 text-xl font-semibold text-center">
+              {member.name}
+            </h3>
+            <p className="text-gray-500 mb-[0.5rem] text-center">
+              {member.position}
+            </p>
             <button className="mt-4 bg-black text-white flex items-center justify-between py-3 px-6 pr-4 mb-[2rem] md:mb-[1rem] rounded-full w-full">
               Say Hello 👋
               <span className="ml-2 bg-red-600 p-2 rounded-full">

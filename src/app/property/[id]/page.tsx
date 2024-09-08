@@ -1,112 +1,85 @@
+"use client";
+import ImageGallery from "@/app/Components/ImageGallery";
+import InquiryForm from "@/app/Components/InquiryForm";
+import PricingDetails from "@/app/Components/PricingDetails";
+import PropertyInfo from "@/app/Components/PropertyInfo";
+import { useParams } from "next/navigation";
 import React, { useState } from "react";
+import { IoLocationSharp } from "react-icons/io5";
+import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
+import SocialLinks from "../../Components/SocialLinks";
+
+const properties = [
+  {
+    id: 1,
+    title: "GIGANTIC AND LUXURIOUS OFFICE COMPLEX FOR SALE",
+    slug: "Coastal Escapes - Where Waves Beckon",
+    location: "DURUMI",
+    description:
+      "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood.",
+    price: "₦25 BILLION",
+    imageUrl: "/prop1.png",
+  },
+  {
+    id: 2,
+    title:
+      "2  UNITS OF WELL SPACIOUS AND NEAT 3 BEDROOM SEMI DETACHED  FLAT IN A CALM AND SERENE ENVIRONMENT",
+    slug: "Urban Oasis - Life in the Heart of the City",
+    location: "LUGBE:EL-SALEM ESTATE, PYKASSA",
+    description:
+      "Immerse yourself in the energy of the city. This modern apartment in the heart...",
+    price: "₦50 MILLION ",
+    imageUrl: "/prop2.png",
+  },
+  {
+    id: 3,
+    title: "Rustic Retreat Cottage",
+    slug: "Countryside Charm - Escape to Nature's Embrace",
+    location: "LAGOS",
+    description:
+      "Find tranquility in the countryside. This charming cottage is nestled amidst rolling hills.",
+    price: "$350,000",
+    imageUrl: "/prop3.png",
+  },
+];
 
 const PropertyDetails = ({ params }: { params: { id: string } }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const propParams = useParams();
+
+  const propertyId = parseInt(params.id, 10);
+  const property = properties.find((p) => p.id === propertyId);
 
   return (
-    <div className="bg-black text-white">
-      <div className="container mx-auto px-4 py-8">
-        <header className="text-center">
-          <h1 className="text-3xl font-bold">Serenity Villa</h1>
-          <p className="text-sm">Chevron Estate</p>
-          <p className="text-xl font-semibold mt-2">Price: ₦1,250,000</p>
-        </header>
-
-        <div className="mt-8">
-          {/* Image Gallery */}
-          <div className="flex justify-center space-x-2">
-            <img
-              src="/path-to-main-image.jpg"
-              alt="Main"
-              className="w-full h-64 object-cover rounded-md"
-            />
-            {/* Additional thumbnails can be placed here */}
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row justify-between mt-8">
-          <div className="md:w-2/3">
-            <h2 className="text-xl font-bold">Description</h2>
-            <p>
-              Discover your own piece of paradise with the Serenity Villa. With
-              an open floor plan, breathtaking ocean views from every room, and
-              direct access to a pristine sandy beach, this property is the
-              epitome of coastal living.
+    <div className="w-full h-full bg-neutral-950 text-white">
+      <Header />
+      <div className="container mx-auto px-4 py-8 lg:px-[3.5rem]">
+        <header className="w-full h-full flex flex-col justify-start items-start gap-x-2">
+          <div className="w-full h-full flex flex-col gap-y-2 justify-start items-start gap-x-2 lg:gap-x-[2rem]">
+            <h1 className="text-3xl lg:text-center lg:w-full">
+              {property ? property.title : "Property not found"}
+            </h1>
+            <p className="text-sm w-fit h-full flex justify-start items-center gap-x-2 p-[0.35rem] px-[0.65rem] rounded-full border border-neutral-800">
+              <IoLocationSharp size={16} className="text-gray-200" />
+              Chevron Estate
             </p>
           </div>
-          <div className="md:w-1/3">
-            <h2 className="text-xl font-bold">Key Features and Amenities</h2>
-            <ul>
-              <li>Expansive oceanfront terrace for outdoor entertaining</li>
-              <li>
-                Master suite with a spa-inspired bathroom and ocean-facing
-                balcony
-              </li>
-              <li>Private garage and ample storage space</li>
-            </ul>
+          <div className="text-base mt-4 lg:text-sm flex flex-col lg:flex-row lg:gap-x-[1rem] justify-start items-start gap-y-2 lg:gap-y-0 lg:mt-2">
+            <div className="font-extralight">Price</div> <div>₦1,250,000</div>
           </div>
-        </div>
+        </header>
 
-        <div className="mt-8">
-          <h2 className="text-xl font-bold">Comprehensive Pricing Details</h2>
-          <div className="flex flex-col md:flex-row justify-between">
-            {/* Pricing details here */}
-            <div>
-              <h3 className="font-bold">Listing Price</h3>
-              <p>₦1,250,000</p>
-            </div>
-            <div>
-              <h3 className="font-bold">Additional Fees</h3>
-              <p>Property Transfer Tax: ₦25,000</p>
-              <p>Legal Fees: ₦3,000</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-8">
-          <h2 className="text-xl font-bold">
-            Inquire About Seaside Serenity Villa
-          </h2>
-          <form className="space-y-4">
-            <input
-              type="text"
-              placeholder="First Name"
-              className="w-full p-2 bg-gray-800 rounded-md"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-            />
-            <input
-              type="text"
-              placeholder="Last Name"
-              className="w-full p-2 bg-gray-800 rounded-md"
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full p-2 bg-gray-800 rounded-md"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <textarea
-              placeholder="Message"
-              className="w-full p-2 bg-gray-800 rounded-md"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-            <button
-              type="submit"
-              className="bg-red-500 hover:bg-red-600 p-2 rounded-md"
-            >
-              Send Your Message
-            </button>
-          </form>
-        </div>
+        <ImageGallery property={property} />
+        <PropertyInfo property={property} />
+        <PricingDetails property={property} />
+        <InquiryForm property={property} />
       </div>
+      <Footer />
+      <SocialLinks />
     </div>
   );
 };

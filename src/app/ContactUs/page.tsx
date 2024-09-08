@@ -3,14 +3,20 @@ import ContactHero from "../Components/ContactHero";
 import LetsConnect from "../Components/letsConnect";
 import Discover from "../Components/Offices";
 import ExploreSection from "../Components/ExploreSection";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
+import SocialLinks from "../Components/SocialLinks";
 
 const page: React.FC = () => {
   return (
     <div>
+      <Header />
       <ContactHero />
       <LetsConnect />
       <Discover />
       <ExploreSection />
+      <Footer />
+      <SocialLinks />
     </div>
   );
 };

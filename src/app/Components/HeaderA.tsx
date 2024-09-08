@@ -7,7 +7,7 @@ import Link from "next/link";
 import { FaXmark } from "react-icons/fa6";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
-const Header: React.FC = () => {
+const HeaderA: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
   return (
-    <header className="w-full bg-neutral-900 text-white p-4">
+    <header className="bg-white w-full h-full text-neutral-900 p-4">
       {/* Small Screen */}
       <div className="flex justify-between items-center lg:hidden pl-[1rem]">
         <div className="flex items-center">
@@ -108,7 +108,7 @@ const Header: React.FC = () => {
           />
           <span className="font-bold">OEandA</span>
         </div>
-        <nav className="w-fit flex items-center space-x-12">
+        <nav className="w-fit flex items-center space-x-12 text-black">
           <Link href="/" className="hover:text-gray-400">
             Home
           </Link>
@@ -124,23 +124,6 @@ const Header: React.FC = () => {
               <span>Properties</span>
               {/* <RiArrowDropDownLine size={26} /> */}
             </Link>
-            {/* Dropdown Menu */}
-            {/* {isDropdownOpen && (
-              <div className="absolute left-0 mt-2 py-2 w-48 bg-white text-black rounded-md shadow-lg">
-                <Link
-                  href="/properties/residential"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Residential
-                </Link>
-                <Link
-                  href="/properties/commercial"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Commercial
-                </Link>
-              </div>
-            )} */}
           </div>
           <Link href="/services" className="hover:text-gray-400">
             Services
@@ -155,14 +138,14 @@ const Header: React.FC = () => {
             >
               Contact Us
             </Link>
-            <div className="bg-neutral-900 ml-4 p-2 px-3 border border-zinc-900 rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">
+            <div className="bg-white text-black ml-4 p-2 px-3 border border-white rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">
               <button>
                 <BiSearchAlt size={26} className="font-light" />
               </button>
               <input
                 type="text"
                 placeholder="Property Search"
-                className="w-[8rem] text-sm bg-neutral-900 ml-4 p-2 px-1 border border-zinc-900 rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition"
+                className="w-[8rem] text-sm bg-white text-black ml-4 p-2 px-1 border border-white rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition"
               />
             </div>
           </div>
@@ -172,4 +155,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default HeaderA;

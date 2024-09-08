@@ -36,20 +36,14 @@ const AboutHero: React.FC = () => {
             Our Journey
           </h1>
           <p className="md:text-base text-[0.9rem] mb-6 md:mt-[1.25rem] md:mb-[1.75rem] text-neutral-400 md:w-[30rem]">
-            Our story is one of continuous growth and evolution. We started as a
-            small team with big dreams, determined to create a real estate
-            platform that transcended the ordinary. Over the years, we&apos;ve
-            expanded our reach, forged valuable partnerships, and gained the
-            trust of countless clients.
+            The firm was incorporated in 1985 and is duly recognized by the
+            Nigerian Institution of Estate Surveyors and Valuers (NIESV), Estate
+            Surveyors and Valuers Registration Board of Nigeria (ESVARBON) and
+            the Royal Institution of Chartered Surveyors (RICS). The firm is
+            also a member of International Facility Management Association,
+            Houston, USA and Institute of Workplace and Facilities Management
+            (IWFM), London, UK.
           </p>
-          {/* <div className="flex md:flex-row w-full md:w-fit md:gap-x-[0.5rem] h-full flex-col mb-[1.85rem] gap-y-[0.75rem]">
-            <button className="md:w-fit bg-zinc-900 shadow-md text-white py-4 px-6 rounded-md w-full md:px-[1.7rem] md:py-[0.75rem] ">
-              Learn More
-            </button>
-            <button className="md:w-fit bg-red-700 text-white shadow-md py-4 px-6 md:px-[1.7rem] md:py-[0.75rem] rounded-md w-full">
-              Browse Properties
-            </button>
-          </div> */}
         </div>
         {/* <!-- Statistics Content --> */}
         <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-2 gap-x-0 text-center w-full justify-between md:justify-start">

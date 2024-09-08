@@ -20,11 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
+        {/* <Header /> */}
         {children}
         <section className="w-full h-full md:bg-zinc-900">
-          <Footer />
-          <SocialLinks />
+          {/* <Footer /> */}
+          {/* <SocialLinks /> */}
         </section>
       </body>
     </html>

@@ -23,16 +23,16 @@ const FooterA: React.FC = () => {
       </div>
 
       {/* Brochure */}
-      <div className="w-full h-full grid grid-cols-3 mt-[2rem]">
+      <div className="w-full h-full lg:grid flex flex-col-reverse lg:grid-cols-3 mt-[2rem]">
         <div className="w-full h-full flex justify-start items-center">
           <img src="/AbstractAATC.png" alt="" />
         </div>
-        <div className="w-full h-full flex flex-col col-span-2 justify-start items-start gap-y-[3rem] mt-[2rem]">
-          <div className="w-full h-full flex flex-col justify-center items-start">
+        <div className="w-full h-full flex flex-col col-span-2 lg:justify-start items-start lg:gap-y-[3rem] lg:mt-[2rem]">
+          <div className="w-full h-full flex flex-col justify-center items-center lg:items-start">
             <button className="bg-emerald-700 mx-auto text-white py-[0.85rem] text-sm px-5 lg:ml-[16rem] mb-[4rem] rounded-lg">
               Download Brochure
             </button>
-            <div className="w-fill h-full flex flex-col md:flex-row justify-start items-center gap-x-[4.25rem]">
+            <div className="w-fill h-full flex flex-col md:flex-row justify-center lg:justify-start items-center gap-x-[4.25rem]">
               <div className="w-full h-full flex gap-y-3 flex-col justify-start items-center">
                 <FaPhoneAlt
                   size={38}

@@ -24,16 +24,16 @@ const FooterA: React.FC = () => {
       </div>
 
       {/* Brochure */}
-      <div className="w-full h-full lg:grid flex flex-col-reverse lg:grid-cols-3 mt-[2rem]">
+      <div className="w-full h-full lg:grid lg:pl-[2rem] px-[1rem] flex flex-col-reverse lg:grid-cols-3 mt-[2rem]">
         <div className="w-full h-full flex justify-start items-center">
           <img src="/AbstractAATC.png" alt="" />
         </div>
-        <div className="w-full h-full flex flex-col col-span-2 lg:justify-start items-start lg:gap-y-[3rem] lg:mt-[2rem]">
+        <div className="w-full h-full flex flex-col lg:ml-[0.05rem] col-span-2 lg:justify-start items-start lg:gap-y-[3rem] lg:mt-[2rem]">
           <div className="w-full h-full flex flex-col justify-center items-center lg:items-start">
-            <button className="bg-emerald-700 mx-auto text-white py-[0.85rem] text-sm px-5 lg:ml-[16rem] mb-[4rem] rounded-lg">
+            <button className="bg-emerald-700 mx-auto text-white py-[0.85rem] text-sm px-5 lg:ml-[17rem] mb-[4rem] rounded-lg">
               Download Brochure
             </button>
-            <div className="w-fill h-full flex flex-col md:flex-row justify-center lg:justify-start items-center gap-x-[4.25rem]">
+            <div className="w-fill h-full flex flex-col pl-[2rem] md:flex-row justify-center lg:justify-start items-center gap-x-[4.25rem]">
               <div className="w-full h-full flex gap-y-3 flex-col justify-start items-center">
                 <FaPhoneAlt
                   size={38}
@@ -159,7 +159,7 @@ const FooterA: React.FC = () => {
             </div>
           </div>
           {/* Navigation Links  md*/}
-          <div className="hidden w-fit h-full lg:flex justify-start items-start gap-8 lg:gap-x-[6rem] xl:gap-x-[7.25rem] gap-x-14 mt-[2rem] md:px-[1.5rem] lg:px-[1.25rem] lg:pl-[3rem] xl:pl-[7.25rem]">
+          <div className="hidden w-fit h-full lg:flex justify-start items-start gap-8 lg:gap-x-[7rem] xl:gap-x-[9rem] gap-x-14 mt-[2rem] md:px-[1.5rem] lg:px-[1.25rem] lg:pl-[3rem] xl:pl-[10rem]">
             <div>
               <h3 className="text-lg font-normal mb-4 text-neutral-500">
                 Home

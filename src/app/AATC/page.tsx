@@ -52,8 +52,8 @@ const page: React.FC = () => {
         />
       </div>
 
-      <section className="lg:p-[5rem] px-[1rem] lg:px-[5rem] mt-[2rem] w-full gap-x-[2rem] h-full flex flex-col lg:flex-row lg:justify-start justify-center items-center lg:items-start">
-        <div className="lg:w-2/4 w-full h-full fles justify-center items-center">
+      <section className="lg:p-[5rem] lg:h-[68rem] px-[1rem] lg:px-[5rem] mt-[2rem] w-full gap-x-[2rem] lg:gap-x-[2.75rem] h-full flex flex-col lg:flex-row  justify-center items-center lg:items-start">
+        <div className="lg:w-[48%] w-full h-[85%] lg:mt-[4rem] fles justify-center items-center">
           <img
             className="w-full h-full flex justify-center items-center"
             src="/AboutAATC.png"
@@ -66,7 +66,7 @@ const page: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }} // Adjust as needed
           viewport={{ once: true }}
-          className="lg:w-2/4 w-full h-full lg:mt-[5rem] flex flex-col justify-start items-start"
+          className="lg:w-[45%] w-full h-full lg:mt-[1rem] flex flex-col justify-start items-start"
         >
           <motion.h1
             initial={{ opacity: 0, y: -20 }}

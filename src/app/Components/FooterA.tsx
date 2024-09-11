@@ -87,7 +87,7 @@ const FooterA: React.FC = () => {
           </div>
 
           {/* Navigation Links  sm*/}
-          <div className="md:hidden w-full h-full flex justify-start px-[1rem] items-start gap-x-[2rem] mt-[2rem]">
+          <div className="md:hidden w-full h-full flex justify-start px-[1rem] items-start gap-x-[0.85rem] mt-[2rem]">
             <div className="w-[1/2] h-full flex pl-[0.85rem] pr-[1.5rem] flex-col justify-start items-center gap-y-[2rem]">
               <div>
                 <h3 className="text-lg font-normal mb-4 text-neutral-500">
@@ -129,29 +129,6 @@ const FooterA: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              {/* <div>
-                <h3 className="text-lg font-light text-neutral-500 mb-4">
-                  Properties
-                </h3>
-                <ul>
-                  <li className="mb-2">
-                    <a
-                      href="#portfolio"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      Portfolio
-                    </a>
-                  </li>
-                  <li className="w-[6rem] border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
-                    <a
-                      href="#categories"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      Categories
-                    </a>
-                  </li>
-                </ul>
-              </div> */}
               <div>
                 <h3 className="text-lg font-light text-neutral-500 mb-4">
                   Contact Us
@@ -176,7 +153,7 @@ const FooterA: React.FC = () => {
                 </ul>
               </div>
             </div>
-            <div className="w-[1/2] h-full flex border-l border-zinc-800 flex-col justify-start items-center gap-y-[2rem]">
+            <div className="w-[1/2] h-full flex border-l border-zinc-800 flex-col pl-[1.5rem] justify-start items-center gap-y-[2rem]">
               <div className="w-fit pb-[1.5rem]">
                 <h3 className="w-fit text-lg font-light text-neutral-500 mb-4">
                   About Us

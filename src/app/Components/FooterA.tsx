@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa6";
@@ -104,27 +105,10 @@ const FooterA: React.FC = () => {
                   </li>
                   <li className="mb-2">
                     <a
-                      href="#features"
+                      href="#Features"
                       className="text-neutral-900 hover:text-gray-400 font-semibold"
                     >
                       Features
-                    </a>
-                  </li>
-
-                  <li className="mb-2">
-                    <a
-                      href="#testimonials"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      Testimonials
-                    </a>
-                  </li>
-                  <li className="w-[6rem] border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
-                    <a
-                      href="#faqs"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      FAQs
                     </a>
                   </li>
                 </ul>
@@ -155,99 +139,23 @@ const FooterA: React.FC = () => {
             </div>
             <div className="w-[1/2] h-full flex border-l border-zinc-800 flex-col pl-[1.5rem] justify-start items-center gap-y-[2rem]">
               <div className="w-fit pb-[1.5rem]">
-                <h3 className="w-fit text-lg font-light text-neutral-500 mb-4">
+                <a
+                  href="#About"
+                  className="w-fit text-lg font-light text-neutral-500 mb-4"
+                >
                   About Us
-                </h3>
+                </a>
                 <ul className="w-fit">
                   <li className="mb-2">
                     <a
-                      href="#story"
+                      href="#About"
                       className="text-neutral-900 hover:text-gray-400 font-semibold"
                     >
                       Our Story
                     </a>
                   </li>
-                  <li className="mb-2">
-                    <a
-                      href="#works"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      Our Works
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a
-                      href="#how-it-works"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      How It Works
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a
-                      href="#team"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      Our Team
-                    </a>
-                  </li>
-                  <li className="border-b pb-[1rem] md:pb-0 border-zinc-800">
-                    <a
-                      href="#clients"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      Our Clients
-                    </a>
-                  </li>
                 </ul>
               </div>
-              {/* <div className="w-full pb-[1.5rem] px-[1rem] flex flex-col items-center">
-                <h3 className="w-fit text-lg font-light text-neutral-500 mb-4">
-                  Services
-                </h3>
-                <ul className="w-fit flex flex-col items-end text-center">
-                  <li className="mb-2 w-fit">
-                    <a
-                      href="#valuation"
-                      className="text-neutral-900 text-center hover:text-gray-400 font-semibold"
-                    >
-                      Valuation Mastery
-                    </a>
-                  </li>
-                  <li className="mb-2 w-fit">
-                    <a
-                      href="#marketing"
-                      className="text-neutral-900 text-center w-full hover:text-gray-400 font-semibold"
-                    >
-                      Strategic Marketing
-                    </a>
-                  </li>
-                  <li className="mb-2 w-fit">
-                    <a
-                      href="#negotiation"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      Negotiation Wizardry
-                    </a>
-                  </li>
-                  <li className="mb-2 w-fit">
-                    <a
-                      href="#closing"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      Closing Success
-                    </a>
-                  </li>
-                  <li className="pb-10 border-b border-zinc-800">
-                    <a
-                      href="#management"
-                      className="w-fit text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      Property Management
-                    </a>
-                  </li>
-                </ul>
-              </div> */}
             </div>
           </div>
           {/* Navigation Links  md*/}
@@ -267,108 +175,32 @@ const FooterA: React.FC = () => {
                 </li>
                 <li className="mb-2">
                   <a
-                    href="#features"
+                    href="#Features"
                     className="text-neutral-900 hover:text-gray-400 font-semibold"
                   >
                     Features
                   </a>
                 </li>
-                <li className="mb-2">
-                  <a
-                    href="#properties"
-                    className="text-neutral-900 hover:text-gray-400 font-semibold"
-                  >
-                    Properties
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#testimonials"
-                    className="text-neutral-900 hover:text-gray-400 font-semibold"
-                  >
-                    Testimonials
-                  </a>
-                </li>
-                <li className="w-[6rem] border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
-                  <a
-                    href="#faqs"
-                    className="text-neutral-900 hover:text-gray-400 font-semibold"
-                  >
-                    FAQ&apos;s
-                  </a>
-                </li>
               </ul>
             </div>
             <div className="pb-[1.5rem] w-fit md:pb-0 pl-[1.5rem] md:pl-0 border-l md:border-none border-zinc-800">
-              <h3 className="text-lg w-[7rem] font-normal text-neutral-500 mb-4">
+              <a
+                href="#About"
+                className="text-lg w-[7rem] font-normal text-neutral-500 mb-4"
+              >
                 About Us
-              </h3>
+              </a>
               <ul className="w-fit">
                 <li className="mb-2">
                   <a
-                    href="#story"
+                    href="#About"
                     className="text-neutral-900 hover:text-gray-400 font-semibold"
                   >
                     Our Story
                   </a>
                 </li>
-                <li className="mb-2">
-                  <a
-                    href="#works"
-                    className="text-neutral-900 hover:text-gray-400 font-semibold"
-                  >
-                    Our Works
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#how-it-works"
-                    className="text-neutral-900 hover:text-gray-400 font-semibold"
-                  >
-                    How It Works
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#team"
-                    className="text-neutral-900 hover:text-gray-400 font-semibold"
-                  >
-                    Our Team
-                  </a>
-                </li>
-                <li className="border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
-                  <a
-                    href="#clients"
-                    className="text-neutral-900 hover:text-gray-400 font-semibold"
-                  >
-                    Our Clients
-                  </a>
-                </li>
               </ul>
             </div>
-            {/* <div>
-              <h3 className="text-lg font-normal text-neutral-500 mb-4">
-                Properties
-              </h3>
-              <ul>
-                <li className="mb-2">
-                  <a
-                    href="#portfolio"
-                    className="text-neutral-900 hover:text-gray-400 font-semibold"
-                  >
-                    Portfolio
-                  </a>
-                </li>
-                <li className="w-[6rem] border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
-                  <a
-                    href="#categories"
-                    className="text-neutral-900 hover:text-gray-400 font-semibold"
-                  >
-                    Categories
-                  </a>
-                </li>
-              </ul>
-            </div> */}
             <div className="w-full">
               <h3 className="text-lg font-normal text-neutral-500 mb-4">
                 Contact Us

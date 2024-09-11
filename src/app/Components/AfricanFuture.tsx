@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 const AfricanFuture: React.FC = () => {
   return (
-    <section className="bg-zinc-50 py-[4.75rem] w-full h-full flex flex-col justify-start items-center">
+    <section
+      id="Features"
+      className="bg-zinc-50 py-[4.75rem] w-full h-full flex flex-col justify-start items-center"
+    >
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

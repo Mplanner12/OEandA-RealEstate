@@ -103,7 +103,7 @@ const HeaderA: React.FC = () => {
       <div className="hidden lg:flex justify-between items-center px-[2rem]">
         <div className="flex items-center">
           <Image
-            src="/Logo.png"
+            src="/realLogo.png"
             alt="OEandA Logo"
             width={30}
             height={30}

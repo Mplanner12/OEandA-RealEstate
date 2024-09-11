@@ -159,20 +159,12 @@ const FooterA: React.FC = () => {
             </div>
           </div>
           {/* Navigation Links  md*/}
-          <div className="hidden w-fit h-full lg:flex justify-start items-start gap-8 lg:gap-x-[5rem] xl:gap-x-[6.25rem] gap-x-14 mt-[2rem] md:px-[1.5rem] lg:px-[1.25rem] lg:pl-[3rem] xl:pl-[7.25rem]">
+          <div className="hidden w-fit h-full lg:flex justify-start items-start gap-8 lg:gap-x-[6rem] xl:gap-x-[7.25rem] gap-x-14 mt-[2rem] md:px-[1.5rem] lg:px-[1.25rem] lg:pl-[3rem] xl:pl-[7.25rem]">
             <div>
               <h3 className="text-lg font-normal mb-4 text-neutral-500">
                 Home
               </h3>
               <ul>
-                <li className="mb-2">
-                  <a
-                    href="#hero"
-                    className="text-neutral-900 hover:text-gray-400 font-semibold"
-                  >
-                    Hero Section
-                  </a>
-                </li>
                 <li className="mb-2">
                   <a
                     href="#Features"
@@ -183,14 +175,14 @@ const FooterA: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="pb-[1.5rem] w-fit md:pb-0 pl-[1.5rem] md:pl-0 border-l md:border-none border-zinc-800">
+            <div className="pb-[1.5rem] w-[6rem] md:pb-0 md:pl-0 border-l md:border-none border-zinc-800">
               <a
                 href="#About"
-                className="text-lg w-[7rem] font-normal text-neutral-500 mb-4"
+                className="text-lg w-[6rem] font-normal text-neutral-500 mb-4"
               >
                 About Us
               </a>
-              <ul className="w-fit">
+              <ul className="w-[6rem] mt-[0.75rem]">
                 <li className="mb-2">
                   <a
                     href="#About"

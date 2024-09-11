@@ -28,23 +28,23 @@ const page: React.FC = () => {
       <HeaderA />
       <div className="lg:w-full w-full bg-teal-700 lg:h-[35rem] text-white md:p-5 xl:px-2 p-4 md:pr-0 flex flex-col md:flex-row-reverse items-center justify-between">
         {/* <!-- Text Content --> */}
-        <div className="w-full h-full flex-col md:px-[3rem] lg:px-[4.5rem] xl:px-[6rem] pt-[1.25rem] md:pt-[5rem] justify-center items-center mt-[-1rem] lg:mt-0 leading-[3rem]">
+        <div className="w-full h-full flex-col md:px-[3rem] lg:px-[4.5rem] xl:px-[6rem] lg:mt-[-13rem] pt-[1.25rem] md:pt-[5rem] justify-center items-center mt-[-1rem] leading-[3rem]">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }} // Adjust duration as needed
             className="flex-col mb-6 mt-[-0.35rem] h-full md:mt-0 w-full flex justify-center items-center"
           >
-            <h1 className="uppercase md:text-[3rem] leading-[2.95rem] text-3xl font-bold mb-4 md:mb-3 w-[20rem] lg:w-[45rem] text-center">
+            <h1 className="uppercase md:text-[3rem] leading-[2.95rem] text-3xl  lg:mt-[-9rem]  font-bold mb-4 md:mb-3 w-[20rem] lg:w-[45rem] text-center">
               Abuja Afreximbank African Trade Centre{" "}
               <span className="text-yellow-400">(AATC)</span>
             </h1>
           </motion.div>
         </div>
       </div>
-      <div className="z--10 mx-auto lg:mt-[-17rem] p-[1rem] rounded-b-lg border-3 border-teal-700 w-full lg:w-[89%] bg-teal-700">
+      <div className="z-20 mx-auto lg:mt-[-16rem] p-[1rem] object-cover rounded-b-lg border-3 border-teal-700 w-full lg:w-[89%] lg:h-[32rem] bg-teal-700">
         <video
-          className="w-full h-full flex justify-center items-center"
+          className="w-full h-full flex justify-center object-cover items-center"
           src="/Hvideo.mp4"
           controls
           muted
@@ -66,7 +66,7 @@ const page: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }} // Adjust as needed
           viewport={{ once: true }}
-          className="lg:w-2/4 w-full h-full flex flex-col justify-start items-start"
+          className="lg:w-2/4 w-full h-full lg:mt-[5rem] flex flex-col justify-start items-start"
         >
           <motion.h1
             initial={{ opacity: 0, y: -20 }}

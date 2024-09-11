@@ -4,37 +4,37 @@ import { FaFacebookF, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa6";
 const SocialAATC: React.FC = () => {
   return (
     <div className="w-full h-full flex flex-col md:flex-row-reverse justify-start md:pb-[4rem] md:justify-between items-center bg-white py-[1.25rem]">
-      <div className="md:hidden px-[1.5rem] py-[1.25rem] w-full h-full flex justify-center items-center gap-x-[1.15rem]">
-        <div className="w-fit h-full flex justify-center items-center p-[1rem] bg-black rounded-full">
+      <div className="md:hidden px-[3.5rem] py-[1.25rem] w-full h-full flex justify-center items-center gap-x-0 lg:gap-x-[1.15rem]">
+        <div className="w-fit h-full flex justify-center items-center p-[0.35rem] rounded-full">
           <FaFacebookF
-            size={32}
-            className="text-white p-2 rounded-full bg-emerald-700"
+            size={39}
+            className="text-white p-2.5 rounded-full bg-emerald-700"
           />
         </div>
-        <div className="w-fit h-full flex justify-center items-center p-[1rem] bg-black rounded-full">
+        <div className="w-fit h-full flex justify-center items-center p-[0.35rem] rounded-full">
           <FaLinkedin
-            size={32}
-            className="text-white p-2 rounded-full bg-emerald-700"
+            size={39}
+            className="text-white p-2.5 rounded-full bg-emerald-700"
           />
         </div>
-        <div className="w-fit h-full flex justify-center items-center p-[1rem] bg-black rounded-full">
+        <div className="w-fit h-full flex justify-center items-center p-[0.35rem] rounded-full">
           <FaTwitter
-            size={32}
-            className="text-white p-2 rounded-full bg-emerald-700"
+            size={39}
+            className="text-white p-2.5 rounded-full bg-emerald-700"
           />
         </div>
-        <div className="w-fit h-full flex justify-center items-center p-[1rem] bg-black rounded-full">
+        <div className="w-fit h-full flex justify-center items-center p-[0.35rem] rounded-full">
           <FaYoutube
-            size={32}
-            className="text-white p-2 rounded-full bg-emerald-700"
+            size={39}
+            className="text-white p-2.5 rounded-full bg-emerald-700"
           />
         </div>
       </div>
       <div className="hidden md:px-[5rem] w-full md:w-fit h-full md:flex justify-center items-center gap-x-[1rem]">
         <div className="w-fit h-full flex justify-center items-center">
           <FaFacebookF
-            size={36}
-            className="text-white p-2 rounded-full bg-emerald-700"
+            size={39}
+            className="text-white p-2.5 rounded-full bg-emerald-700"
           />
         </div>
         <div className="w-fit h-full flex justify-center items-center">

@@ -24,16 +24,16 @@ const page: React.FC = () => {
   ];
 
   return (
-    <div className="bg-white w-full h-full flex flex-col justify-start items-start text-white font-sans">
+    <div className="bg-white w-full h-full flex flex-col justify-start items-center lg:items-start text-white font-sans">
       <HeaderA />
-      <div className="lg:w-full bg-teal-700 lg:h-[35rem] text-white md:p-5 xl:px-2 p-4 md:pr-0 flex flex-col md:flex-row-reverse items-center sm:items-start justify-between">
+      <div className="lg:w-full w-full bg-teal-700 lg:h-[35rem] text-white md:p-5 xl:px-2 p-4 md:pr-0 flex flex-col md:flex-row-reverse items-center justify-between">
         {/* <!-- Text Content --> */}
         <div className="w-full h-full flex-col md:px-[3rem] lg:px-[4.5rem] xl:px-[6rem] pt-[1.25rem] md:pt-[5rem] justify-center items-center mt-[-1rem] lg:mt-0 leading-[3rem]">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }} // Adjust duration as needed
-            className="flex-col mb-6 mt-[-0.35rem] md:mt-0 w-full flex justify-center items-center"
+            className="flex-col mb-6 mt-[-0.35rem] h-full md:mt-0 w-full flex justify-center items-center"
           >
             <h1 className="uppercase md:text-[3rem] leading-[2.95rem] text-3xl font-bold mb-4 md:mb-3 w-[20rem] lg:w-[45rem] text-center">
               Abuja Afreximbank African Trade Centre{" "}
@@ -42,13 +42,23 @@ const page: React.FC = () => {
           </motion.div>
         </div>
       </div>
-      <div className="z-20 mx-auto lg:mt-[-17rem] p-[1rem] rounded-lg border-3 border-teal-700 w-full lg:w-[89%] bg-teal-700">
-        <img className="bg-neutral-400" src="/AATCimg.png" alt="" />
+      <div className="z-20 mx-auto lg:mt-[-17rem] p-[1rem] rounded-b-lg border-3 border-teal-700 w-full lg:w-[89%] bg-teal-700">
+        <video
+          className="w-full h-full flex justify-center items-center"
+          src="/Hvideo.mp4"
+          controls
+          muted
+          autoPlay
+        />
       </div>
 
-      <section className="lg:p-[5rem] px-[1rem] lg:px-[5rem] mt-[2rem] w-full gap-x-[2rem] h-full flex flex-col lg:flex-row lg:justify-start justify-center items-start">
+      <section className="lg:p-[5rem] px-[1rem] lg:px-[5rem] mt-[2rem] w-full gap-x-[2rem] h-full flex flex-col lg:flex-row lg:justify-start justify-center items-center lg:items-start">
         <div className="lg:w-2/4 w-full h-full fles justify-center items-center">
-          <img src="/AboutAATC.png" alt="" />
+          <img
+            className="w-full h-full flex justify-center items-center"
+            src="/AboutAATC.png"
+            alt=""
+          />
         </div>
         <motion.div
           initial={{ opacity: 0, x: 20 }}
@@ -90,16 +100,16 @@ const page: React.FC = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 1.2, delay: 0.3 }}
-              className="p-[1rem] py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-start items-start"
+              className="p-[1rem] py-[1rem] pt-0 lg:pt-[1.85rem] lg:py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-start mb-[0.5rem] lg:mb-0"
             >
-              <div className="w-fit ml-[-2rem] relative top-1 h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-4 to-teal-800 rounded-lg justify-center items-center">
+              <div className="w-fit lg:ml-[-2rem] top-[-1.35rem] lg:top-1 relative h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-4 to-teal-800 rounded-lg justify-center items-center">
                 i
               </div>
-              <p className="w-full ml-[0.85rem] text-neutral-950">
+              <div className="w-full ml-[0.85rem] text-neutral-950">
                 Bridging the gap in trade and market information in Africa,
                 especially with regards to intra African trade between Nigeria
                 and other African countries.
-              </p>
+              </div>
             </motion.div>
             <motion.div
               variants={{
@@ -107,9 +117,9 @@ const page: React.FC = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 1.2, delay: 0.3 }}
-              className="p-[1rem] py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-start items-start"
+              className="p-[1rem] py-[1rem] pt-0 lg:pt-[1.85rem] lg:py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-start mb-[0.5rem] lg:mb-0"
             >
-              <div className="w-fit ml-[-2rem] relative top-1 h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-4 to-teal-800 rounded-lg justify-center items-center">
+              <div className="w-fit lg:ml-[-2rem] top-[-1.35rem] lg:top-1 relative h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-4 to-teal-800 rounded-lg justify-center items-center">
                 ii
               </div>
               <p className="w-full ml-[0.85rem] text-neutral-950">
@@ -124,9 +134,9 @@ const page: React.FC = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 1.2, delay: 0.3 }}
-              className="p-[1rem] py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-start items-start"
+              className="p-[1rem] py-[1rem] pt-0 lg:pt-[1.85rem] lg:py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-start mb-[0.5rem] lg:mb-0"
             >
-              <div className="w-fit ml-[-2rem] relative top-1 h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-3.5 to-teal-800 rounded-lg justify-center items-center">
+              <div className="w-fit lg:ml-[-2rem] top-[-1.35rem] lg:top-1 relative h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-4 to-teal-800 rounded-lg justify-center items-center">
                 iii
               </div>
               <p className="w-full ml-[0.85rem] text-neutral-950">
@@ -141,9 +151,9 @@ const page: React.FC = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 1.2, delay: 0.3 }}
-              className="p-[1rem] py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-start items-start"
+              className="p-[1rem] py-[1rem] pt-0 lg:pt-[1.85rem] lg:py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-start mb-[0.5rem] lg:mb-0"
             >
-              <div className="w-fit ml-[-2rem] relative top-1 h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-3.5 to-teal-800 rounded-lg justify-center items-center">
+              <div className="w-fit lg:ml-[-2rem] top-[-1.35rem] lg:top-1 relative h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-4 to-teal-800 rounded-lg justify-center items-center">
                 iv
               </div>
               <p className="w-full ml-[0.85rem] text-neutral-950">

@@ -70,7 +70,7 @@ const FooterA: React.FC = () => {
           {/* Logo and Newsletter */}
           <div className="w-full mb-8 md:mb-0 px-4 flex flex-col items-start lg:mt-[1.85rem]">
             <div className="flex items-center mb-4">
-              <img src="/LogoAATC.png" alt="Logo" className="h-8 mr-2" />
+              <img src="/realLogo.png" alt="Logo" className="h-8 mr-2" />
               <span className="text-xl font-bold">OEandA</span>
             </div>
             <div className="w-full md:w-fit flex items-center border border-emerald-700 bg-white rounded-lg px-5 py-3">
@@ -87,7 +87,7 @@ const FooterA: React.FC = () => {
           </div>
 
           {/* Navigation Links  sm*/}
-          <div className="md:hidden w-full h-full flex justify-center items-start gap-x-2 mt-[2rem]">
+          <div className="md:hidden w-full h-full flex justify-start px-[1rem] items-start gap-x-[2rem] mt-[2rem]">
             <div className="w-[1/2] h-full flex pl-[0.85rem] pr-[1.5rem] flex-col justify-start items-center gap-y-[2rem]">
               <div>
                 <h3 className="text-lg font-normal mb-4 text-neutral-500">
@@ -110,14 +110,7 @@ const FooterA: React.FC = () => {
                       Features
                     </a>
                   </li>
-                  <li className="mb-2">
-                    <a
-                      href="#properties"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      Properties
-                    </a>
-                  </li>
+
                   <li className="mb-2">
                     <a
                       href="#testimonials"
@@ -136,7 +129,7 @@ const FooterA: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div>
+              {/* <div>
                 <h3 className="text-lg font-light text-neutral-500 mb-4">
                   Properties
                 </h3>
@@ -158,7 +151,7 @@ const FooterA: React.FC = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-lg font-light text-neutral-500 mb-4">
                   Contact Us
@@ -376,7 +369,7 @@ const FooterA: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h3 className="text-lg font-normal text-neutral-500 mb-4">
                 Properties
               </h3>
@@ -398,7 +391,7 @@ const FooterA: React.FC = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div className="w-full">
               <h3 className="text-lg font-normal text-neutral-500 mb-4">
                 Contact Us

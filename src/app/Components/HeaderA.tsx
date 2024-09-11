@@ -24,7 +24,7 @@ const HeaderA: React.FC = () => {
       <div className="flex justify-between items-center lg:hidden pl-[1rem]">
         <div className="flex items-center">
           <Image
-            src="/Logo.png"
+            src="/realLogo.png"
             alt="OEandA Logo"
             width={30}
             height={30}
@@ -32,8 +32,11 @@ const HeaderA: React.FC = () => {
           />
           <span className="font-bold">OEandA</span>
         </div>
-        <button onClick={toggleMenu} className="text-white">
-          <HiMiniBars3BottomRight size={23} />
+        <button onClick={toggleMenu} className="bg-inherit">
+          <HiMiniBars3BottomRight
+            size={23}
+            className="bg-inherit text-black shadow-sm"
+          />
         </button>
       </div>
 

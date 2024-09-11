@@ -35,7 +35,7 @@ const page: React.FC = () => {
             transition={{ duration: 1.5 }} // Adjust duration as needed
             className="flex-col mb-6 mt-[-0.35rem] md:mt-0 w-full flex justify-center items-center"
           >
-            <h1 className="uppercase md:text-[3rem] leading-[2.85rem] text-3xl font-bold mb-4 md:mb-3 w-[20rem] lg:w-[45rem] text-center">
+            <h1 className="uppercase md:text-[3rem] leading-[2.95rem] text-3xl font-bold mb-4 md:mb-3 w-[20rem] lg:w-[45rem] text-center">
               Abuja Afreximbank African Trade Centre{" "}
               <span className="text-yellow-400">(AATC)</span>
             </h1>
@@ -46,8 +46,8 @@ const page: React.FC = () => {
         <img className="bg-neutral-400" src="/AATCimg.png" alt="" />
       </div>
 
-      <section className="p-[5rem] mt-[2rem] w-full gap-x-[2rem] h-full flex flex-col lg:flex-row lg:justify-start justify-center items-start">
-        <div className="w-2/4 h-full fles justify-center items-center">
+      <section className="lg:p-[5rem] px-[1rem] lg:px-[5rem] mt-[2rem] w-full gap-x-[2rem] h-full flex flex-col lg:flex-row lg:justify-start justify-center items-start">
+        <div className="lg:w-2/4 w-full h-full fles justify-center items-center">
           <img src="/AboutAATC.png" alt="" />
         </div>
         <motion.div
@@ -55,15 +55,15 @@ const page: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }} // Adjust as needed
           viewport={{ once: true }}
-          className="w-2/4 h-full flex flex-col justify-start items-start"
+          className="lg:w-2/4 w-full h-full flex flex-col justify-start items-start"
         >
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-[3rem] font-bold text-neutral-900"
+            className="text-3xl lg:text-[3rem] mt-[1rem] lg:mt-0 lg:leading-[2.85rem] w-full font-bold text-neutral-900"
           >
-            About the Abuja-AATC Building.
+            Welcome to the Future of Trade in Africa
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: -10 }}
@@ -90,7 +90,7 @@ const page: React.FC = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 1.2, delay: 0.3 }}
-              className="p-[1rem] py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex justify-start items-start"
+              className="p-[1rem] py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-start items-start"
             >
               <div className="w-fit ml-[-2rem] relative top-1 h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-4 to-teal-800 rounded-lg justify-center items-center">
                 i
@@ -107,7 +107,7 @@ const page: React.FC = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 1.2, delay: 0.3 }}
-              className="p-[1rem] py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex justify-start items-start"
+              className="p-[1rem] py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-start items-start"
             >
               <div className="w-fit ml-[-2rem] relative top-1 h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-4 to-teal-800 rounded-lg justify-center items-center">
                 ii
@@ -124,10 +124,10 @@ const page: React.FC = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 1.2, delay: 0.3 }}
-              className="p-[1rem] py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex justify-start items-start"
+              className="p-[1rem] py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-start items-start"
             >
               <div className="w-fit ml-[-2rem] relative top-1 h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-3.5 to-teal-800 rounded-lg justify-center items-center">
-                {/* <img src="/SVG1.png" alt="" /> */}iii
+                iii
               </div>
               <p className="w-full ml-[0.85rem] text-neutral-950">
                 Bridging the gap in trade and market information in Africa,
@@ -141,10 +141,10 @@ const page: React.FC = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 1.2, delay: 0.3 }}
-              className="p-[1rem] py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex justify-start items-start"
+              className="p-[1rem] py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-start items-start"
             >
               <div className="w-fit ml-[-2rem] relative top-1 h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-3.5 to-teal-800 rounded-lg justify-center items-center">
-                {/* <img src="/SVG1.png" alt="" /> */}iv
+                iv
               </div>
               <p className="w-full ml-[0.85rem] text-neutral-950">
                 Bridging the gap in trade and market information in Africa,

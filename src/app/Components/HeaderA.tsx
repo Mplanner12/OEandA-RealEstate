@@ -43,28 +43,25 @@ const HeaderA: React.FC = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex flex-col justify-center items-center lg:hidden">
-          <button
-            onClick={toggleMenu}
-            className="absolute top-4 right-4 text-white"
-          >
-            <FaXmark size={26} />
+          <button onClick={toggleMenu} className="absolute top-4 right-4 ">
+            <FaXmark size={26} className="text-white" />
           </button>
           <nav className="flex flex-col items-center space-y-6 text-lg">
-            <Link href="/" className="hover:text-gray-400">
+            <Link href="/" className="hover:text-gray-400 text-white">
               Home
             </Link>
-            <Link href="/AboutUs" className="hover:text-gray-400">
+            <Link href="/AboutUs" className="hover:text-gray-400 text-white">
               About Us
             </Link>
             <div className="relative">
-              <Link
+              {/* <Link
                 href={"/Properties"}
-                className="flex items-center justify-center space-x-2 hover:text-gray-400"
+                className="flex items-center justify-center space-x-2 hover:text-gray-400 text-white"
                 onClick={toggleDropdown}
               >
                 <span>Properties</span>
-                {/* <RiArrowDropDownLine size={26} /> */}
-              </Link>
+                <RiArrowDropDownLine size={26} />
+              </Link> */}
               {/* Dropdown Menu */}
               {/* {isDropdownOpen && (
                 <div className="absolute left-0 mt-2 py-2 w-48 bg-white text-black rounded-md shadow-lg">
@@ -83,24 +80,24 @@ const HeaderA: React.FC = () => {
                 </div>
               )} */}
             </div>
-            <Link href="/services" className="hover:text-gray-400">
+            <Link href="/services" className="hover:text-gray-400 text-white">
               Services
             </Link>
-            <Link href="/blog" className="hover:text-gray-400">
-              Blog
+            <Link href="/blog" className="hover:text-gray-400 text-white">
+              AATC
             </Link>
-            <Link href="/ContactUs" className="hover:text-gray-400">
+            <Link href="/ContactUs" className="hover:text-gray-400 text-white">
               Contact Us
             </Link>
-            <button className="bg-neutral-900 ml-4 p-3 px-6 border border-zinc-900 rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">
+            {/* <button className="bg-neutral-900 ml-4 p-3 px-6 border border-zinc-900 rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">
               <BiSearchAlt size={26} className="font-light" />
               <span>Property Search</span>
-            </button>
+            </button> */}
           </nav>
         </div>
       )}
       {/*  Larger screen */}
-      <div className="hidden lg:flex justify-between items-center px-[2rem]">
+      <div className="hidden lg:flex justify-between items-center  p-[2rem] px-[2rem] pr-[4rem]">
         <div className="flex items-center">
           <Image
             src="/realLogo.png"
@@ -131,8 +128,8 @@ const HeaderA: React.FC = () => {
           <Link href="/services" className="hover:text-gray-400">
             Services
           </Link>
-          <Link href="/blog" className="hover:text-gray-400">
-            Blog
+          <Link href="/AATc" className="hover:text-gray-400">
+            AATC
           </Link>
           <div className="flex justify-start items-center space-x-10">
             <Link
@@ -141,7 +138,7 @@ const HeaderA: React.FC = () => {
             >
               Contact Us
             </Link>
-            <div className="bg-white text-black ml-4 p-2 px-3 border border-white rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">
+            {/* <div className="bg-white text-black ml-4 p-2 px-3 border border-white rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">
               <button>
                 <BiSearchAlt size={26} className="font-light" />
               </button>
@@ -150,7 +147,7 @@ const HeaderA: React.FC = () => {
                 placeholder="Property Search"
                 className="w-[8rem] text-sm bg-white text-black ml-4 p-2 px-1 border border-white rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition"
               />
-            </div>
+            </div> */}
           </div>
         </nav>
       </div>

@@ -28,24 +28,24 @@ const page: React.FC = () => {
       <HeaderA />
       <div className="lg:w-full w-full bg-teal-700 lg:h-[35rem] h-[25rem] text-white md:p-5 xl:px-2 p-4 md:pr-0 flex flex-col md:flex-row-reverse items-center justify-between">
         {/* <!-- Text Content --> */}
-        <div className="w-full h-full flex-col md:px-[3rem] lg:px-[4.5rem] xl:px-[6rem] lg:mt-[-13rem] pt-[1.25rem] md:pt-[5rem] justify-center items-center mt-[-1rem] leading-[3rem]">
+        <div className="w-full h-full flex-col md:px-[3rem] lg:px-[4.5rem] xl:px-[6rem] mt-[-2rem] lg:mt-[-13rem] pt-[1.25rem] md:pt-[5rem] justify-center items-center leading-[3rem]">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }} // Adjust duration as needed
             className="flex-col mb-6 mt-[-0.35rem] h-full md:mt-0 w-full flex justify-center items-center"
           >
-            <h1 className="uppercase md:text-[3rem] lg:leading-[2.95rem] text-2xl mt-[-10rem] lg:mt-[-9rem] font-bold mb-4 md:mb-3 w-[20rem] lg:w-[45rem] text-center">
+            <h1 className="uppercase md:text-[3rem] lg:leading-[2.95rem] text-2xl mt-[-10rem] lg:mt-[-11rem] font-bold mb-4 md:mb-3 w-[20rem] lg:w-[82rem] text-center">
               Abuja Afreximbank African Trade Centre{" "}
               <span className="text-yellow-400">(AATC)</span>
             </h1>
           </motion.div>
         </div>
       </div>
-      <div className="z-20 mx-auto lg:mt-[-16rem] p-[1rem] object-cover rounded-lg mb-[4rem] lg:mb-[1rem] border-3 h-[29.5rem] mt-[-13rem] border-teal-700 w-[94%] lg:w-[89%] lg:h-full bg-teal-700">
+      <div className="z-20 mx-auto lg:mt-[-20rem] p-[1rem] object-contain rounded-lg mb-[4rem] lg:mb-[1rem] border-3 h-[18rem] mt-[-15rem] border-teal-700 w-[94%] lg:w-[69%] lg:h-full xl:h-[42rem] lg:py-[0rem] bg-teal-700 lg:flex justify-center items-center">
         <video
-          className="w-fit lg:w-full h-full lg:h-[38rem] rounded-lg flex justify-center object-cover items-center"
-          src="/Hvideo.mp4"
+          className="w-full lg:w-full h-full lg:h-[38rem] xl:mt-[2rem] rounded-lg flex justify-center object-contain items-center"
+          src="/Hvideo1.mp4"
           controls
           muted
           autoPlay
@@ -53,7 +53,7 @@ const page: React.FC = () => {
       </div>
 
       <section className="lg:p-[5rem] lg:h-[68rem] px-[1rem] lg:px-[5rem] mt-[3rem] lg:mt-[1.85rem] w-full gap-x-[2rem] lg:gap-x-[2.75rem] h-full flex flex-col lg:flex-row  justify-center items-center lg:items-start">
-        <div className="lg:w-[48%] w-full h-[85%] lg:mt-[4rem] fles justify-center items-center">
+        <div className="lg:w-[48%] w-full h-[96%] lg:mt-[1rem] fles justify-center items-center">
           <img
             className="w-full h-full flex justify-center items-center"
             src="/AboutAATC.png"
@@ -93,7 +93,7 @@ const page: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ staggerChildren: 0.2, delayChildren: 0.5 }}
-            className="w-full h-full gap-y-[1.5rem] flex flex-col justify-start items-center mt-[2.85rem]"
+            className="w-full h-full gap-y-[1.25rem] flex flex-col justify-start items-center mt-[2.85rem] lg:mt-[1.75rem]"
           >
             <motion.div
               variants={{
@@ -101,7 +101,7 @@ const page: React.FC = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 1.2, delay: 0.3 }}
-              className="p-[1rem] py-[1rem] pt-0 lg:pt-[1.85rem] lg:py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-start mb-[0.5rem] lg:mb-0"
+              className="p-[1rem] py-[1rem] pt-0 lg:py-[1.5rem] border border-neutral-200 rounded-lg w-full h-full lg:h-[9rem] flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-center mb-[0.35rem] lg:mb-0"
             >
               <div className="w-fit lg:ml-[-2rem] top-[-1.35rem] lg:top-1 relative h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-4 to-teal-800 rounded-lg justify-center items-center">
                 i
@@ -118,7 +118,7 @@ const page: React.FC = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 1.2, delay: 0.3 }}
-              className="p-[1rem] py-[1rem] pt-0 lg:pt-[1.85rem] lg:py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-start mb-[0.5rem] lg:mb-0"
+              className="p-[1rem] py-[1rem] pt-0 lg:py-[1.5rem] border border-neutral-200 rounded-lg w-full h-full lg:h-[9rem] flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-center mb-[0.35rem] lg:mb-0"
             >
               <div className="w-fit lg:ml-[-2rem] top-[-1.35rem] lg:top-1 relative h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-4 to-teal-800 rounded-lg justify-center items-center">
                 ii
@@ -135,7 +135,7 @@ const page: React.FC = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 1.2, delay: 0.3 }}
-              className="p-[1rem] py-[1rem] pt-0 lg:pt-[1.85rem] lg:py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-start mb-[0.5rem] lg:mb-0"
+              className="p-[1rem] py-[1rem] pt-0 lg:py-[1.5rem] border border-neutral-200 rounded-lg w-full h-full lg:h-[9rem] flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-center mb-[0.35rem] lg:mb-0"
             >
               <div className="w-fit lg:ml-[-2rem] top-[-1.35rem] lg:top-1 relative h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-4 to-teal-800 rounded-lg justify-center items-center">
                 iii
@@ -152,7 +152,7 @@ const page: React.FC = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 1.2, delay: 0.3 }}
-              className="p-[1rem] py-[1rem] pt-0 lg:pt-[1.85rem] lg:py-[1.85rem] border border-neutral-200 rounded-lg w-full h-full flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-start mb-[0.5rem] lg:mb-0"
+              className="p-[1rem] py-[1rem] pt-0 lg:py-[1.5rem] border border-neutral-200 rounded-lg w-full h-full lg:h-[9rem] flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-center mb-[0.35rem] lg:mb-0"
             >
               <div className="w-fit lg:ml-[-2rem] top-[-1.35rem] lg:top-1 relative h-fit p-2 flex bg-gradient-to-br from-emerald-500 px-4 to-teal-800 rounded-lg justify-center items-center">
                 iv

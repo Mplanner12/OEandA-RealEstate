@@ -33,17 +33,17 @@ const FooterA: React.FC = () => {
           className="w-full h-full flex flex-col lg:ml-[0.05rem] col-span-2 lg:justify-start items-start lg:gap-y-[3rem] lg:mt-[2rem]"
         >
           <div className="w-full h-full flex flex-col justify-center items-center lg:items-start">
-            <button className="bg-emerald-700 mx-auto text-white py-[0.85rem] text-sm px-5 lg:ml-[17rem] mb-[4rem] rounded-lg">
+            <button className="bg-emerald-700 mx-auto text-white py-[0.85rem] text-sm px-5 lg:ml-[24rem] xl:ml-[24.5rem] 2xl:ml-[32rem] lg:w-fit mb-[4rem] rounded-lg">
               Download Brochure
             </button>
-            <div className="w-full h-full flex flex-col lg:pl-[2rem] md:flex-row justify-center lg:justify-start items-center gap-x-[4.25rem]">
+            <div className="w-full h-full flex flex-col lg:pl-[2rem] xl:pl-[4.5rem] 2xl:pl-[6rem] md:flex-row justify-center lg:justify-start items-center gap-x-[4.25rem]">
               <div className="w-full h-full flex gap-y-3 flex-col justify-start items-center">
                 <FaPhoneAlt
                   size={38}
                   className="text-emerald-700 p-2 bg-emerald-100 rounded-full"
                 />
                 <p className="text-center text-lg text-emerald-700">
-                  +234-xxx-xxx-xxxx
+                  +2348023126111
                 </p>
               </div>
               <div className="w-full h-full flex gap-y-3 flex-col justify-start items-center">
@@ -69,7 +69,7 @@ const FooterA: React.FC = () => {
         </a>
       </div>
 
-      <div className="w-full md:w-fit h-full bg-white text-neutral-900 py-12 lg:mt-[1.75rem]">
+      <div className="w-full md:w-fit h-full bg-white text-neutral-900 py-12 lg:py-8 lg:mt-[1.75rem]">
         <div className="container mx-auto px-1 md:px-[1.5rem] flex flex-col md:flex-row justify-between">
           {/* Logo and Newsletter */}
           <div className="w-full mb-8 md:mb-0 px-4 flex flex-col items-start lg:mt-[1rem]">
@@ -77,17 +77,39 @@ const FooterA: React.FC = () => {
               <img src="/realLogo.png" alt="Logo" className="h-8 mr-2" />
               <span className="text-xl font-bold">OEandA</span>
             </div>
-            <div className="w-full md:w-fit flex items-center border border-emerald-700 bg-white rounded-lg px-5 py-3">
-              <TbMailPlus size={20} className="text-emerald-700 mr-[0.5rem]" />
-              <input
-                type="email"
-                placeholder="Enter Your Email"
-                className="bg-transparent outline-none text-emerald-700 placeholder-emerald-700 flex-1"
-              />
-              <button className="ml-2 text-xl">
-                <GrSend className="h-6 w-6 text-emerald-700" />
+            <form className="gap-y-4 max-w-lg mx-auto lg:py-[1rem]">
+              <div className="w-full h-full lg:h-fit flex justify-start items-center gap-x-2 mb-4">
+                <div>
+                  <label className="block font-semibold">Name</label>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    className="w-full border lg:w-[14rem] rounded-md p-2"
+                  />
+                </div>
+                <div>
+                  <label className="block font-semibold">Email</label>
+                  <input
+                    type="email"
+                    placeholder="Enter your Email"
+                    className="w-full border lg:w-[14rem] rounded-md p-2"
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="block font-semibold">Message</label>
+                <textarea
+                  placeholder="Enter your Message here.."
+                  className="w-full border rounded-md p-2"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-emerald-700 text-white rounded-md p-2 font-semibold hover:bg-emerald-800"
+              >
+                Send Your Message
               </button>
-            </div>
+            </form>
           </div>
 
           {/* Navigation Links  sm*/}
@@ -143,7 +165,7 @@ const FooterA: React.FC = () => {
             </div>
           </div>
           {/* Navigation Links  md*/}
-          <div className="hidden w-fit h-full lg:flex justify-start items-start gap-8 lg:gap-x-[7rem] xl:gap-x-[11.5rem] gap-x-14 mt-[2rem] lg:mt-[3.5rem] md:px-[1.5rem] lg:px-[1.25rem] lg:pl-[3rem] xl:pl-[12rem]">
+          <div className="hidden w-fit h-full lg:flex justify-start items-start gap-8 lg:gap-x-[5rem] xl:gap-x-[8.5rem] gap-x-14 mt-[2rem] lg:mt-[4.85rem] md:px-[1.5rem] lg:px-[1.25rem] lg:pl-[3rem] xl:pl-[6rem]">
             <div>
               <h3 className="text-lg font-normal mb-4 text-neutral-500">
                 Home

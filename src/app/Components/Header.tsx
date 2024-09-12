@@ -99,7 +99,7 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
         </div>
       )}
       {/*  Larger screen */}
-      <div className="hidden lg:flex justify-between items-center px-[2rem]">
+      <div className="hidden lg:flex justify-between items-center p-[2rem] px-[2rem] pr-[4rem]">
         <div className="flex items-center">
           <Image
             src="/Logo.png"
@@ -147,8 +147,8 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
           <Link href="/services" className="hover:text-gray-400">
             Services
           </Link>
-          <Link href="/blog" className="hover:text-gray-400">
-            Blog
+          <Link href="/AATc" className="hover:text-gray-400">
+            AATC
           </Link>
           <div className="flex justify-start items-center space-x-10">
             <Link
@@ -157,7 +157,7 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
             >
               Contact Us
             </Link>
-            <div className="bg-neutral-900 ml-4 p-2 px-3 border border-zinc-900 rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">
+            {/* <div className="bg-neutral-900 ml-4 p-2 px-3 border border-zinc-900 rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">
               <button>
                 <BiSearchAlt size={26} className="font-light" />
               </button>
@@ -172,7 +172,7 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
                   }
                 }}
               />
-            </div>
+            </div> */}
           </div>
         </nav>
       </div>

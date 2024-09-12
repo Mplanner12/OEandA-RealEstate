@@ -86,7 +86,7 @@ const AfricanFuture: React.FC = () => {
       >
         <div className="w-full lg:w-[40%] mb-[2.5rem] lg:mb-0 h-full flex justify-center items-center">
           <video
-            src="video2.mp4"
+            src="Hvideo.mp4"
             controls
             muted
             autoPlay

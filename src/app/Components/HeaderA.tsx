@@ -116,14 +116,14 @@ const HeaderA: React.FC = () => {
             About Us
           </Link>
           <div className="relative">
-            <Link
+            {/* <Link
               href={"/Properties"}
               className="flex items-center space-x-2 hover:text-gray-400"
               onClick={toggleDropdown}
             >
               <span>Properties</span>
-              {/* <RiArrowDropDownLine size={26} /> */}
-            </Link>
+              <RiArrowDropDownLine size={26} />
+            </Link> */}
           </div>
           <Link href="/services" className="hover:text-gray-400">
             Services

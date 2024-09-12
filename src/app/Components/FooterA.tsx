@@ -52,7 +52,7 @@ const FooterA: React.FC = () => {
                   className="text-emerald-700 p-2 bg-emerald-100 rounded-full"
                 />
                 <p className="text-center text-lg text-emerald-700">
-                  cykonkwo@oraegbunike.com{" "}
+                  cykonkwo@oraegbunike.com
                 </p>
               </div>
               <div className="w-full h-full flex gap-y-3 flex-col justify-start items-center">

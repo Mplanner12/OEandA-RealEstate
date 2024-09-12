@@ -30,7 +30,7 @@ const HeaderA: React.FC = () => {
             height={30}
             className="mr-2"
           />
-          <span className="font-bold">OEandA</span>
+          <span className="font-bold">Ora Egbunike & Associates</span>
         </div>
         <button onClick={toggleMenu} className="bg-inherit">
           <HiMiniBars3BottomRight
@@ -106,7 +106,7 @@ const HeaderA: React.FC = () => {
             height={30}
             className="mr-2"
           />
-          <span className="font-bold">OEandA</span>
+          <span className="font-bold">Ora Egbunike & Associates</span>
         </div>
         <nav className="w-fit flex items-center gap-x-14 text-black">
           <Link href="/" className="hover:text-gray-400">

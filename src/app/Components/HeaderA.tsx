@@ -108,15 +108,14 @@ const HeaderA: React.FC = () => {
           />
           <span className="font-bold">OEandA</span>
         </div>
-        <nav className="w-fit flex items-center space-x-12 text-black">
+        <nav className="w-fit flex items-center gap-x-14 text-black">
           <Link href="/" className="hover:text-gray-400">
             Home
           </Link>
           <Link href="/AboutUs" className="hover:text-gray-400">
             About Us
           </Link>
-          <div className="relative">
-            {/* <Link
+          {/* <Link
               href={"/Properties"}
               className="flex items-center space-x-2 hover:text-gray-400"
               onClick={toggleDropdown}
@@ -124,21 +123,17 @@ const HeaderA: React.FC = () => {
               <span>Properties</span>
               <RiArrowDropDownLine size={26} />
             </Link> */}
-          </div>
           <Link href="/services" className="hover:text-gray-400">
             Services
           </Link>
           {/* <Link href="/AATc" className="hover:text-gray-400">
             AATC
           </Link> */}
-          <div className="flex justify-start items-center space-x-10">
-            <Link
-              href="/ContactUs"
-              className="hover:text-gray-400 ml-[2.25rem]"
-            >
-              Contact Us
-            </Link>
-            {/* <div className="bg-white text-black ml-4 p-2 px-3 border border-white rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">
+
+          <Link href="/ContactUs" className="hover:text-gray-400 ml-[2.25rem]">
+            Contact Us
+          </Link>
+          {/* <div className="bg-white text-black ml-4 p-2 px-3 border border-white rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">
               <button>
                 <BiSearchAlt size={26} className="font-light" />
               </button>
@@ -148,7 +143,6 @@ const HeaderA: React.FC = () => {
                 className="w-[8rem] text-sm bg-white text-black ml-4 p-2 px-1 border border-white rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition"
               />
             </div> */}
-          </div>
         </nav>
       </div>
     </header>

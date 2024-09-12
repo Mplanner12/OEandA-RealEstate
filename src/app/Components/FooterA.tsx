@@ -36,7 +36,7 @@ const FooterA: React.FC = () => {
             <button className="bg-emerald-700 mx-auto text-white py-[0.85rem] text-sm px-5 lg:ml-[17rem] mb-[4rem] rounded-lg">
               Download Brochure
             </button>
-            <div className="w-fill h-full flex flex-col pl-[2rem] md:flex-row justify-center lg:justify-start items-center gap-x-[4.25rem]">
+            <div className="w-full h-full flex flex-col lg:pl-[2rem] md:flex-row justify-center lg:justify-start items-center gap-x-[4.25rem]">
               <div className="w-full h-full flex gap-y-3 flex-col justify-start items-center">
                 <FaPhoneAlt
                   size={38}

@@ -26,7 +26,7 @@ const page: React.FC = () => {
   return (
     <div className="bg-white w-full h-full flex flex-col justify-start items-center lg:items-start text-white font-sans">
       <HeaderA />
-      <div className="lg:w-full w-full bg-teal-700 lg:h-[35rem] text-white md:p-5 xl:px-2 p-4 md:pr-0 flex flex-col md:flex-row-reverse items-center justify-between">
+      <div className="lg:w-full w-full bg-teal-700 lg:h-[35rem] h-[25rem] text-white md:p-5 xl:px-2 p-4 md:pr-0 flex flex-col md:flex-row-reverse items-center justify-between">
         {/* <!-- Text Content --> */}
         <div className="w-full h-full flex-col md:px-[3rem] lg:px-[4.5rem] xl:px-[6rem] lg:mt-[-13rem] pt-[1.25rem] md:pt-[5rem] justify-center items-center mt-[-1rem] leading-[3rem]">
           <motion.div
@@ -35,16 +35,16 @@ const page: React.FC = () => {
             transition={{ duration: 1.5 }} // Adjust duration as needed
             className="flex-col mb-6 mt-[-0.35rem] h-full md:mt-0 w-full flex justify-center items-center"
           >
-            <h1 className="uppercase md:text-[3rem] leading-[2.95rem] text-3xl  lg:mt-[-9rem]  font-bold mb-4 md:mb-3 w-[20rem] lg:w-[45rem] text-center">
+            <h1 className="uppercase md:text-[3rem] lg:leading-[2.95rem] text-2xl mt-[-10rem] lg:mt-[-9rem] font-bold mb-4 md:mb-3 w-[20rem] lg:w-[45rem] text-center">
               Abuja Afreximbank African Trade Centre{" "}
               <span className="text-yellow-400">(AATC)</span>
             </h1>
           </motion.div>
         </div>
       </div>
-      <div className="z-20 mx-auto lg:mt-[-16rem] p-[1rem] object-cover rounded-b-lg border-3 border-teal-700 w-full lg:w-[89%] lg:h-full bg-teal-700">
+      <div className="z-20 mx-auto lg:mt-[-16rem] p-[1rem] object-cover rounded-lg mb-[4rem] lg:mb-[1rem] border-3 h-[29.5rem] mt-[-13rem] border-teal-700 w-[94%] lg:w-[89%] lg:h-full bg-teal-700">
         <video
-          className="w-full h-full lg:h-[38rem] flex justify-center object-cover items-center"
+          className="w-fit lg:w-full h-full lg:h-[38rem] rounded-lg flex justify-center object-cover items-center"
           src="/Hvideo.mp4"
           controls
           muted
@@ -52,7 +52,7 @@ const page: React.FC = () => {
         />
       </div>
 
-      <section className="lg:p-[5rem] lg:h-[68rem] px-[1rem] lg:px-[5rem] mt-[2rem] w-full gap-x-[2rem] lg:gap-x-[2.75rem] h-full flex flex-col lg:flex-row  justify-center items-center lg:items-start">
+      <section className="lg:p-[5rem] lg:h-[68rem] px-[1rem] lg:px-[5rem] mt-[3rem] lg:mt-[1.85rem] w-full gap-x-[2rem] lg:gap-x-[2.75rem] h-full flex flex-col lg:flex-row  justify-center items-center lg:items-start">
         <div className="lg:w-[48%] w-full h-[85%] lg:mt-[4rem] fles justify-center items-center">
           <img
             className="w-full h-full flex justify-center items-center"

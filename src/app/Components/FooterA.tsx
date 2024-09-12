@@ -9,7 +9,7 @@ import { TbMailPlus } from "react-icons/tb";
 
 const FooterA: React.FC = () => {
   return (
-    <footer className="bg-white text-black w-full h-full border-y-[0.5px] border-zinc-100 flex flex-col justify-start items-start py-[3.25rem] pt-[0.5rem] lg:pb-[3.25rem]">
+    <footer className="bg-white text-black w-full h-full border-y-[0.5px] border-zinc-100 flex flex-col justify-start items-start py-[3.25rem] pt-[0.5rem] lg:pb-[2rem]">
       <div className="py-[3.25rem] px-[0.85rem] md:px-[3rem] lg:mt-[5rem] w-full h-full flex flex-col md:flex-row justify-center items-center gap-x-[1rem]">
         <div className="w-full md:w-3/4 h-full flex flex-col justify-center items-center">
           <div className="text-4xl flex justify-center items-center font-bold text-center">
@@ -28,7 +28,10 @@ const FooterA: React.FC = () => {
         <div className="w-full h-full flex justify-start items-center">
           <img src="/AbstractAATC.png" alt="" />
         </div>
-        <div className="w-full h-full flex flex-col lg:ml-[0.05rem] col-span-2 lg:justify-start items-start lg:gap-y-[3rem] lg:mt-[2rem]">
+        <a
+          href="#Contact"
+          className="w-full h-full flex flex-col lg:ml-[0.05rem] col-span-2 lg:justify-start items-start lg:gap-y-[3rem] lg:mt-[2rem]"
+        >
           <div className="w-full h-full flex flex-col justify-center items-center lg:items-start">
             <button className="bg-emerald-700 mx-auto text-white py-[0.85rem] text-sm px-5 lg:ml-[17rem] mb-[4rem] rounded-lg">
               Download Brochure
@@ -63,13 +66,13 @@ const FooterA: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div className="w-full md:w-fit h-full bg-white text-neutral-900 py-12 lg:mt-[1.75rem]">
         <div className="container mx-auto px-1 md:px-[1.5rem] flex flex-col md:flex-row justify-between">
           {/* Logo and Newsletter */}
-          <div className="w-full mb-8 md:mb-0 px-4 flex flex-col items-start lg:mt-[1.85rem]">
+          <div className="w-full mb-8 md:mb-0 px-4 flex flex-col items-start lg:mt-[1rem]">
             <div className="flex items-center mb-4">
               <img src="/realLogo.png" alt="Logo" className="h-8 mr-2" />
               <span className="text-xl font-bold">OEandA</span>
@@ -97,14 +100,6 @@ const FooterA: React.FC = () => {
                 <ul>
                   <li className="mb-2">
                     <a
-                      href="#hero"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      Hero Section
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a
                       href="#Features"
                       className="text-neutral-900 hover:text-gray-400 font-semibold"
                     >
@@ -120,18 +115,10 @@ const FooterA: React.FC = () => {
                 <ul>
                   <li className="mb-2">
                     <a
-                      href="#contact-form"
+                      href="#Contact"
                       className="text-neutral-900 hover:text-gray-400 font-semibold"
                     >
-                      Contact Form
-                    </a>
-                  </li>
-                  <li className="w-[6rem] border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
-                    <a
-                      href="#offices"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      Our Offices
+                      Contact Links
                     </a>
                   </li>
                 </ul>
@@ -139,12 +126,9 @@ const FooterA: React.FC = () => {
             </div>
             <div className="w-[1/2] h-full flex border-l border-zinc-800 flex-col pl-[1.5rem] justify-start items-center gap-y-[2rem]">
               <div className="w-fit pb-[1.5rem]">
-                <a
-                  href="#About"
-                  className="w-fit text-lg font-light text-neutral-500 mb-4"
-                >
+                <h1 className="w-fit text-lg font-light text-neutral-500 mb-4">
                   About Us
-                </a>
+                </h1>
                 <ul className="w-fit">
                   <li className="mb-2">
                     <a
@@ -159,7 +143,7 @@ const FooterA: React.FC = () => {
             </div>
           </div>
           {/* Navigation Links  md*/}
-          <div className="hidden w-fit h-full lg:flex justify-start items-start gap-8 lg:gap-x-[7rem] xl:gap-x-[9rem] gap-x-14 mt-[2rem] md:px-[1.5rem] lg:px-[1.25rem] lg:pl-[3rem] xl:pl-[10rem]">
+          <div className="hidden w-fit h-full lg:flex justify-start items-start gap-8 lg:gap-x-[7rem] xl:gap-x-[11.5rem] gap-x-14 mt-[2rem] lg:mt-[3.5rem] md:px-[1.5rem] lg:px-[1.25rem] lg:pl-[3rem] xl:pl-[12rem]">
             <div>
               <h3 className="text-lg font-normal mb-4 text-neutral-500">
                 Home

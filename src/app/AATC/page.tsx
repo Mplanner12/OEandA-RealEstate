@@ -42,9 +42,9 @@ const page: React.FC = () => {
           </motion.div>
         </div>
       </div>
-      <div className="z-20 mx-auto lg:mt-[-16rem] p-[1rem] object-cover rounded-b-lg border-3 border-teal-700 w-full lg:w-[89%] lg:h-[32rem] bg-teal-700">
+      <div className="z-20 mx-auto lg:mt-[-16rem] p-[1rem] object-cover rounded-b-lg border-3 border-teal-700 w-full lg:w-[89%] lg:h-full bg-teal-700">
         <video
-          className="w-full h-full flex justify-center object-cover items-center"
+          className="w-full h-full lg:h-[38rem] flex justify-center object-cover items-center"
           src="/Hvideo.mp4"
           controls
           muted

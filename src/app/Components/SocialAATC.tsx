@@ -4,7 +4,7 @@ import { FaFacebookF, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa6";
 
 const SocialAATC: React.FC = () => {
   return (
-    <div className="w-full h-full flex flex-col md:flex-row-reverse justify-start md:pb-[4rem] md:justify-between items-center bg-white py-[1.25rem]">
+    <div className="w-full h-full flex flex-col md:flex-row-reverse justify-start md:pb-[2.5rem] md:justify-between items-center bg-white py-[1.25rem]">
       <div className="md:hidden px-[3.5rem] py-[1.25rem] w-full h-full flex justify-center items-center gap-x-0 lg:gap-x-[1.15rem]">
         <Link
           href="https://www.facebook.com/share/XWysssLPi3qCbSEp/?mibextid=kFxxJD"

@@ -9,7 +9,7 @@ import { TbMailPlus } from "react-icons/tb";
 
 const FooterA: React.FC = () => {
   return (
-    <footer className="bg-white text-black w-full h-full border-y-[0.5px] border-zinc-100 flex flex-col justify-start items-start py-[3.25rem] pt-[0.5rem] lg:pb-[2rem]">
+    <footer className="bg-white text-black w-full h-full lg:px-[3.85rem] border-y-[0.5px] border-zinc-100 flex flex-col justify-start items-start py-[3.25rem] pt-[0.5rem] lg:pb-[2rem]">
       <div className="py-[3.25rem] px-[0.85rem] md:px-[3rem] lg:mt-[5rem] w-full h-full flex flex-col md:flex-row justify-center items-center gap-x-[1rem]">
         <div className="w-full md:w-3/4 h-full flex flex-col justify-center items-center">
           <div className="text-4xl flex justify-center items-center font-bold text-center">
@@ -33,7 +33,7 @@ const FooterA: React.FC = () => {
           className="w-full h-full flex flex-col lg:ml-[0.05rem] col-span-2 lg:justify-start items-start lg:gap-y-[3rem] lg:mt-[2rem]"
         >
           <div className="w-full h-full flex flex-col justify-center items-center lg:items-start">
-            <button className="bg-emerald-700 mx-auto text-white py-[0.85rem] text-sm px-5 lg:ml-[24rem] xl:ml-[24.5rem] 2xl:ml-[32rem] lg:w-fit mb-[4rem] rounded-lg">
+            <button className="bg-emerald-700 mx-auto text-white py-[0.85rem] text-sm px-5 lg:ml-[28rem] xl:ml-[30.5rem] 2xl:ml-[32rem] lg:w-fit mb-[4rem] rounded-lg">
               Download Brochure
             </button>
             <div className="w-full h-full flex flex-col lg:pl-[2rem] xl:pl-[4.5rem] 2xl:pl-[6rem] md:flex-row justify-center lg:justify-start items-center gap-x-[4.25rem]">
@@ -165,7 +165,7 @@ const FooterA: React.FC = () => {
             </div>
           </div>
           {/* Navigation Links  md*/}
-          <div className="hidden w-fit h-full lg:flex justify-start items-start gap-8 lg:gap-x-[5rem] xl:gap-x-[8.5rem] gap-x-14 mt-[2rem] lg:mt-[4.85rem] md:px-[1.5rem] lg:px-[1.25rem] lg:pl-[3rem] xl:pl-[6rem]">
+          <div className="hidden w-fit h-full lg:flex justify-start items-start gap-8 lg:gap-x-[5rem] xl:gap-x-[8.5rem] gap-x-14 mt-[2rem] lg:mt-[4.85rem] md:px-[1.5rem] lg:px-[1.25rem] lg:pl-[2.5rem] xl:pl-[3rem] 2xl:pl-[13rem]">
             <div>
               <h3 className="text-lg font-normal mb-4 text-neutral-500">
                 Home

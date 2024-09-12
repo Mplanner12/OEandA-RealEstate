@@ -35,14 +35,14 @@ const page: React.FC = () => {
             transition={{ duration: 1.5 }} // Adjust duration as needed
             className="flex-col mb-6 mt-[-0.35rem] h-full md:mt-0 w-full flex justify-center items-center"
           >
-            <h1 className="uppercase md:text-[3rem] lg:leading-[2.95rem] text-2xl mt-[-10rem] lg:mt-[-11rem] font-bold mb-4 md:mb-3 w-[20rem] lg:w-[82rem] text-center">
+            <h1 className="uppercase md:text-[3rem] lg:leading-[2.95rem] text-2xl mt-[-10rem] lg:mt-[-14rem] 2xl:mt-[-16.5rem] font-bold mb-4 md:mb-3 w-[20rem] lg:w-[82rem] text-center">
               Abuja Afreximbank African Trade Centre{" "}
               <span className="text-yellow-400">(AATC)</span>
             </h1>
           </motion.div>
         </div>
       </div>
-      <div className="z-20 mx-auto lg:mt-[-20rem] p-[1rem] object-contain rounded-lg mb-[4rem] lg:mb-[1rem] border-3 h-[18rem] mt-[-15rem] border-teal-700 w-[94%] lg:w-[69%] lg:h-full xl:h-[42rem] lg:py-[0rem] bg-teal-700 lg:flex justify-center items-center">
+      <div className="z-20 mx-auto lg:mt-[-28.2rem] p-[1rem] object-contain rounded-lg mb-[4rem] lg:mb-[1rem] border-3 h-[18rem] mt-[-15rem] border-teal-700 w-[94%] lg:w-[69%] lg:h-full xl:h-[42rem] lg:py-[0rem] bg-teal-700 lg:flex justify-center items-center">
         <video
           className="w-full lg:w-full h-full lg:h-[38rem] xl:mt-[2rem] rounded-lg flex justify-center object-contain items-center"
           src="/Hvideo1.mp4"

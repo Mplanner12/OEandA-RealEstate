@@ -115,22 +115,10 @@ const HeaderA: React.FC = () => {
           <Link href="/AboutUs" className="hover:text-gray-400">
             About Us
           </Link>
-          {/* <Link
-              href={"/Properties"}
-              className="flex items-center space-x-2 hover:text-gray-400"
-              onClick={toggleDropdown}
-            >
-              <span>Properties</span>
-              <RiArrowDropDownLine size={26} />
-            </Link> */}
           <Link href="/services" className="hover:text-gray-400">
             Services
           </Link>
-          {/* <Link href="/AATc" className="hover:text-gray-400">
-            AATC
-          </Link> */}
-
-          <Link href="/ContactUs" className="hover:text-gray-400 ml-[2.25rem]">
+          <Link href="/ContactUs" className="hover:text-gray-400">
             Contact Us
           </Link>
           {/* <div className="bg-white text-black ml-4 p-2 px-3 border border-white rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">

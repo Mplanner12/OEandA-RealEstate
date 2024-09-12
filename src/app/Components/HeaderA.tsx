@@ -128,9 +128,9 @@ const HeaderA: React.FC = () => {
           <Link href="/services" className="hover:text-gray-400">
             Services
           </Link>
-          <Link href="/AATc" className="hover:text-gray-400">
+          {/* <Link href="/AATc" className="hover:text-gray-400">
             AATC
-          </Link>
+          </Link> */}
           <div className="flex justify-start items-center space-x-10">
             <Link
               href="/ContactUs"

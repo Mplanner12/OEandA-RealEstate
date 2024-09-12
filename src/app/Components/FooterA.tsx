@@ -115,7 +115,7 @@ const FooterA: React.FC = () => {
           {/* Navigation Links  sm*/}
           <div className="md:hidden w-full h-full flex justify-start px-[1rem] items-start gap-x-[0.85rem] mt-[2rem]">
             <div className="w-[1/2] h-full flex pl-[0.85rem] pr-[1.5rem] flex-col justify-start items-center gap-y-[2rem]">
-              <div>
+              <div className="w-full h-full flex flex-col justify-center items-start">
                 <h3 className="text-lg font-normal mb-4 text-neutral-500">
                   Home
                 </h3>
@@ -130,7 +130,7 @@ const FooterA: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className="w-full h-full flex flex-col justify-center items-start">
                 <h3 className="text-lg font-light text-neutral-500 mb-4">
                   Contact Us
                 </h3>

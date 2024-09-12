@@ -85,8 +85,8 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
             <Link href="/services" className="hover:text-gray-400">
               Services
             </Link>
-            <Link href="/blog" className="hover:text-gray-400">
-              Blog
+            <Link href="/AATC" className="hover:text-gray-400">
+              AATC
             </Link>
             <Link href="/ContactUs" className="hover:text-gray-400">
               Contact Us
@@ -147,7 +147,7 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
           <Link href="/services" className="hover:text-gray-400">
             Services
           </Link>
-          <Link href="/AATc" className="hover:text-gray-400">
+          <Link href="/AATC" className="hover:text-gray-400">
             AATC
           </Link>
           <div className="flex justify-start items-center space-x-10">

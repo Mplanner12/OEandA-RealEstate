@@ -32,7 +32,7 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
             height={30}
             className="mr-2"
           />
-          <span className="font-bold">OEandA</span>
+          <span className="font-bold">Ora Egbunike & Associates</span>
         </div>
         <button onClick={toggleMenu} className="text-white">
           <HiMiniBars3BottomRight size={23} />
@@ -108,7 +108,7 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
             height={30}
             className="mr-2"
           />
-          <span className="font-bold">OEandA</span>
+          <span className="font-bold">Ora Egbunike & Associates</span>
         </div>
         <nav className="w-fit flex items-center space-x-12">
           <Link href="/" className="hover:text-gray-400">

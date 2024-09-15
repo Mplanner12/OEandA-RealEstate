@@ -75,9 +75,14 @@ const FooterA: React.FC = () => {
           <div className="w-full mb-8 md:mb-0 px-4 flex flex-col items-start lg:mt-[1rem]">
             <div className="flex items-center mb-4">
               <img src="/realLogo.png" alt="Logo" className="h-8 mr-2" />
-              <span className="text-xl font-bold">OEandA</span>
+              <span className="text-xl font-bold">
+                Ora Egbunike & Associates
+              </span>
             </div>
             <form className="gap-y-4 max-w-lg mx-auto lg:py-[1rem]">
+              <h1 className="w-full text-start text-lg font-semibold mb-[0.25rem]">
+                Contact Us
+              </h1>
               <div className="w-full h-full lg:h-fit flex justify-start items-center gap-x-2 mb-4">
                 <div>
                   <label className="block font-semibold">Name</label>

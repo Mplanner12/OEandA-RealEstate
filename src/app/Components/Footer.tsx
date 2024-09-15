@@ -33,7 +33,9 @@ const Footer: React.FC = () => {
           <div className="w-full mb-8 md:mb-0 px-4 flex flex-col items-start">
             <div className="flex items-center mb-4">
               <img src="/Logo.png" alt="Logo" className="h-8 mr-2" />
-              <span className="text-xl font-bold">OEandA</span>
+              <span className="text-xl font-bold">
+                Ora Egbunike & Associates
+              </span>
             </div>
             <div className="w-full md:w-fit flex items-center bg-neutral-950 rounded-lg px-4 py-2">
               <TbMailPlus size={20} className="text-neutral-400 mr-[0.5rem]" />

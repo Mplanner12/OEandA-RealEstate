@@ -35,7 +35,7 @@ const page: React.FC = () => {
             transition={{ duration: 1.5 }} // Adjust duration as needed
             className="flex-col mb-6 mt-[-0.35rem] h-full md:mt-0 w-full flex justify-center items-center"
           >
-            <h1 className="uppercase md:text-[3rem] lg:leading-[2.95rem] text-2xl mt-[-10rem] lg:mt-[-14rem] 2xl:mt-[-16.5rem] font-bold mb-4 md:mb-3 w-[20rem] lg:w-[82rem] text-center">
+            <h1 className="z-40 uppercase md:text-[3rem] lg:leading-[2.95rem] text-2xl mt-[-10rem] lg:mt-[-14rem] 2xl:mt-[-16.5rem] font-bold mb-4 md:mb-3 w-[20rem] lg:w-[82rem] text-center">
               Abuja Afreximbank African Trade Centre{" "}
               <span className="text-yellow-400">(AATC)</span>
             </h1>

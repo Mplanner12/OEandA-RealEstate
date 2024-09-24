@@ -43,7 +43,7 @@ const FooterA: React.FC = () => {
                   className="text-emerald-700 p-2 bg-emerald-100 rounded-full"
                 />
                 <p className="text-center text-lg text-emerald-700">
-                  +2348023126111
+                  +2348038774238
                 </p>
               </div>
               <div className="w-full h-full flex gap-y-3 flex-col justify-start items-center">
@@ -118,9 +118,9 @@ const FooterA: React.FC = () => {
           </div>
 
           {/* Navigation Links  sm*/}
-          <div className="md:hidden w-full h-full flex justify-start px-[1rem] items-start gap-x-[0.85rem] mt-[2rem]">
-            <div className="w-[1/2] h-full flex pl-[0.85rem] pr-[1.5rem] flex-col justify-start items-center gap-y-[2rem]">
-              <div className="w-full h-full flex flex-col justify-center items-start">
+          <div className="md:hidden w-full h-full flex flex-col justify-start px-[1rem] items-start gap-x-[0.85rem] mt-[2rem]">
+            <div className="w-full h-full flex mb-[1.5rem] pr-[1.5rem] justify-start items-center gap-y-[2rem]">
+              <div className="w-full h-full flex flex-col justify-start items-start">
                 <h3 className="text-lg font-normal mb-4 text-neutral-500">
                   Home
                 </h3>
@@ -135,38 +135,55 @@ const FooterA: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="w-full h-full flex flex-col justify-center items-start">
-                <h3 className="text-lg font-light text-neutral-500 mb-4">
-                  Contact Us
-                </h3>
-                <ul>
-                  <li className="mb-2">
-                    <a
-                      href="#Contact"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      Contact Links
-                    </a>
-                  </li>
-                </ul>
+
+              <div className="w-full h-full flex border-l border-zinc-800 flex-col pl-[1.5rem] justify-start items-center gap-y-[2rem]">
+                <div className="w-fit">
+                  <h1 className="w-fit text-lg font-light text-neutral-500 mb-4">
+                    About Us
+                  </h1>
+                  <ul className="w-fit">
+                    <li className="mb-2">
+                      <a
+                        href="#About"
+                        className="text-neutral-900 hover:text-gray-400 font-semibold"
+                      >
+                        Our Story
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div className="w-[1/2] h-full flex border-l border-zinc-800 flex-col pl-[1.5rem] justify-start items-center gap-y-[2rem]">
-              <div className="w-fit pb-[1.5rem]">
-                <h1 className="w-fit text-lg font-light text-neutral-500 mb-4">
-                  About Us
-                </h1>
-                <ul className="w-fit">
-                  <li className="mb-2">
-                    <a
-                      href="#About"
-                      className="text-neutral-900 hover:text-gray-400 font-semibold"
-                    >
-                      Our Story
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div className="w-full h-full flex flex-col justify-center items-start">
+              <h3 className="text-lg font-light text-neutral-500 mb-4">
+                Contact Us
+              </h3>
+              <ul className="w-full flex flex-col justify-start items-center gap-y-[1rem]">
+                <div className="w-full h-full flex gap-x-2 justify-start items-center">
+                  <FaGlobe
+                    size={18}
+                    className="text-emerald-700 rounded-full"
+                  />
+                  <p className="text-center text-sm text-emerald-700">
+                    oraegbunike.com/AATC{" "}
+                  </p>
+                </div>
+                <div className="w-full h-full flex gap-x-2 justify-start items-center">
+                  <IoMail size={18} className="text-emerald-700 rounded-full" />
+                  <p className="text-center text-sm text-emerald-700">
+                    cykonkwo@oraegbunike.com{" "}
+                  </p>
+                </div>
+                <div className="w-full h-full flex gap-x-2 justify-start items-center">
+                  <FaPhoneAlt
+                    size={18}
+                    className="text-emerald-700 rounded-full"
+                  />
+                  <p className="text-center text-sm text-emerald-700">
+                    +2348038774238
+                  </p>
+                </div>
+              </ul>
             </div>
           </div>
           {/* Navigation Links  md*/}
@@ -230,7 +247,7 @@ const FooterA: React.FC = () => {
                     className="text-emerald-700 rounded-full"
                   />
                   <p className="text-center text-sm text-emerald-700">
-                    +234-xxx-xxx-xxxx
+                    +2348038774238
                   </p>
                 </div>
               </ul>

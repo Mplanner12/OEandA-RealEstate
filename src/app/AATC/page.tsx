@@ -166,6 +166,9 @@ const page: React.FC = () => {
           </motion.div>
         </motion.div>
       </section>
+      {/* <div className="w-full h-full flex justify-center items-center text-[2.5rem] md:text-[3rem] text-black pt-[2.5rem] pb-[3.25rem] lg:mb-[3rem]">
+        PRICING: $200/Sqm
+      </div> */}
       <AfricanFuture />
       <WhyChooseUs />
       <FooterA />

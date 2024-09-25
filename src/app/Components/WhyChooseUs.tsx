@@ -18,18 +18,12 @@ const WhyChooseUs: React.FC = () => {
             AATC has everything you need to succeed.
           </h1>
           <div className="w-full lg:pr-[13.85rem] h-full flex flex-col justify-start items-start mt-[1.5rem]">
-            {" "}
             <div className="w-full h-full flex justify-start items-center mt-4">
               <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-white rounded-full">
                 <TiTick size={22} className="text-teal-800 rounded-full" />
               </div>
               <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-                {/* Strategic Location- Situated in Abuja’s exclusive Central
-                Business District, offering unmatched access to Nigeria’s
-                largest economy */}
-                24-hour uninterrupted power supply with 150% backup capacity,
-                Continuous, reliable water supply, and a Shatterproof,
-                soundproof glass façade for optimal security and noise control
+                24-hour uninterrupted power supply with 150% backup capacity
               </p>
             </div>
             <div className="w-full h-full flex justify-start items-center mt-4">
@@ -37,11 +31,32 @@ const WhyChooseUs: React.FC = () => {
                 <TiTick size={22} className="text-teal-800 rounded-full" />
               </div>
               <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-                {/* Business Ecosystem - AATC is more than just office space; it’s a
-                comprehensive business ecosystem designed to support your growth */}
-                Advanced security systems with state-of-the-art access control,
+                Continuous, reliable water supply
+              </p>
+            </div>
+            <div className="w-full h-full flex justify-start items-center mt-4">
+              <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-white rounded-full">
+                <TiTick size={22} className="text-teal-800 rounded-full" />
+              </div>
+              <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+                Shatterproof, soundproof glass façade for optimal security and
+                noise control
+              </p>
+            </div>
+            <div className="w-full h-full flex justify-start items-center mt-4">
+              <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-white rounded-full">
+                <TiTick size={22} className="text-teal-800 rounded-full" />
+              </div>
+              <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+                Advanced security systems with state-of-the-art access control
+              </p>
+            </div>
+            <div className="w-full h-full flex justify-start items-center mt-4">
+              <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-white rounded-full">
+                <TiTick size={22} className="text-teal-800 rounded-full" />
+              </div>
+              <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
                 Building Management System (BMS) to optimize mechanical services
-                and High-speed elevators for seamless vertical transportation.
               </p>
             </div>
             <div className="w-full h-full flex justify-start items-center mt-4">
@@ -49,13 +64,7 @@ const WhyChooseUs: React.FC = () => {
                 <TiTick size={22} className="text-teal-800 rounded-full" />
               </div>
               <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-                {/* Community and Collaboration - Join a vibrant community of
-                industry leaders, innovators, and key stakeholders in African
-                trade */}
-                Daikin VRV air-conditioning for superior climate control and
-                Fibre optic internet for fast and reliable connectivity 24/7
-                concierge and maintenance services and Ample parking with up to
-                12 dedicated slots per floor.
+                High-speed elevators for seamless vertical transportation
               </p>
             </div>
             <div className="w-full h-full flex justify-start items-center mt-4">
@@ -63,10 +72,31 @@ const WhyChooseUs: React.FC = () => {
                 <TiTick size={22} className="text-teal-800 rounded-full" />
               </div>
               <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-                {/* Community and Collaboration - Join a vibrant community of
-                industry leaders, innovators, and key stakeholders in African
-                trade */}
-                PRICING: $200/Sqm
+                Daikin VRV air-conditioning for superior climate control
+              </p>
+            </div>
+            <div className="w-full h-full flex justify-start items-center mt-4">
+              <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-white rounded-full">
+                <TiTick size={22} className="text-teal-800 rounded-full" />
+              </div>
+              <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+                Fibre optic internet for fast and reliable connectivity
+              </p>
+            </div>
+            <div className="w-full h-full flex justify-start items-center mt-4">
+              <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-white rounded-full">
+                <TiTick size={22} className="text-teal-800 rounded-full" />
+              </div>
+              <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+                24/7 concierge and maintenance services
+              </p>
+            </div>
+            <div className="w-full h-full flex justify-start items-center mt-4">
+              <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-white rounded-full">
+                <TiTick size={22} className="text-teal-800 rounded-full" />
+              </div>
+              <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+                Ample parking with up to 12 dedicated slots per floor
               </p>
             </div>
           </div>
@@ -89,18 +119,3 @@ const WhyChooseUs: React.FC = () => {
 };
 
 export default WhyChooseUs;
-
-//  <div className="w-full h-full flex justify-center items-center text-[3rem] text-black pt-[2.5rem] pb-[3.25rem] mb-[3rem]">
-//         PRICING: $200/Sqm
-//       </div>
-
-//  24-hour uninterrupted power supply with 150% backup capacity,
-//                 Continuous, reliable water supply, and a Shatterproof,
-//                 soundproof glass façade for optimal security and noise control
-//                   Advanced security systems with state-of-the-art access control,
-//                 Building Management System (BMS) to optimize mechanical services
-//                 and High-speed elevators for seamless vertical transportation.
-//                   Daikin VRV air-conditioning for superior climate control and
-//                 Fibre optic internet for fast and reliable connectivity
-//                   24/7 concierge and maintenance services and Ample parking with
-//                 up to 12 dedicated slots per floor.

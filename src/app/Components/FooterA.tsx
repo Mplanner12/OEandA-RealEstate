@@ -33,7 +33,10 @@ const FooterA: React.FC = () => {
           className="w-full h-full flex flex-col lg:ml-[0.05rem] col-span-2 lg:justify-start items-start lg:gap-y-[3rem] lg:mt-[2rem]"
         >
           <div className="w-full h-full flex flex-col justify-center items-center lg:items-start">
-            <button className="bg-emerald-700 mx-auto text-white py-[0.85rem] text-sm px-5 lg:ml-[28rem] xl:ml-[30.5rem] 2xl:ml-[32rem] lg:w-fit mb-[4rem] rounded-lg">
+            <button
+              id="button"
+              className="bg-emerald-700 mx-auto text-white py-[0.85rem] text-sm px-5 lg:ml-[19rem] xl:ml-[20.5rem] 2xl:ml-[29.5rem] lg:w-fit mb-[4rem] rounded-lg"
+            >
               Download Brochure
             </button>
             <div className="w-full h-full flex flex-col lg:pl-[2rem] xl:pl-[4.5rem] 2xl:pl-[6rem] md:flex-row justify-center lg:justify-start items-center gap-x-[4.25rem]">

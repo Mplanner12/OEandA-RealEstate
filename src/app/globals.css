@@ -25,6 +25,13 @@
     left: 21.5rem;
   }
 }
+
+@media (width<= 1521px) {
+  #button {
+    margin-left: 24.75rem;
+  }
+}
+
 @media (width<= 1510px) {
   #blackbox {
     width: 17.5rem;
@@ -33,6 +40,9 @@
   }
 }
 @media (width<= 1400px) {
+  #button {
+    margin-left: 22rem;
+  }
   #blackbox {
     width: 17.5rem;
     top: 8rem;

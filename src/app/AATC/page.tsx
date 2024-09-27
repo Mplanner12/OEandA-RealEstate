@@ -124,9 +124,9 @@ const page: React.FC = () => {
                 ii
               </div>
               <p className="w-full ml-[0.85rem] text-neutral-950">
-                Bridging the gap in trade and market information in Africa,
-                especially with regards to intra African trade between Nigeria
-                and other African countries.
+                AATC acts as a central hub for intra-African trade, enabling
+                businesses to connect, collaborate, and conduct transactions,
+                supported by facilities for trade fairs and exhibitions.
               </p>
             </motion.div>
             <motion.div
@@ -141,9 +141,10 @@ const page: React.FC = () => {
                 iii
               </div>
               <p className="w-full ml-[0.85rem] text-neutral-950">
-                Bridging the gap in trade and market information in Africa,
-                especially with regards to intra African trade between Nigeria
-                and other African countries.
+                By showcasing the potential of the African market and providing
+                a secure and well-equipped business environment, AATC seeks to
+                attract foreign direct investment, supported by resources and
+                guidance for international investors.
               </p>
             </motion.div>
             <motion.div
@@ -158,9 +159,10 @@ const page: React.FC = () => {
                 iv
               </div>
               <p className="w-full ml-[0.85rem] text-neutral-950">
-                Bridging the gap in trade and market information in Africa,
-                especially with regards to intra African trade between Nigeria
-                and other African countries.
+                AATC will house dedicated spaces for workshops, seminars, and
+                conferences to promote innovation and knowledge sharing,
+                addressing Africa&apos;s unique trade and development
+                challenges.
               </p>
             </motion.div>
           </motion.div>

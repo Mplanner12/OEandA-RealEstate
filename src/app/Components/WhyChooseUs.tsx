@@ -23,7 +23,7 @@ const WhyChooseUs: React.FC = () => {
                 <TiTick size={22} className="text-teal-800 rounded-full" />
               </div>
               <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-                24-hour uninterrupted power supply with 150% backup capacity
+                24-hour uninterrupted power supply with 150% backup capacity.
               </p>
             </div>
             <div className="w-full h-full flex justify-start items-center mt-4">
@@ -31,7 +31,7 @@ const WhyChooseUs: React.FC = () => {
                 <TiTick size={22} className="text-teal-800 rounded-full" />
               </div>
               <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-                Continuous, reliable water supply
+                Continuous, reliable water supply.
               </p>
             </div>
             <div className="w-full h-full flex justify-start items-center mt-4">
@@ -40,7 +40,7 @@ const WhyChooseUs: React.FC = () => {
               </div>
               <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
                 Shatterproof, soundproof glass façade for optimal security and
-                noise control
+                noise control.
               </p>
             </div>
             <div className="w-full h-full flex justify-start items-center mt-4">
@@ -48,7 +48,7 @@ const WhyChooseUs: React.FC = () => {
                 <TiTick size={22} className="text-teal-800 rounded-full" />
               </div>
               <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-                Advanced security systems with state-of-the-art access control
+                Advanced security systems with state-of-the-art access control.
               </p>
             </div>
             <div className="w-full h-full flex justify-start items-center mt-4">
@@ -56,7 +56,8 @@ const WhyChooseUs: React.FC = () => {
                 <TiTick size={22} className="text-teal-800 rounded-full" />
               </div>
               <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-                Building Management System (BMS) to optimize mechanical services
+                Building Management System (BMS) to optimize mechanical
+                services.
               </p>
             </div>
             <div className="w-full h-full flex justify-start items-center mt-4">
@@ -64,7 +65,7 @@ const WhyChooseUs: React.FC = () => {
                 <TiTick size={22} className="text-teal-800 rounded-full" />
               </div>
               <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-                High-speed elevators for seamless vertical transportation
+                High-speed elevators for seamless vertical transportation.
               </p>
             </div>
             <div className="w-full h-full flex justify-start items-center mt-4">
@@ -72,7 +73,7 @@ const WhyChooseUs: React.FC = () => {
                 <TiTick size={22} className="text-teal-800 rounded-full" />
               </div>
               <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-                Daikin VRV air-conditioning for superior climate control
+                Daikin VRV air-conditioning for superior climate control.
               </p>
             </div>
             <div className="w-full h-full flex justify-start items-center mt-4">
@@ -80,7 +81,7 @@ const WhyChooseUs: React.FC = () => {
                 <TiTick size={22} className="text-teal-800 rounded-full" />
               </div>
               <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-                Fibre optic internet for fast and reliable connectivity
+                Fibre optic internet for fast and reliable connectivity.
               </p>
             </div>
             <div className="w-full h-full flex justify-start items-center mt-4">
@@ -88,7 +89,7 @@ const WhyChooseUs: React.FC = () => {
                 <TiTick size={22} className="text-teal-800 rounded-full" />
               </div>
               <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-                24/7 concierge and maintenance services
+                24/7 concierge and maintenance services.
               </p>
             </div>
             <div className="w-full h-full flex justify-start items-center mt-4">
@@ -96,7 +97,7 @@ const WhyChooseUs: React.FC = () => {
                 <TiTick size={22} className="text-teal-800 rounded-full" />
               </div>
               <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-                Ample parking with up to 12 dedicated slots per floor
+                Ample parking with up to 12 dedicated slots per floor.
               </p>
             </div>
           </div>

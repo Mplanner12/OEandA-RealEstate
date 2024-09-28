@@ -66,8 +66,9 @@ const MeetTheTeam: React.FC = () => {
           Meet Our Outstanding Team
         </h2>
         <p className="mb-4">
-          Welcome to Ora Egbunike, where you're not just a user but a pioneer in
-          the transition to a safer world, with affordable housing options.
+          Welcome to Ora Egbunike, where you&rsquo;re not just a user but a
+          pioneer in the transition to a safer world, with affordable housing
+          options.
         </p>
         <div className="flex items-center justify-center">
           <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-y-[1.5rem] md:gap-y-0 gap-x-[2.25rem] overflow-hidden mx-4">

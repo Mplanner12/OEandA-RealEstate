@@ -11,6 +11,7 @@ import Footer from "./Components/Footer";
 import SocialLinks from "./Components/SocialLinks";
 import FeaturedProperties from "./Components/FeaturedProperty";
 import { useState } from "react";
+import ClientLogos from "./Components/ClientLogos";
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -27,9 +28,10 @@ export default function Home() {
       <WhoWeAre />
       <WhatWeDo />
       <FeaturedProperties searchTerm={searchTerm} />
-      <ProfessionalAffiliations />
-      <CustomersSay />
-      <FAQ />
+      <ClientLogos />
+      {/* <ProfessionalAffiliations /> */}
+      {/* <CustomersSay /> */}
+      {/* <FAQ /> */}
       <Footer />
       <SocialLinks />
     </main>

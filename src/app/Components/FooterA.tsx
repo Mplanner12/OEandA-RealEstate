@@ -141,9 +141,12 @@ const FooterA: React.FC = () => {
 
               <div className="w-full h-full flex border-l border-zinc-800 flex-col pl-[1.5rem] justify-start items-center gap-y-[2rem]">
                 <div className="w-fit">
-                  <h1 className="w-fit text-lg font-light text-neutral-500 mb-4">
+                  <Link
+                    href="/AboutUs"
+                    className="w-fit text-lg font-light text-neutral-500 mb-4"
+                  >
                     About Us
-                  </h1>
+                  </Link>
                   <ul className="w-fit">
                     <li className="mb-2">
                       <a
@@ -208,7 +211,7 @@ const FooterA: React.FC = () => {
             </div>
             <div className="pb-[1.5rem] w-[6rem] md:pb-0 md:pl-0 border-l md:border-none border-zinc-800">
               <a
-                href="#About"
+                href="/AboutUs"
                 className="text-lg w-[6rem] font-normal text-neutral-500 mb-4"
               >
                 About Us

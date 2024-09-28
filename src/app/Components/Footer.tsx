@@ -32,8 +32,8 @@ const Footer: React.FC = () => {
           {/* Logo and Newsletter */}
           <div className="w-full mb-8 md:mb-0 px-4 flex flex-col items-start">
             <div className="flex items-center mb-4">
-              <img src="/Logo.png" alt="Logo" className="h-8 mr-2" />
-              <span className="text-xl font-bold">
+              <img src="/realLogo.png" alt="Logo" className="h-8 mr-2" />
+              <span className="text-xl font-semibold">
                 Ora Egbunike & Associates
               </span>
             </div>

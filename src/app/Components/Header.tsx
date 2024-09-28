@@ -26,7 +26,7 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
       <div className="flex justify-between items-center lg:hidden pl-[1rem]">
         <div className="flex items-center">
           <Image
-            src="/Logo.png"
+            src="/realLogo.png"
             alt="OEandA Logo"
             width={30}
             height={30}
@@ -102,7 +102,7 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
       <div className="hidden lg:flex justify-between items-center p-[2rem] px-[2rem] pr-[4rem]">
         <div className="flex items-center">
           <Image
-            src="/Logo.png"
+            src="/realLogo.png"
             alt="OEandA Logo"
             width={30}
             height={30}

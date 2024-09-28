@@ -1,32 +1,33 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const properties = [
   {
     id: 1,
     title: "GIGANTIC AND LUXURIOUS OFFICE COMPLEX FOR SALE",
-    slug: "Coastal Escapes - Where Waves Beckon",
-    location: "DURUMI",
-    description:
-      "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood.",
+    // slug: "Coastal Escapes - Where Waves Beckon",
+    // location: "DURUMI",
+    slug: "Office space",
+    description: `GIGANTIC AND LUXURIOUS OFFICE COMPLEX FOR SALE
+Located at Durumi... Read More`,
     price: "₦25 BILLION",
     imageUrl: "/Giganti.jpeg",
   },
   {
     id: 2,
-    title: "SEMI DETACHED FLAT IN A CALM AND SERENE ENVIRONMENT",
+    title: "SEMI DETACHED FLAT",
     slug: "Urban Oasis - Life in the Heart of the City",
-    location: "LUGBE:EL-SALEM ESTATE, PYKASSA",
-    description:
-      "2  Units of well spacious and neat 3 Bedroom. This modern apartment in the heart...",
+    // location: "LUGBE:EL-SALEM ESTATE, PYKASSA",
+    description: `2 UNITS OF WELL SPACIOUS AND NEAT 3 BEDROOM SEMI DETACHED  FLAT IN A CALM AND SERENE ENVIRONMENT
+LOCATION: LUGBE:EL-SALEM ESTATE...Read More`,
     price: "₦50 MILLION ",
     imageUrl: "/2Units.jpeg",
   },
   {
     id: 3,
     title: "Rustic Retreat Cottage",
-    slug: "Countryside Charm - Escape to Nature's Embrace",
+    slug: "Newly Built Units",
     location: "LAGOS",
     description:
       "Find tranquility in the countryside. This charming cottage is nestled amidst rolling hills.",
@@ -42,15 +43,34 @@ interface FeaturedPropertiesProps {
 const FeaturedProperties: React.FC<FeaturedPropertiesProps> = ({
   searchTerm,
 }) => {
-  const filteredProperties = properties.filter((property) =>
-    property.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // const filteredProperties = properties.filter((property) =>
+  //   property.title.toLowerCase().includes(searchTerm.toLowerCase())
+  // );
+  const [selectedFilter, setSelectedFilter] = useState("all");
+
+  const filteredProperties = properties.filter((property) => {
+    // Apply search term filter
+    const matchesSearch = property.title
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+
+    // Apply property type filter
+    if (selectedFilter === "all") {
+      return matchesSearch; // Show all if "all" is selected
+    } else {
+      return matchesSearch && property.slug.toLowerCase() === selectedFilter;
+    }
+  });
 
   return (
-    <div className="bg-neutral-950 lg:px-[2rem] mt-[0.5rem] py-[3rem] lg:mt-[5rem]">
-      <div className="mt-0 md:mt-0 md:w-full md:pl-12 p-[1.5rem] flex flex-col justify-start items-start">
-        <img className="inline my-[0.15rem]" src="/AbstractDesign.png" alt="" />
-        <div className="w-full flex justify-between items-center">
+    <div className="bg-neutral-950 w-full lg:px-[5rem] mt-[0.5rem] py-[3rem] pb-[6rem] lg:mt-[5rem]">
+      <div className="mt-0 md:mt-0 w-full md:pl-12 p-[1.5rem] flex flex-col justify-start items-start">
+        <img
+          className="inline  my-[0.15rem]"
+          src="/AbstractDesign.png"
+          alt=""
+        />
+        <div className="w-full h-full flex justify-between items-center mb-[2rem]">
           <div className="w-full h-full">
             <h2 className="text-[2.25rem] text-white md:text-[2.5rem] font-bold mt-3 md:mt-2">
               Featured Properties
@@ -62,13 +82,48 @@ const FeaturedProperties: React.FC<FeaturedPropertiesProps> = ({
               information.
             </p>
           </div>
+          <button className="w-[19rem] md:block bg-neutral-950 flex justify-center items-center text-white py-3 px-4 rounded-lg shadow-lg mr-4">
+            View more properties
+          </button>
+        </div>
+        <div className="flex space-x-2 mr-4">
+          <button
+            onClick={() => setSelectedFilter("all")}
+            className={`px-4 py-2 rounded-2xl text-sm font-medium ${
+              selectedFilter === "all"
+                ? "bg-red-700 text-white"
+                : "bg-gray-200 text-gray-700"
+            }`}
+          >
+            All Properties
+          </button>
+          <button
+            onClick={() => setSelectedFilter("for rent")}
+            className={`px-4 py-2 rounded-2xl text-sm font-medium ${
+              selectedFilter === "for rent"
+                ? "bg-red-700 text-white"
+                : "bg-gray-200 text-gray-700"
+            }`}
+          >
+            For Rent
+          </button>
+          <button
+            onClick={() => setSelectedFilter("for sale")}
+            className={`px-4 py-2 rounded-2xl text-sm font-medium ${
+              selectedFilter === "for sale"
+                ? "bg-red-700 text-white"
+                : "bg-gray-200 text-gray-700"
+            }`}
+          >
+            For Sale
+          </button>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:px-[3rem] px-2 py-4 lg:py-0">
         {filteredProperties.map((property) => (
           <div
             key={property.id}
-            className="border border-gray-900 p-5 rounded-md"
+            className="border w-full h-full flex flex-col justify-start items-start border-gray-900 p-5 rounded-lg"
           >
             <div className="w-full h-full flex flex-col justify-start items-start">
               <img
@@ -78,12 +133,12 @@ const FeaturedProperties: React.FC<FeaturedPropertiesProps> = ({
               />
               <div className="mt-4 w-full flex flex-col justify-start items-start">
                 <div className="rounded-full font-light mt-[0.4rem] text-white mb-[0.85rem] w-fit p-[0.3rem] px-[0.5rem] border lg:ml-[0.25rem] border-neutral-800 bg-neutral-900 text-xs">
-                  {property.location}
+                  {property.slug}
                 </div>
-                <h3 className="text-lg font-bold text-white h-[5rem]">
+                <h3 className="text-lg font-bold text-white h-[3.85rem]">
                   {property.title}
                 </h3>
-                <p className="text-gray-400 text-sm font-extralight">
+                <p className="text-gray-400 capitalize h-[5rem] text-sm font-extralight">
                   {property.description}
                 </p>
                 <div className="w-full flex justify-between gap-x-2 items-center mt-4">

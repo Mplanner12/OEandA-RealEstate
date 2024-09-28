@@ -48,7 +48,7 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
           >
             <FaXmark size={26} />
           </button>
-          <nav className="flex flex-col items-center space-y-6 text-lg">
+          <nav className="flex flex-col mt-[-10rem] items-center space-y-6 text-lg">
             <Link href="/" className="hover:text-gray-400">
               Home
             </Link>
@@ -91,10 +91,10 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
             <Link href="/ContactUs" className="hover:text-gray-400">
               Contact Us
             </Link>
-            <button className="bg-neutral-900 ml-4 p-3 px-6 border border-zinc-900 rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">
+            {/* <button className="bg-neutral-900 ml-4 p-3 px-6 border border-zinc-900 rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">
               <BiSearchAlt size={26} className="font-light" />
               <span>Property Search</span>
-            </button>
+            </button> */}
           </nav>
         </div>
       )}

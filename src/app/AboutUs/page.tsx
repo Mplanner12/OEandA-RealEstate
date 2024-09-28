@@ -8,6 +8,7 @@ import MeetTheTeam from "../Components/Team";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import SocialLinks from "../Components/SocialLinks";
+import ClientLogos from "../Components/ClientLogos";
 
 const Page: React.FC = () => {
   return (
@@ -16,7 +17,8 @@ const Page: React.FC = () => {
       <AboutHero />
       <MissionVisionSection />
       <ValuesSection />
-      <CustomersSay />
+      <ClientLogos />
+      {/* <CustomersSay /> */}
       <MeetTheTeam />
       <Footer />
       <SocialLinks />

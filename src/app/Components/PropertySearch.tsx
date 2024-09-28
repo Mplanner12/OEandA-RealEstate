@@ -15,13 +15,13 @@ interface PropertySearchProps {
 
 const PropertySearch: React.FC<PropertySearchProps> = ({ setSearchTerm }) => {
   return (
-    <div className="lg:mt-[-2rem] mt-[1rem] lg:px-[4.75rem] w-full h-full flex flex-col justify-start items-center px-[0.75rem]">
-      <div className="w-full lg:w-[78%] xl:w-[60%] justify-center items-center font-light lg:bg-neutral-900 lg:p-2 text-stone-500 rounded-lg  lg:rounded-none lg:rounded-t-lg">
+    <div className="lg:mt-[-2rem] mt-[1rem] md:mb-[-3rem] lg:px-[3.75rem] w-full h-full flex flex-col justify-start items-center px-[0.75rem]">
+      <div className="w-full lg:w-[80%] xl:w-[73%] justify-center items-center font-light lg:bg-neutral-900 lg:p-2 text-stone-500 rounded-lg  lg:rounded-none lg:rounded-t-lg">
         <div className="w-full h-full flex justify-start items-center lg:py-[0.35rem] px-[0.5rem] lg:px-[0.75rem] lg:bg-neutral-950 border-neutral-800 shadow-lg rounded-lg lg:rounded-md border">
           <input
             type="text"
             placeholder="Search For A Property"
-            className="w-full h-full text-stone-500 outline-none rounded-md shadow-lg text-sm p-4 lg:p-2 px-4 lg:px-2 bg-neutral-950"
+            className="w-full h-full text-stone-500 outline-none rounded-md shadow-lg text-sm p-4 lg:p-4 px-4 lg:px-2 bg-neutral-950"
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           <button className="bg-red-700 w-fit lg:w-[32%] flex justify-center lg:justify-start items-center gap-x-2 text-white rounded-lg p-[0.5rem] px-[1rem] lg:pr-[0.35rem] lg:pl-[1rem]">
@@ -30,9 +30,9 @@ const PropertySearch: React.FC<PropertySearchProps> = ({ setSearchTerm }) => {
           </button>
         </div>
       </div>
-      <div className="w-full mt-[1rem] lg:mt-0 lg:w-fit flex justify-center rounded-lg items-center font-light bg-neutral-900 px-2 text-stone-500">
+      <div className="w-full mt-[1rem] lg:mt-0 lg:w-[88%] xl:w-[89%] flex justify-center rounded-lg items-center font-light bg-neutral-900 px-2 text-stone-500">
         <div className="bg-neutral-900 p-3 py-5 w-full rounded-lg lg:w-fit flex justify-between items-center">
-          <div className="w-full flex flex-col md:flex-row justify-center items-center gap-x-4 gap-y-4 px-[0.2rem] lg:px-0 lg:gap-y-0">
+          <div className="w-full flex flex-col md:flex-row justify-center items-center gap-x-4 lg:gap-x-[2.85rem] gap-y-4 px-[0.2rem] lg:px-0 lg:gap-y-0">
             {/* Dropdown for Location */}
             <div className="relative p-3 lg:p-2 lg:px-2 bg-neutral-950 w-full flex justify-start border border-neutral-800 rounded-lg items-center gap-x-2">
               <IoLocationSharp className="text-gray-400  border-r border-neutral-800 pr-2 w-fit" />

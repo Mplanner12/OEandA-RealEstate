@@ -8,14 +8,14 @@ interface Logo {
 
 const ClientLogos = () => {
   const logos: Logo[] = [
-    { name: "Airtel", image: "/logos/airtel.png" },
-    { name: "Huawei", image: "/logos/huawei.png" },
-    { name: "UNDP", image: "/logos/undp.png" },
-    { name: "FH360", image: "/logos/fh360.png" },
-    { name: "Total", image: "/logos/total.png" },
-    { name: "AMCON", image: "/logos/amcon.png" },
-    { name: "NNPC", image: "/logos/nnpc.png" },
-    { name: "CBN", image: "/logos/cbn.png" },
+    { name: "Airtel", image: "/AIRTEL.png" },
+    { name: "Huawei", image: "/HUAWEI.png" },
+    { name: "UNDP", image: "/UNDP.png" },
+    { name: "FH360", image: "/FHI360.png" },
+    { name: "Total", image: "/TOTAL.png" },
+    { name: "AMCON", image: "/AMCON.png" },
+    { name: "NNPC", image: "/NNPC.png" },
+    { name: "CBN", image: "/CBN.png" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,7 +41,7 @@ const ClientLogos = () => {
             <h1 className="font-semibold text-[2.35rem] mb-4">
               Our Experience
             </h1>
-            <div className="text-[0.9rem] font-light mb-4 w-[58%]">
+            <div className="text-[0.9rem] font-light mb-4 w-full md:w-[58%]">
               Read the success stories and heartfelt testimonials from our
               valued clients. Discover why they chose ORA EGBUNIKE & ASSOCIATES
               for their real estate needs.
@@ -58,13 +58,18 @@ const ClientLogos = () => {
               return (
                 <div
                   key={logo.name}
-                  className="p-4 shadow-md rounded-lg bg-white"
+                  className="p-4 shadow-lg h-fit rounded-lg flex flex-col justify-center items-center bg-white"
                 >
-                  <img
-                    src={logos[displayIndex].image}
-                    alt={logos[displayIndex].name}
-                    className="h-12 mx-auto"
-                  />
+                  <div className="w-full h-full flex justify-center items-center">
+                    <img
+                      src={logo.image}
+                      alt={logo.name}
+                      className="h-12 mx-auto"
+                    />
+                  </div>
+                  <p className="w-full h-full text-center font-semibold text-[1.25rem] text-black mt-2">
+                    {logo.name}
+                  </p>
                 </div>
               );
             })}
@@ -73,13 +78,18 @@ const ClientLogos = () => {
             {logos.slice(currentIndex, currentIndex + 4).map((logo) => (
               <div
                 key={logo.name}
-                className="p-4 shadow-md rounded-lg bg-white"
+                className="p-4 shadow-lg h-fit rounded-lg flex flex-col justify-center items-center bg-white"
               >
-                <img
-                  src={logo.image}
-                  alt={logo.name}
-                  className="h-12 mx-auto"
-                />
+                <div className="w-full h-full flex justify-center items-center">
+                  <img
+                    src={logo.image}
+                    alt={logo.name}
+                    className="h-12 mx-auto"
+                  />
+                </div>
+                <p className="w-full h-full text-center font-semibold text-[1.25rem] text-black mt-2">
+                  {logo.name}
+                </p>
               </div>
             ))}
           </div>

@@ -27,7 +27,7 @@ export default function Home() {
       <NewWay />
       <WhoWeAre />
       <WhatWeDo />
-      <FeaturedProperties searchTerm={searchTerm} />
+      <FeaturedProperties searchTerm={searchTerm} showViewMoreButton={true} />
       <ClientLogos />
       {/* <ProfessionalAffiliations /> */}
       {/* <CustomersSay /> */}

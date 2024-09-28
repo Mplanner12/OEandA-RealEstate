@@ -70,30 +70,75 @@ const MeetTheTeam: React.FC = () => {
           the transition to a safer world, with affordable housing options.
         </p>
         <div className="flex items-center justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 overflow-hidden mx-4">
+          <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-y-[1.5rem] md:gap-y-0 gap-x-[2.25rem] overflow-hidden mx-4">
             {teamMembers
-              .slice(currentIndex, currentIndex + 4)
+              .slice(currentIndex, currentIndex + 3)
               .map((member, index) => (
-                <div key={member.name} className="w-full p-4 shalow-lg">
-                  <img
-                    src={member.imageUrl}
-                    alt={member.name}
-                    className="w-full h-auto rounded-lg shadow-lg"
-                  />
-                  <h3 className="text-lg font-semibold mt-2">{member.name}</h3>
-                  <p className="text-sm">{member.position}</p>
-                  <a
-                    //  href={member.descriptionUrl}
-                    className="mt-2 inline-block bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 rounded"
-                  >
-                    Read more
-                  </a>
+                <div
+                  key={member.name}
+                  className="w-fit h-full shalow-xl border-[0.5px] border-gray-100 rounded-lg"
+                >
+                  <div className="w-full flex justify-center items-center object-contain">
+                    <img
+                      src={member.imageUrl}
+                      alt={member.name}
+                      className="w-[79%] h-[12rem] mt-4 bg-white rounded-lg"
+                    />
+                  </div>
+                  <div className="hover:bg-black hover:text-white w-full h-[7.5rem] md:h-[5.85rem] flex justify-between gap-x-[0.5rem] md:gap-x-[3rem] mt-4 pt-1 px-3 md:px-6 bg-stone-100 items-center rounded-md">
+                    <div className="w-full h-full flex flex-col justify-start items-start">
+                      <h3 className="text-[0.95rem] tracking-tight uppercase text-start font-semibold mt-2 w-[10rem] md:w-[12rem]">
+                        {member.name}
+                      </h3>
+                      <p className="text-xs text-start w-[8.75rem] md:w-[10rem]">
+                        {member.position}
+                      </p>
+                    </div>
+                    <div className="w-full h-full flex mt-4 justify-center items-start">
+                      <a className="mt-2 inline-block text-xs w-[6.25rem] bg-red-100 text-red-400 hover:bg-neutral-700 hover:text-white font-bold py-1.5 px-3 rounded-lg">
+                        Read more
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+          </div>
+          <div className="md:hidden grid grid-cols-1 md:grid-cols-3 gap-y-[1.5rem] md:gap-y-0 gap-x-[2.25rem] overflow-hidden mx-4">
+            {teamMembers
+              .slice(currentIndex, currentIndex + 1)
+              .map((member, index) => (
+                <div
+                  key={member.name}
+                  className="w-fit h-full shalow-xl border-[0.5px] border-gray-100 rounded-lg"
+                >
+                  <div className="w-full flex justify-center items-center object-contain">
+                    <img
+                      src={member.imageUrl}
+                      alt={member.name}
+                      className="w-[79%] h-[12rem] mt-4 bg-white rounded-lg"
+                    />
+                  </div>
+                  <div className="hover:bg-black hover:text-white w-full h-[7.5rem] md:h-[5.85rem] flex justify-between gap-x-[0.5rem] md:gap-x-[3rem] mt-4 pt-1 px-3 md:px-6 bg-stone-100 items-center rounded-md">
+                    <div className="w-full h-full flex flex-col justify-start items-start">
+                      <h3 className="text-[0.95rem] tracking-tight uppercase text-start font-semibold mt-2 w-[10rem] md:w-[12rem]">
+                        {member.name}
+                      </h3>
+                      <p className="text-xs text-start w-[8.75rem] md:w-[10rem]">
+                        {member.position}
+                      </p>
+                    </div>
+                    <div className="w-full h-full flex mt-4 justify-center items-start">
+                      <a className="mt-2 inline-block text-xs w-[6.25rem] bg-red-100 text-red-400 hover:bg-neutral-700 hover:text-white font-bold py-1.5 px-3 rounded-lg">
+                        Read more
+                      </a>
+                    </div>
+                  </div>
                 </div>
               ))}
           </div>
         </div>
 
-        <div className="w-full gap-x-[0.95rem] mt-[-2rem] h-full flex justify-end items-center">
+        <div className="w-full gap-x-[0.95rem] mt-[2rem] h-full flex justify-end items-center">
           <button
             onClick={previous}
             className="bg-gray-50 border hover:bg-gray-700 p-3 rounded-full focus:bg-black active:bg-black"

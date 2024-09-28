@@ -5,9 +5,9 @@ import React, { useState } from "react";
 const properties = [
   {
     id: 1,
-    title: "GIGANTIC AND LUXURIOUS OFFICE COMPLEX FOR SALE",
-    // slug: "Coastal Escapes - Where Waves Beckon",
-    // location: "DURUMI",
+    title: "GIGANTIC LUXURIOUS OFFICE COMPLEX",
+    location: "DURUMI",
+    status: "for Sale",
     slug: "Office space",
     description: `GIGANTIC AND LUXURIOUS OFFICE COMPLEX FOR SALE
 Located at Durumi... Read More`,
@@ -18,7 +18,8 @@ Located at Durumi... Read More`,
     id: 2,
     title: "SEMI DETACHED FLAT",
     slug: "Urban Oasis - Life in the Heart of the City",
-    // location: "LUGBE:EL-SALEM ESTATE, PYKASSA",
+    status: "for Sale",
+    location: "LUGBE:EL-SALEM ESTATE",
     description: `2 UNITS OF WELL SPACIOUS AND NEAT 3 BEDROOM SEMI DETACHED  FLAT IN A CALM AND SERENE ENVIRONMENT
 LOCATION: LUGBE:EL-SALEM ESTATE...Read More`,
     price: "₦50 MILLION ",
@@ -26,22 +27,25 @@ LOCATION: LUGBE:EL-SALEM ESTATE...Read More`,
   },
   {
     id: 3,
-    title: "Rustic Retreat Cottage",
+    title: "Fully detached duplex",
     slug: "Newly Built Units",
-    location: "LAGOS",
+    location: "ASOKORO",
+    status: "for Sale",
     description:
-      "Find tranquility in the countryside. This charming cottage is nestled amidst rolling hills.",
-    price: "$350,000",
-    imageUrl: "/prop3.png",
+      "units of 6- Bedrooms Fully detached duplex with 2 bedrooms Guest charlet and a self contain Bq available for sale at ASOKORO... Read More",
+    price: "N1.6 BILLION",
+    imageUrl: "/DUPLEX.png",
   },
 ];
 
 interface FeaturedPropertiesProps {
   searchTerm: string;
+  showViewMoreButton?: boolean;
 }
 
 const FeaturedProperties: React.FC<FeaturedPropertiesProps> = ({
   searchTerm,
+  showViewMoreButton = false,
 }) => {
   // const filteredProperties = properties.filter((property) =>
   //   property.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -58,7 +62,7 @@ const FeaturedProperties: React.FC<FeaturedPropertiesProps> = ({
     if (selectedFilter === "all") {
       return matchesSearch; // Show all if "all" is selected
     } else {
-      return matchesSearch && property.slug.toLowerCase() === selectedFilter;
+      return matchesSearch && property.status.toLowerCase() === selectedFilter;
     }
   });
 
@@ -82,9 +86,14 @@ const FeaturedProperties: React.FC<FeaturedPropertiesProps> = ({
               information.
             </p>
           </div>
-          <button className="w-[19rem] md:block bg-neutral-950 flex justify-center items-center text-white py-3 px-4 rounded-lg shadow-lg mr-4">
-            View more properties
-          </button>
+          {showViewMoreButton && (
+            <Link
+              href="/Properties"
+              className="w-[19rem] md:block bg-neutral-950 flex justify-center items-center text-white py-3 px-4 rounded-lg shadow-lg mr-4"
+            >
+              View more properties
+            </Link>
+          )}
         </div>
         <div className="flex space-x-2 mr-4">
           <button
@@ -135,7 +144,7 @@ const FeaturedProperties: React.FC<FeaturedPropertiesProps> = ({
                 <div className="rounded-full font-light mt-[0.4rem] text-white mb-[0.85rem] w-fit p-[0.3rem] px-[0.5rem] border lg:ml-[0.25rem] border-neutral-800 bg-neutral-900 text-xs">
                   {property.slug}
                 </div>
-                <h3 className="text-lg font-bold text-white h-[3.85rem]">
+                <h3 className="text-lg font-bold uppercase text-white h-[3.85rem]">
                   {property.title}
                 </h3>
                 <p className="text-gray-400 capitalize h-[5rem] text-sm font-extralight">

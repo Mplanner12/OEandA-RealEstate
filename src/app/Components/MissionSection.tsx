@@ -70,22 +70,19 @@ const MissionVisionSection: React.FC = () => {
                 We make it easy for tenants and landlords.
               </h2>
               <p className="text-gray-600 text-lg h-[10rem]">
-                Whether it&apos;s selling your current home, getting financing,
-                or buying a new home, we make it easy and efficient. The best
-                part? You&apos;ll save a bunch of money and time with our
-                services.
+                To deliver premium value using our strategic capabilities and
+                global best practices to meet the changing needs of our clients,
+                our people and other key stakeholders.
               </p>
             </div>
           ) : (
             <div className="z-20">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4 h-[4rem]">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4 h-[3rem]">
                 Our Vision
               </h2>
               <p className="text-gray-600 text-lg h-[10rem]">
-                We envision a world where finding a home is as easy as clicking
-                a button. Our mission is to simplify the process for both
-                tenants and landlords, making property transactions smooth and
-                hassle-free.
+                To be the preferred global provider of Real Estate and
+                Facilities Management Solutions.
               </p>
             </div>
           )}

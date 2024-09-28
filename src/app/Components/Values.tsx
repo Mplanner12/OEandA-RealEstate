@@ -20,9 +20,9 @@ const ValuesSection = () => {
             </div>
           </div>
           <div className="ml-4">
-            <h4 className="text-lg font-bold">Trust</h4>
+            <h4 className="text-lg font-bold">Performance</h4>
             <p className="text-gray-500">
-              Trust is the cornerstone of every successful real estate
+              Performance is the cornerstone of every successful real estate
               transaction.
             </p>
           </div>
@@ -69,6 +69,36 @@ const ValuesSection = () => {
             <p className="text-gray-500">
               We believe in pushing the boundaries and always finding new ways
               to serve our customers.
+            </p>
+          </div>
+        </div>
+        <div className="flex items-start">
+          <div className="flex-shrink-0">
+            <div className="p-3 bg-gray-800 rounded-full">
+              <FaRegStar size={24} className="text-white" />
+            </div>
+          </div>
+          <div className="ml-4">
+            <h4 className="text-lg font-bold">Leadership </h4>
+            <p className="text-gray-500">
+              {/* We believe in pushing the boundaries and always finding new ways
+              to serve our customers. */}
+            </p>
+          </div>
+        </div>
+        <div className="flex items-start">
+          <div className="flex-shrink-0">
+            <div className="p-3 bg-gray-800 rounded-full">
+              <FaRegStar size={24} className="text-white" />
+            </div>
+          </div>
+          <div className="ml-4">
+            <h4 className="text-lg font-bold">
+              Wealth creation and knowledge sharing
+            </h4>
+            <p className="text-gray-500">
+              {/* We believe in pushing the boundaries and always finding new ways
+              to serve our customers. */}
             </p>
           </div>
         </div>

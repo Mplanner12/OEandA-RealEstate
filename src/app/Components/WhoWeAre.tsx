@@ -4,7 +4,10 @@ import React from "react";
 
 const WhoWeAre: React.FC = () => {
   return (
-    <div className="w-full h-full flex flex-col md:flex-row-reverse justify-center items-center py-[2.5rem] pt-[1rem] px-[2rem] gap-y-[2.75rem]">
+    <div
+      id="story"
+      className="w-full h-full flex flex-col md:flex-row-reverse justify-center items-center py-[2.5rem] pt-[1rem] px-[2rem] gap-y-[2.75rem]"
+    >
       <div className="w-full h-full flex justify-center items-center">
         <img className="md:hidden" src="WhoweAre.png" alt="Image" />
         <img className="hidden md:flex" src="WhoweAremd.png" alt="Image" />

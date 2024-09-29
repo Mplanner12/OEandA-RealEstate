@@ -9,7 +9,7 @@ import SocialLinks from "../Components/SocialLinks";
 
 const page: React.FC = () => {
   return (
-    <div>
+    <div id="#contact-form">
       <Header />
       <ContactHero />
       <LetsConnect />

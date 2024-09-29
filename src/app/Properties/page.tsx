@@ -14,7 +14,7 @@ const PropertyPage: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-full">
+    <div id="#properties" className="w-full h-full">
       <Header onSearch={handleSearch} />
       <div className="bg-neutral-950 w-full h-full text-white flex flex-col justify-start items-center">
         <div className="w-full h-full flex flex-col justify-start items-center lg:py-2">
@@ -31,9 +31,7 @@ const PropertyPage: React.FC = () => {
             </p>
           </div>
           <PropertySearch setSearchTerm={setSearchTerm} />
-          <FeaturedProperties
-            searchTerm={searchTerm}
-          />
+          <FeaturedProperties searchTerm={searchTerm} />
         </div>
         <ContactForm />
       </div>

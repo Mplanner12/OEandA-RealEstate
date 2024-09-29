@@ -4,7 +4,10 @@ import React from "react";
 
 const AboutHero: React.FC = () => {
   return (
-    <div className="lg:w-full bg-black text-white md:p-5 xl:px-2 p-4 md:pr-0 flex flex-col md:flex-row-reverse items-center sm:items-start justify-between">
+    <div
+      // id="story"
+      className="lg:w-full bg-black text-white md:p-5 xl:px-2 p-4 md:pr-0 flex flex-col md:flex-row-reverse items-center sm:items-start justify-between"
+    >
       {/* <!-- Image --> */}
       <div className="bg-[url('/About Design.png')] w-full h-full lg:flex lg:flex-col hidden md:px-[1.5rem] justify-center">
         <div className="bg-zinc-900 rounded-xl md:py-[3.5rem] bg-cover hidden lg:flex w-full h-full justify-center">

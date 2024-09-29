@@ -4,7 +4,10 @@ import React from "react";
 
 const NewWay: React.FC = () => {
   return (
-    <div className="bg-white w-full h-full flex flex-col md:flex-row justify-start items-center md:items-start px-[2.5rem] md:px-[3rem] py-[4.25rem]">
+    <div
+      id="#features"
+      className="bg-white w-full h-full flex flex-col md:flex-row justify-start items-center md:items-start px-[2.5rem] md:px-[3rem] py-[4.25rem]"
+    >
       <div className="bg-stone-50 py-[3.5rem] md:mx-[2rem] rounded-xl shadow-md">
         <div className="w-full h-full gap-y-[1.25rem] flex flex-col justify-center items-start px-[2.75rem]">
           <h1 className="text-[2.2rem] font-bold text-gray-800">

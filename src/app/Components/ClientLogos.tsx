@@ -31,7 +31,10 @@ const ClientLogos = () => {
   };
 
   return (
-    <div className="w-full text-black p-6 lg:px-[5rem] py-[3.5rem] flex flex-col justify-start items-start mb-[2rem]">
+    <div
+      id="clients"
+      className="w-full text-black p-6 lg:px-[5rem] py-[3.5rem] flex flex-col justify-start items-start mb-[2rem]"
+    >
       <p className="w-full uppercase md:hidden text-red-600 text-[1rem] text-start font-bold">
         Valued Customers
       </p>

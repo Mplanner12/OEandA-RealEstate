@@ -54,9 +54,12 @@ const Footer: React.FC = () => {
           <div className="md:hidden w-full h-full flex justify-center items-start gap-x-2 mt-[2rem]">
             <div className="w-[1/2] h-full flex pl-[0.85rem] pr-[1.5rem] flex-col justify-start items-center gap-y-[2rem]">
               <div>
-                <h3 className="text-lg font-normal mb-4 text-neutral-400">
+                <Link
+                  href={"/"}
+                  className="text-lg font-normal mb-4 text-neutral-400"
+                >
                   Home
-                </h3>
+                </Link>
                 <ul>
                   <li className="mb-2">
                     <a
@@ -101,9 +104,12 @@ const Footer: React.FC = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-light text-neutral-400 mb-4">
+                <Link
+                  href={"/Properties"}
+                  className="text-lg font-light text-neutral-400 mb-4"
+                >
                   Properties
-                </h3>
+                </Link>
                 <ul>
                   <li className="mb-2">
                     <a
@@ -115,7 +121,8 @@ const Footer: React.FC = () => {
                   </li>
                   <li className="w-[6rem] border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
                     <a
-                      href="#categories"
+                      href="#portfolio"
+                      // href="#categories"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       Categories
@@ -124,9 +131,12 @@ const Footer: React.FC = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-light text-neutral-400 mb-4">
+                <Link
+                  href={"/ContactUs"}
+                  className="text-lg font-light text-neutral-400 mb-4"
+                >
                   Contact Us
-                </h3>
+                </Link>
                 <ul>
                   <li className="mb-2">
                     <a
@@ -163,7 +173,7 @@ const Footer: React.FC = () => {
                   </li>
                   <li className="mb-2">
                     <a
-                      href="#works"
+                      href="#clients"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       Our Works
@@ -247,9 +257,12 @@ const Footer: React.FC = () => {
           {/* Navigation Links  md*/}
           <div className="hidden w-fit h-full md:flex justify-start items-start gap-8 md:gap-x-[4rem] gap-x-14 mt-[2rem] md:mt-0 md:px-[2rem]">
             <div>
-              <h3 className="text-lg font-normal mb-4 text-neutral-400">
+              <Link
+                href={"/"}
+                className="text-lg font-normal mb-4 text-neutral-400"
+              >
                 Home
-              </h3>
+              </Link>
               <ul>
                 <li className="mb-2">
                   <a
@@ -267,14 +280,14 @@ const Footer: React.FC = () => {
                     Features
                   </a>
                 </li>
-                <li className="mb-2">
+                {/* <li className="mb-2">
                   <a
                     href="#properties"
                     className="text-white hover:text-gray-400 font-extralight"
                   >
                     Properties
                   </a>
-                </li>
+                </li> */}
                 <li className="mb-2">
                   <a
                     href="#testimonials"
@@ -293,11 +306,14 @@ const Footer: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="pb-[1.5rem] w-fit md:pb-0 pl-[1.5rem] md:pl-0 border-l md:border-none border-zinc-800">
-              <h3 className="text-lg w-[7rem] font-light text-neutral-400 mb-4">
+            <div className="pb-[1.5rem] w-[7rem] md:pb-0 pl-[1.5rem] md:pl-0 border-l md:border-none border-zinc-800">
+              <Link
+                href={"/AboutUs"}
+                className="text-lg w-[7rem] font-light text-neutral-400 mb-4"
+              >
                 About Us
-              </h3>
-              <ul className="w-fit">
+              </Link>
+              <ul className="w-[7.5rem]">
                 <li className="mb-2">
                   <a
                     href="#story"
@@ -341,9 +357,12 @@ const Footer: React.FC = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-light text-neutral-400 mb-4">
+              <Link
+                href="/Properties"
+                className="text-lg font-light text-neutral-400 mb-4"
+              >
                 Properties
-              </h3>
+              </Link>
               <ul>
                 <li className="mb-2">
                   <Link
@@ -365,9 +384,12 @@ const Footer: React.FC = () => {
             </div>
             <div className="w-full h-full flex flex-col md:flex-row justify-start items-center gap-y-[2rem] md:gap-x-[3.5rem] md:gap-y-0">
               <div className="pb-[1.5rem] md:pb-0 pl-[1.5rem] md:pl-0 border-l md:border-none border-b border-zinc-800">
-                <h3 className="text-lg font-light text-neutral-400 mb-4">
+                <Link
+                  href={"/Services"}
+                  className="text-lg font-light text-neutral-400 mb-4"
+                >
                   Services
-                </h3>
+                </Link>
                 <ul>
                   <li className="mb-2">
                     <a
@@ -413,17 +435,20 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <div className="w-[6.5rem]">
-              <h3 className="text-lg font-light text-neutral-400 mb-4">
+              <Link
+                href="/ContactUs"
+                className="text-lg font-light text-neutral-400 mb-4"
+              >
                 Contact Us
-              </h3>
+              </Link>
               <ul className="w-[6.5rem]">
                 <li className="mb-2">
-                  <Link
-                    href="ContactUs"
+                  <a
+                    href="#contact-form"
                     className="text-white hover:text-gray-400 font-extralight"
                   >
                     Contact Form
-                  </Link>
+                  </a>
                 </li>
                 <li className="w-[6rem] border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
                   <a

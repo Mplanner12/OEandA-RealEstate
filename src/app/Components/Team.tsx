@@ -104,7 +104,7 @@ const MeetTheTeam: React.FC = () => {
                 </div>
               ))}
           </div>
-          <div className="md:hidden grid grid-cols-1 md:grid-cols-3 gap-y-[1.5rem] md:gap-y-0 gap-x-[2.25rem] overflow-hidden mx-4">
+          <div className="md:hidden grid grid-cols-1 md:grid-cols-3 gap-y-[1.5rem] md:gap-y-0 gap-x-[2.25rem] overflow-hidden mx-1">
             {teamMembers
               .slice(currentIndex, currentIndex + 1)
               .map((member, index) => (
@@ -119,7 +119,7 @@ const MeetTheTeam: React.FC = () => {
                       className="w-[79%] h-[12rem] mt-4 bg-white rounded-lg"
                     />
                   </div>
-                  <div className="hover:bg-black hover:text-white w-full h-[7.5rem] md:h-[5.85rem] flex justify-between gap-x-[0.5rem] md:gap-x-[3rem] mt-4 pt-1 px-3 md:px-6 bg-stone-100 items-center rounded-md">
+                  <div className="hover:bg-black hover:text-white w-full h-[7.5rem] md:h-[5.85rem] flex justify-between gap-x-[0.35rem] md:gap-x-[3rem] mt-4 pt-1 px-3 md:px-6 bg-stone-100 items-center rounded-md">
                     <div className="w-full h-full flex flex-col justify-start items-start">
                       <h3 className="text-[0.95rem] tracking-tight uppercase text-start font-semibold mt-2 w-[10rem] md:w-[12rem]">
                         {member.name}

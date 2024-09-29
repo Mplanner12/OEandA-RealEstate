@@ -1,5 +1,12 @@
 import React from "react";
-import { FaGraduationCap, FaRegStar, FaUser, FaUsers } from "react-icons/fa6";
+import {
+  FaGraduationCap,
+  FaMoneyBillTransfer,
+  FaRegStar,
+  FaUser,
+  FaUsers,
+} from "react-icons/fa6";
+import { MdLeaderboard } from "react-icons/md";
 
 const ValuesSection = () => {
   return (
@@ -75,7 +82,7 @@ const ValuesSection = () => {
         <div className="flex items-start">
           <div className="flex-shrink-0">
             <div className="p-3 bg-gray-800 rounded-full">
-              <FaRegStar size={24} className="text-white" />
+              <MdLeaderboard size={24} className="text-white" />
             </div>
           </div>
           <div className="ml-4">
@@ -89,7 +96,7 @@ const ValuesSection = () => {
         <div className="flex items-start">
           <div className="flex-shrink-0">
             <div className="p-3 bg-gray-800 rounded-full">
-              <FaRegStar size={24} className="text-white" />
+              <FaMoneyBillTransfer size={24} className="text-white" />
             </div>
           </div>
           <div className="ml-4">

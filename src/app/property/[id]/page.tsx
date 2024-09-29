@@ -9,16 +9,18 @@ import { IoLocationSharp } from "react-icons/io5";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import SocialLinks from "../../Components/SocialLinks";
+import RelevantProperties from "@/app/Components/RelevantProperties";
 
 interface Property {
   id: number;
   title: string;
-  location: string; // Make location a required string
+  location: string;
   status: string;
   slug: string;
   description: string;
   price: string;
   imageUrl: string;
+  imageUrls: string[] | any;
 }
 
 const properties: Property[] = [
@@ -32,6 +34,7 @@ const properties: Property[] = [
 Located at Durumi... Read More`,
     price: "₦25 BILLION",
     imageUrl: "/Giganti.jpeg",
+    imageUrls: ["/Giganti.jpeg"],
   },
   {
     id: 2,
@@ -43,6 +46,7 @@ Located at Durumi... Read More`,
 LOCATION: LUGBE:EL-SALEM ESTATE...Read More`,
     price: "₦50 MILLION ",
     imageUrl: "/2Units.jpeg",
+    imageUrls: ["/2Units.jpeg"],
   },
   {
     id: 3,
@@ -54,6 +58,7 @@ LOCATION: LUGBE:EL-SALEM ESTATE...Read More`,
       "units of 6- Bedrooms Fully detached duplex with 2 bedrooms Guest charlet and a self contain Bq available for sale at ASOKORO... Read More",
     price: "N1.6 BILLION",
     imageUrl: "/DUPLEX.png",
+    imageUrls: ["/DUPLEX.png"],
   },
 ];
 
@@ -72,10 +77,7 @@ const PropertyDetails = ({ params }: { params: { id: string } }) => {
       <Header />
       <div className="container mx-auto px-4 py-8 lg:px-[3.5rem]">
         <header className="w-full h-full flex flex-col justify-start items-start gap-x-2">
-          <div className="w-full h-full flex flex-col gap-y-2 justify-start items-start gap-x-2 lg:gap-x-[2rem]">
-            {/* <h1 className="text-3xl lg:text-center lg:w-full">
-              {property ? property.title : "Property not found"}
-            </h1> */}
+          <div className="w-full h-full flex flex-col gap-y-2 justify-start items-start gap-x-2 lg:px-5 lg:gap-x-[2rem] lg:mb-[-2rem]">
             <p className="text-sm w-fit h-full flex justify-start items-center gap-x-2 p-[0.35rem] px-[0.65rem] rounded-full border border-neutral-800">
               <IoLocationSharp size={16} className="text-gray-200" />
               {property ? property.location : "Location"}
@@ -84,6 +86,7 @@ const PropertyDetails = ({ params }: { params: { id: string } }) => {
         </header>
 
         <ImageGallery property={property} />
+        <RelevantProperties />
         {/* <PropertyInfo property={property} /> */}
         {/* <PricingDetails property={property} /> */}
         <InquiryForm property={property} />

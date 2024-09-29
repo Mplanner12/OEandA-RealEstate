@@ -8,7 +8,7 @@ interface Logo {
 
 const ClientLogos = () => {
   const logos: Logo[] = [
-    { name: "Airtel", image: "/AIRTEL.png" },
+    { name: "Airtel", image: "/Airtel.png" },
     { name: "Huawei", image: "/HUAWEI.png" },
     { name: "UNDP", image: "/UNDP.png" },
     { name: "FH360", image: "/FHI360.png" },

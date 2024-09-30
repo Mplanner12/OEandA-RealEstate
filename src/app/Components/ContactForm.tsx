@@ -17,9 +17,9 @@ const ContactForm: React.FC = () => {
           your perfect match. Don&apos;t wait; let&apos;s embark on this
           exciting journey together.
         </p>
-        <form className="gap-y-4 mb-[2rem] mx-auto flex flex-col p-[0.5rem] justify-center items-center mt-[1.25rem] border border-neutral-100 shadow-md rounded-lg">
+        <form className="gap-y-4 mb-[2rem] mx-auto flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-x-7 py-[1.85rem] md:pt-[3rem] md:pb-[2.35rem] px-12 md:px-[5rem] justify-center items-center mt-[1.25rem] border border-neutral-100 shadow-md rounded-lg">
           <div className="w-full">
-            <label className="block text-zinc-800 mb-[0.65rem]">
+            <label className="block text-zinc-50 mb-[0.65rem]">
               First Name
             </label>
             <input
@@ -29,9 +29,7 @@ const ContactForm: React.FC = () => {
             />
           </div>
           <div className="w-full">
-            <label className="block text-zinc-800 mb-[0.65rem]">
-              Last Name
-            </label>
+            <label className="block text-zinc-50 mb-[0.65rem]">Last Name</label>
             <input
               type="text"
               placeholder="Enter Last Name"
@@ -39,7 +37,7 @@ const ContactForm: React.FC = () => {
             />
           </div>
           <div className="w-full">
-            <label className="block text-zinc-800 mb-[0.65rem]">Email</label>
+            <label className="block text-zinc-50 mb-[0.65rem]">Email</label>
             <input
               type="email"
               placeholder="Enter your Email"
@@ -47,7 +45,7 @@ const ContactForm: React.FC = () => {
             />
           </div>
           <div className="w-full">
-            <label className="block text-zinc-800 mb-[0.65rem]">Phone</label>
+            <label className="block text-zinc-50 mb-[0.65rem]">Phone</label>
             <input
               type="text"
               placeholder="Enter Phone Number"
@@ -55,90 +53,41 @@ const ContactForm: React.FC = () => {
             />
           </div>
           <div className="w-full">
-            <label className="block text-zinc-800 mb-[0.65rem]">
-              Preferred Loaction
+            <label className="block text-zinc-50 mb-[0.65rem]">
+              Inquiry Type
             </label>
             <select className="w-full border rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200">
-              <option>Abuja</option>
+              <option disabled>Select Inquiry Type</option>
+              <option>Rent</option>
             </select>
           </div>
           <div className="w-full">
-            <label className="block text-zinc-800 mb-[0.65rem]">
-              Property Type
+            <label className="block text-zinc-50 mb-[0.65rem]">
+              How did you hear about us?
             </label>
             <select className="w-full border rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200">
-              <option>Select Property Type</option>
+              <option disabled>Select an option</option>
+              <option>Social Media</option>
             </select>
           </div>
-          <div className="w-full">
-            <label className="block text-zinc-800 mb-[0.65rem]">
-              No. of bathrooms
-            </label>
-            <select className="w-full border rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200">
-              <option>Select No. of bathrooms</option>
-            </select>
-          </div>
-          <div className="w-full">
-            <label className="block text-zinc-800 mb-[0.65rem]">
-              No. of bedrooms
-            </label>
-            <select className="w-full border rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200">
-              <option>Select No. of bedrooms</option>
-            </select>
-          </div>
-          <div className="w-full">
-            <label className="block text-zinc-800 mb-[0.65rem]">Budget</label>
-            <select className="w-full border rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200">
-              <option>Select Budget</option>
-            </select>
-          </div>
-          <div className="w-full">
-            <label className="block text-zinc-800 mb-[0.65rem]">
-              Preferred Contact Method
-            </label>
-            <div className="w-full border flex justify-start items-center rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200">
-              <FaPhoneAlt size={22} className="text-red-700 mr-2" />
-              <input
-                type="email"
-                placeholder="Enter Your Number"
-                className="w-full bg-red-50"
-              />
-              <FaRegCircle size={22} className="text-red-300" />
-            </div>
-          </div>
-          <div className="w-full border flex justify-start items-center rounded-md p-6 py-[1rem] mt-[2rem] text-stone-500 bg-red-50 border-red-200">
-            <FaEnvelope size={22} className="text-red-700 mr-2" />
-            <input
-              type="email"
-              placeholder="Enter your Email"
-              className="w-full bg-red-50"
-            />
-            <FaRegCircle size={22} className="text-red-300" />
-          </div>
-          <div className="w-full">
-            <label className="block text-zinc-800 mb-[0.65rem]">Message</label>
+
+          <div className="w-full col-span-3">
+            <label className="block text-zinc-50 mb-[0.65rem]">Message</label>
             <textarea
               placeholder="Enter your Message here.."
               className="w-full border h-[7.25rem] rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200"
             />
           </div>
-          <div className="w-full h-full mt-[0.75rem] flex flex-col justify-between items-center">
-            <div className="w-full mb-[1rem]">
-              <label className="flex items-center w-full">
-                <input type="checkbox" className="mr-2 w-fit" />
-                <span className="text-neutral-400">
-                  I agree with Terms of Use and Privacy Policy
-                </span>
-              </label>
-            </div>
-            <div className="w-full mt-[0.75rem] mb-[1rem]">
-              <button
-                type="submit"
-                className="w-full bg-red-700 text-white rounded-md p-4 px-7 font-light hover:bg-red-700"
-              >
-                Send Your Message
-              </button>
-            </div>
+          <div className="w-full col-span-3 flex flex-col md:flex-row justify-start md:justify-between items-center">
+            <label className="flex justify-start items-center">
+              <input type="checkbox" className="mr-2 " />
+              <span className="text-neutral-400 font-light">
+                I agree with Terms of Use and Privacy Policy
+              </span>
+            </label>
+            <button className="w-fit px-5 mt-3 flex font-extralight justify-center items-center bg-red-700 hover:bg-red-600 p-4 rounded-md">
+              Send Your Message
+            </button>
           </div>
         </form>
       </div>
@@ -155,9 +104,9 @@ const ContactForm: React.FC = () => {
             this exciting journey together.
           </p>
         </div>
-        <form className="gap-y-4 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 mt-[2.5rem] gap-6 p-[3rem] border border-neutral-100 shadow-md rounded-lg">
-          <div>
-            <label className="block text-zinc-800 mb-[0.65rem]">
+        <form className="gap-y-4 mb-[2rem] mx-auto flex flex-col md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-x-7 py-[1.85rem] md:pt-[3rem] md:pb-[2.35rem] px-12 md:px-[5rem] justify-center items-center mt-[1.25rem] border border-neutral-100 shadow-md rounded-lg">
+          <div className="w-full">
+            <label className="block text-zinc-50 mb-[0.65rem]">
               First Name
             </label>
             <input
@@ -166,117 +115,47 @@ const ContactForm: React.FC = () => {
               className="w-full border rounded-md p-6 text-stone-500 py-[1rem] bg-red-50 border-red-200"
             />
           </div>
-          <div>
-            <label className="block text-zinc-800 mb-[0.65rem]">
-              Last Name
-            </label>
+          <div className="w-full">
+            <label className="block text-zinc-50 mb-[0.65rem]">Last Name</label>
             <input
               type="text"
               placeholder="Enter Last Name"
               className="w-full border rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200"
             />
           </div>
-          <div>
-            <label className="block text-zinc-800 mb-[0.65rem]">Email</label>
+          <div className="w-full">
+            <label className="block text-zinc-50 mb-[0.65rem]">Email</label>
             <input
               type="email"
               placeholder="Enter your Email"
               className="w-full border rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200"
             />
           </div>
-          <div>
-            <label className="block text-zinc-800 mb-[0.65rem]">Phone</label>
+          <div className="w-full">
+            <label className="block text-zinc-50 mb-[0.65rem]">Phone</label>
             <input
               type="text"
               placeholder="Enter Phone Number"
               className="w-full border rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200"
             />
           </div>
-          <div>
-            <label className="block text-zinc-800 mb-[0.65rem]">
-              Preferred Loaction
-            </label>
-            <select className="w-full border rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200">
-              <option>Abuja</option>
-            </select>
-          </div>
-          <div>
-            <label className="block text-zinc-800 mb-[0.65rem]">
-              Property Type
-            </label>
-            <select className="w-full border rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200">
-              <option>Select Property Type</option>
-            </select>
-          </div>
-          <div>
-            <label className="block text-zinc-800 mb-[0.65rem]">
-              No. of bathrooms
-            </label>
-            <select className="w-full border rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200">
-              <option>Select No. of bathrooms</option>
-            </select>
-          </div>
-          <div>
-            <label className="block text-zinc-800 mb-[0.65rem]">
-              No. of bedrooms
-            </label>
-            <select className="w-full border rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200">
-              <option>Select No. of bedrooms</option>
-            </select>
-          </div>
-          <div className="col-span-2">
-            <label className="block text-zinc-800 mb-[0.65rem]">Budget</label>
-            <select className="w-full border rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200">
-              <option>Select Budget</option>
-            </select>
-          </div>
-          <div>
-            <label className="block text-zinc-800 mb-[0.65rem]">
-              Preferred Contact Method
-            </label>
-            <div className="w-full border flex justify-start items-center rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200">
-              <FaPhoneAlt size={22} className="text-red-700 mr-2" />
-              <input
-                type="email"
-                placeholder="Enter Your Number"
-                className="w-full bg-red-50"
-              />
-              <FaRegCircle size={22} className="text-red-300" />
-            </div>
-          </div>
-          <div className="w-full border flex justify-start items-center rounded-md p-6 py-[1rem] mt-[2rem] text-stone-500 bg-red-50 border-red-200">
-            <FaEnvelope size={22} className="text-red-700 mr-2" />
-            <input
-              type="email"
-              placeholder="Enter your Email"
-              className="w-full bg-red-50"
-            />
-            <FaRegCircle size={22} className="text-red-300" />
-          </div>
-          <div className="col-span-3">
-            <label className="block text-zinc-800 mb-[0.65rem]">Message</label>
+          <div className="w-full col-span-4">
+            <label className="block text-zinc-50 mb-[0.65rem]">Message</label>
             <textarea
               placeholder="Enter your Message here.."
               className="w-full border h-[7.25rem] rounded-md p-6 py-[1rem] text-stone-500 bg-red-50 border-red-200"
             />
           </div>
-          <div className="w-full col-span-4 h-full mt-[0.75rem] flex justify-between items-center">
-            <div className="col-span-2">
-              <label className="flex items-center">
-                <input type="checkbox" className="mr-2 " />
-                <span className="text-neutral-400">
-                  I agree with Terms of Use and Privacy Policy
-                </span>
-              </label>
-            </div>
-            <div className="col-span-2">
-              <button
-                type="submit"
-                className="w-full bg-red-700 text-white rounded-md p-4 px-7 font-light hover:bg-red-700"
-              >
-                Send Your Message
-              </button>
-            </div>
+          <div className="w-full col-span-4 flex flex-col md:flex-row justify-start md:justify-between items-center">
+            <label className="flex justify-start items-center">
+              <input type="checkbox" className="mr-2 " />
+              <span className="text-neutral-400 font-light">
+                I agree with Terms of Use and Privacy Policy
+              </span>
+            </label>
+            <button className="w-fit px-5 mt-3 flex font-extralight justify-center items-center bg-red-700 hover:bg-red-600 p-4 rounded-md">
+              Send Your Message
+            </button>
           </div>
         </form>
       </div>

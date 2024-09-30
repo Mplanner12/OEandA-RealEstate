@@ -24,7 +24,7 @@ const PropertySearch: React.FC<PropertySearchProps> = ({ setSearchTerm }) => {
             className="w-full h-full text-stone-500 outline-none rounded-md shadow-lg text-sm p-4 lg:p-4 px-4 lg:px-2 bg-neutral-950"
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <button className="bg-red-700 w-fit lg:w-[32%] flex justify-center lg:justify-start items-center gap-x-2 text-white rounded-lg p-[0.5rem] px-[1rem] lg:pr-[0.35rem] lg:pl-[1rem]">
+          <button className="bg-red-700 w-fit lg:w-[20%] flex justify-center lg:justify-start items-center gap-x-2 text-white rounded-lg p-[0.5rem] px-[1rem] lg:pr-[0.35rem] lg:pl-[1rem]">
             <IoSearchSharp />
             <p className="hidden lg:block">Find Property</p>
           </button>

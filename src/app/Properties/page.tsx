@@ -18,7 +18,7 @@ const PropertyPage: React.FC = () => {
       <Header onSearch={handleSearch} />
       <div className="bg-neutral-950 w-full h-full text-white flex flex-col justify-start items-center">
         <div className="w-full h-full flex flex-col justify-start items-center lg:py-2">
-          <div className="lg:p-[4.5rem] lg:pl-[7.5rem] px-[1.25rem] pt-[3.5rem] lg:pb-[4rem] border-b border-neutral-800 lg:pt-[5rem] bg-gradient-to-r from-neutral-900 to-neutral-950 w-full h-full flex flex-col justify-start items-start">
+          <div className="lg:p-[5.75rem] lg:pl-[7.5rem] px-[1.25rem] pt-[3.5rem] lg:pb-[4rem] border-b border-neutral-900 lg:pt-[6.25rem] bg-gradient-to-r from-neutral-900 to-neutral-950 w-full h-full flex flex-col justify-start items-start">
             <h1 className="text-4xl w-[21rem] lg:w-full lg:mb-4 font-bold text-start">
               Find Your Dream Property
             </h1>

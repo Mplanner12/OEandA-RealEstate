@@ -115,21 +115,21 @@ const Footer: React.FC = () => {
                 </Link>
                 <ul>
                   <li className="mb-2">
-                    <a
-                      href="#portfolio"
+                    <Link
+                      href="/Portfolio"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       Portfolio
-                    </a>
+                    </Link>
                   </li>
                   <li className="w-[6rem] border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
-                    <a
-                      href="#portfolio"
+                    <Link
+                      href="/Portfolio"
                       // href="#categories"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       Categories
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -369,19 +369,19 @@ const Footer: React.FC = () => {
               <ul>
                 <li className="mb-2">
                   <Link
-                    href="/Properties"
+                    href="/Portfolio"
                     className="text-white hover:text-gray-400 font-extralight"
                   >
                     Portfolio
                   </Link>
                 </li>
                 <li className="w-[6rem] border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
-                  <a
-                    href="#categories"
+                  <Link
+                    href="/Portfolio"
                     className="text-white hover:text-gray-400 font-extralight"
                   >
                     Categories
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

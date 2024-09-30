@@ -15,26 +15,6 @@ const MissionVisionSection: React.FC = () => {
             alt="House"
             className="rounded-xl shadow-lg w-full"
           />
-          {/* Virtual Home Tour Badge */}
-          {/* <div className="absolute top-[1.5rem] left-[-2rem] 2xl:left-[-3rem] bg-white rounded-lg shadow-lg p-4 flex items-center space-x-2">
-            <img src="/AboutIcon1.png" alt="Virtual Tour" className="h-8 w-8" />
-            <div>
-              <h4 className="text-red-500 font-semibold">Virtual home tour</h4>
-              <p className="text-gray-600 text-sm">
-                We provide you with a virtual tour
-              </p>
-            </div>
-          </div> */}
-          {/* Find The Best Deal Badge */}
-          {/* <div className="absolute bottom-[-1rem] left-[8.5rem] 2xl:left-[12rem] bg-white rounded-lg shadow-lg p-4 flex items-center space-x-2">
-            <img src="/AboutIcon3.png" alt="Best Deal" className="h-8 w-8" />
-            <div>
-              <h4 className="text-red-500 font-semibold">Find the best deal</h4>
-              <p className="text-gray-600 text-sm">
-                Browse thousands of properties
-              </p>
-            </div>
-          </div> */}
         </div>
 
         {/* Text Section */}
@@ -67,7 +47,7 @@ const MissionVisionSection: React.FC = () => {
           {isMissionActive ? (
             <div className="z-20">
               <h2 className="text-3xl font-bold text-gray-900 mb-[4rem] lg:mb-4 h-[4rem]">
-                We make it easy for tenants and landlords.
+                Our Misson
               </h2>
               <p className="text-gray-600 text-lg h-[10rem]">
                 To deliver premium value using our strategic capabilities and

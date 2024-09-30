@@ -6,7 +6,7 @@ import { TbMailPlus } from "react-icons/tb";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-neutral-900 w-full h-full flex flex-col justify-start items-start py-[3.25rem] pt-[0.5rem] lg:pb-[3.25rem]">
+    <footer className="bg-neutral-900 w-full h-full flex flex-col justify-start items-start py-[3.25rem] pt-[0.5rem] lg:pb-[0.75rem]">
       <div className="py-[3.25rem] px-[0.85rem] md:px-[3rem] border-y-[0.5px] border-zinc-900 w-full h-full flex flex-col md:flex-row justify-center items-center gap-x-[1rem]">
         <div className="w-full md:w-3/4 h-full flex flex-col justify-center items-start">
           <div className="text-white text-4xl font-bold">

@@ -61,7 +61,7 @@ const MeetTheTeam: React.FC = () => {
 
   return (
     <div id="team" className=" text-black p-6">
-      <div className="container mx-auto text-center">
+      <div className="w-full md:container md:mx-auto text-center">
         <h2 className="text-3xl uppercase font-bold mb-6">
           Meet Our Outstanding Team
         </h2>
@@ -70,7 +70,7 @@ const MeetTheTeam: React.FC = () => {
           pioneer in the transition to a safer world, with affordable housing
           options.
         </p>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center w-full justify-center">
           <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-y-[1.5rem] md:gap-y-0 gap-x-[2.25rem] overflow-hidden mx-4">
             {teamMembers
               .slice(currentIndex, currentIndex + 3)
@@ -83,7 +83,7 @@ const MeetTheTeam: React.FC = () => {
                     <img
                       src={member.imageUrl}
                       alt={member.name}
-                      className="w-[79%] h-[12rem] mt-4 bg-white rounded-lg"
+                      className="w-full h-[17.5rem] mt-4 bg-white rounded-lg"
                     />
                   </div>
                   <div className="hover:bg-black hover:text-white w-full h-[7.5rem] md:h-[5.85rem] flex justify-between gap-x-[0.5rem] md:gap-x-[3rem] mt-4 pt-1 px-3 md:px-6 bg-stone-100 items-center rounded-md">
@@ -104,22 +104,22 @@ const MeetTheTeam: React.FC = () => {
                 </div>
               ))}
           </div>
-          <div className="md:hidden grid grid-cols-1 md:grid-cols-3 gap-y-[1.5rem] md:gap-y-0 gap-x-[2.25rem] overflow-hidden mx-1">
+          <div className="md:hidden w-full grid grid-cols-1 md:grid-cols-3 gap-y-[1.5rem] md:gap-y-0 gap-x-[0.75rem] overflow-hidden mx-1">
             {teamMembers
               .slice(currentIndex, currentIndex + 1)
               .map((member, index) => (
                 <div
                   key={member.name}
-                  className="w-fit h-full shalow-xl border-[0.5px] border-gray-100 rounded-lg"
+                  className="w-full h-full shalow-xl border-[0.5px] border-gray-100 rounded-lg"
                 >
                   <div className="w-full flex justify-center items-center object-contain">
                     <img
                       src={member.imageUrl}
                       alt={member.name}
-                      className="w-[79%] h-[12rem] mt-4 bg-white rounded-lg"
+                      className="w-full h-[16rem] mt-4 bg-white rounded-lg"
                     />
                   </div>
-                  <div className="hover:bg-black hover:text-white w-full h-[7.5rem] md:h-[5.85rem] flex justify-between gap-x-[0.35rem] md:gap-x-[3rem] mt-4 pt-1 px-3 md:px-6 bg-stone-100 items-center rounded-md">
+                  <div className="hover:bg-black hover:text-white w-full h-[7.5rem] md:h-[5.85rem] flex justify-between gap-x-[0.35rem] md:gap-x-[3rem] mt-4 pt-1 px-[2rem] md:px-6 bg-stone-100 items-center rounded-md">
                     <div className="w-full h-full flex flex-col justify-start items-start">
                       <h3 className="text-[0.95rem] tracking-tight uppercase text-start font-semibold mt-2 w-[10rem] md:w-[12rem]">
                         {member.name}
@@ -128,7 +128,7 @@ const MeetTheTeam: React.FC = () => {
                         {member.position}
                       </p>
                     </div>
-                    <div className="w-full h-full flex mt-4 justify-center items-start">
+                    <div className="w-full h-full flex mt-4 justify-end items-start">
                       <a className="mt-2 inline-block text-xs w-[6.25rem] bg-red-100 text-red-400 hover:bg-neutral-700 hover:text-white font-bold py-1.5 px-3 rounded-lg">
                         Read more
                       </a>

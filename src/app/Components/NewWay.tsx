@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const NewWay: React.FC = () => {
@@ -17,9 +17,12 @@ const NewWay: React.FC = () => {
             Find your dream place to live in with more than 10k+ properties
             listed.
           </p>
-          <button className="w-fit bg-red-700 rounded-xl text-white text-base md:text-lg py-[1.25rem] px-[1.25rem] md:px-[2rem]">
+          <Link
+            href={"/Properties"}
+            className="w-fit bg-red-700 rounded-xl text-white text-base md:text-lg py-[1.25rem] px-[1.25rem] md:px-[2rem]"
+          >
             Browse Properties
-          </button>
+          </Link>
         </div>
 
         <img

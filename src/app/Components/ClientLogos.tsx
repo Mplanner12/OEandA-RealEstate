@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import Link from "next/link";
 
 interface Logo {
   name: string;
@@ -50,9 +51,12 @@ const ClientLogos = () => {
               for their real estate needs.
             </div>
           </div>
-          <button className="mt-4 py-4 px-4 w-[12rem] hidden lg:block bg-red-700 hover:bg-red-400 rounded-lg text-white font-bold">
+          <Link
+            href={"/Portfolio"}
+            className="mt-4 py-4 px-4 w-[12rem] hidden lg:block bg-red-700 hover:bg-red-400 rounded-lg text-white font-bold"
+          >
             View Portfolio
-          </button>
+          </Link>
         </div>
         <div className="flex justify-between items-center mt-[3rem]">
           <div className="w-full h-full hidden md:grid md:grid-cols-4 md:grid-rows-[repeat(2, min-content)] gap-4">

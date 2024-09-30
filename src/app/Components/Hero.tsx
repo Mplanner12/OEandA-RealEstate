@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Hero: React.FC = () => {
@@ -59,12 +60,18 @@ const Hero: React.FC = () => {
             valued clients.
           </p>
           <div className="flex md:flex-row w-full md:w-fit md:gap-x-[0.5rem] h-full flex-col mb-[1.85rem] gap-y-[0.75rem]">
-            <button className="md:w-fit bg-zinc-900 shadow-md text-white py-4 px-6 rounded-md w-full md:px-[1.7rem] md:py-[0.75rem] ">
+            <Link
+              href={"/AboutUs"}
+              className="md:w-fit bg-zinc-900 shadow-md text-white py-4 px-6 rounded-md w-full md:px-[1.7rem] md:py-[0.75rem] "
+            >
               Learn More
-            </button>
-            <button className="md:w-fit bg-red-700 text-white shadow-md py-4 px-6 md:px-[1.7rem] md:py-[0.75rem] rounded-md w-full">
+            </Link>
+            <Link
+              href={"/Properties"}
+              className="md:w-fit bg-red-700 text-white shadow-md py-4 px-6 md:px-[1.7rem] md:py-[0.75rem] rounded-md w-full"
+            >
               Browse Properties
-            </button>
+            </Link>
           </div>
         </div>
         {/* <!-- Statistics Content --> */}

@@ -82,9 +82,9 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
                 </div>
               )} */}
             </div>
-            <Link href="/services" className="hover:text-gray-400">
+            {/* <Link href="/services" className="hover:text-gray-400">
               Services
-            </Link>
+            </Link> */}
             <Link href="/AATC" className="hover:text-gray-400">
               AATC
             </Link>
@@ -144,17 +144,14 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
               </div>
             )} */}
           </div>
-          <Link href="/services" className="hover:text-gray-400">
+          {/* <Link href="/services" className="hover:text-gray-400">
             Services
-          </Link>
+          </Link> */}
           <Link href="/AATC" className="hover:text-gray-400">
             AATC
           </Link>
-          <div className="flex justify-start items-center space-x-10">
-            <Link
-              href="/ContactUs"
-              className="hover:text-gray-400 ml-[2.25rem]"
-            >
+          <div className="flex justify-start items-center space-x-5">
+            <Link href="/ContactUs" className="hover:text-gray-400">
               Contact Us
             </Link>
             {/* <div className="bg-neutral-900 ml-4 p-2 px-3 border border-zinc-900 rounded-lg flex items-center space-x-2 hover:bg-white hover:text-black transition">

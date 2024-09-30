@@ -11,16 +11,18 @@ interface Property {
   price: string;
   imageUrl: string;
   imageUrls: string[] | any;
+  bedroomNo?: string;
+  bathroomNo?: string;
 }
 const InquiryForm: React.FC<{ property: Property | undefined }> = ({
   property,
 }) => {
   return (
-    <div className="mt-8 lg:mt-[4.25rem]">
-      <h2 className="text-3xl tracking-wide text-center">
+    <div className="mt-8 lg:mt-[7.5rem] flex flex-col justify-start items-center">
+      <h2 className="text-3xl lg:w-[60%] flex justify-center items-center self-center tracking-wide text-center">
         Inquire About {property?.title}
       </h2>
-      <form className="gap-y-4 mb-[2rem] mx-auto flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-7 py-[1.85rem] md:pt-[3rem] md:pb-[2.35rem] px-12 md:px-[5rem] justify-center items-center mt-[1.25rem] border border-neutral-100 shadow-md rounded-lg">
+      <form className="gap-y-4 mb-[2rem] mx-auto flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-7 py-[1.85rem] md:pt-[3rem] md:pb-[2.35rem] px-12 md:px-[5rem] justify-center items-center mt-[1.25rem] border border-neutral-700 shadow-md rounded-lg">
         <div className="w-full">
           <label className="block text-zinc-50 mb-[0.65rem]">First Name</label>
           <input

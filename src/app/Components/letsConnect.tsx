@@ -137,7 +137,7 @@ const LetsConnect = () => {
                 I agree with Terms of Use and Privacy Policy
               </span>
             </label>
-            <button className="w-fit px-5 mt-3 flex font-extralight justify-center items-center bg-red-700 hover:bg-red-600 p-4 rounded-md">
+            <button className="w-fit text-white px-5 mt-3 flex font-extralight justify-center items-center bg-red-700 hover:bg-red-600 p-4 rounded-md">
               Send Your Message
             </button>
           </div>

@@ -6,7 +6,7 @@ import { TbMailPlus } from "react-icons/tb";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-neutral-900 w-full h-full flex flex-col justify-start items-start py-[3.25rem] pt-[0.5rem] lg:pb-[0.75rem]">
+    <footer className="bg-neutral-900 w-full h-full flex flex-col justify-start items-start py-[3.25rem] pt-[0.5rem] lg:pb-[0.75rem] lg:px-[2rem]">
       <div className="py-[3.25rem] px-[0.85rem] md:px-[3rem] border-y-[0.5px] border-zinc-900 w-full h-full flex flex-col md:flex-row justify-center items-center gap-x-[1rem]">
         <div className="w-full md:w-3/4 h-full flex flex-col justify-center items-start">
           <div className="text-white text-4xl font-bold">
@@ -22,9 +22,12 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="w-full md:w-1/4 mt-[2rem] md:mt-0 h-full flex justify-end items-center">
-          <button className="bg-red-600 w-full md:w-fit p-[1rem] h-full flex justify-center items-center text-white text-sm font-bold rounded-lg">
+          <Link
+            href={"/Properties"}
+            className="bg-red-600 w-full md:w-fit p-[1rem] h-full flex justify-center items-center text-white text-sm font-bold rounded-lg"
+          >
             Explore Properties
-          </button>
+          </Link>
         </div>
       </div>
       <div className="w-full md:w-fit h-full bg-neutral-900 text-white py-12">

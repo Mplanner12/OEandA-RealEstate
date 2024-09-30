@@ -16,21 +16,21 @@ const OfficeCard = ({ office }: any) => {
       <div className="flex flex-col md:flex-row items-start justify-start w-full md:px-[0.5rem] gap-2 mb-4">
         <Link
           href={`mailto:${office.email}`}
-          className="text-white text-xs lg:text-sm flex justify-start items-center rounded-full border bg-neutral-900 hover:bg-neutral-800 border-neutral-800 p-[0.85rem]"
+          className="text-white w-full text-xs lg:text-sm flex justify-start items-center rounded-full border bg-neutral-900 hover:bg-neutral-800 border-neutral-800 p-[0.85rem] text-start"
         >
           <div>
             <FaEnvelope className="mr-2 text-white" />
           </div>
-          <div>{office.email}</div>
+          <div className="w-full lg:w-[14rem]">{office.email}</div>
         </Link>
         <div className="w-full h-full flex justify-start items-center gap-2">
-          <Link
+          {/* <Link
             href={`tel:${office.phone}`}
             className="text-white text-xs lg:text-sm flex justify-start items-center rounded-full border bg-neutral-900  hover:bg-neutral-800 border-neutral-800 p-[0.85rem]"
           >
             <FaPhoneAlt className="mr-2 text-white" />
             {office.phone}
-          </Link>
+          </Link> */}
           <div className="text-white text-xs lg:text-sm flex justify-start items-center rounded-full border bg-neutral-900  hover:bg-neutral-800 border-neutral-800 p-[0.85rem]">
             <FaLocationDot className="mr-2 text-white" />
             {office.location}

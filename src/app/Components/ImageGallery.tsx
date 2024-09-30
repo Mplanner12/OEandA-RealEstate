@@ -15,6 +15,8 @@ interface Property {
   price: string;
   imageUrl: string;
   imageUrls: string[];
+  bedroomNo?: string;
+  bathroomNo?: string;
 }
 
 const ImageGallery: React.FC<{ property: Property | undefined }> = ({
@@ -116,28 +118,36 @@ const ImageGallery: React.FC<{ property: Property | undefined }> = ({
                     {property.description}
                   </p>
                   <div className="w-full h-full flex justify-start items-center gap-x-4 mt--4 pt-4 border-t border-neutral-800">
-                    <div className="w-full h-full flex flex-col justify-start items-center gap-y-2">
-                      <div className="w-full h-full gap-x-2 flex justify-start items-center">
-                        <IoBedSharp size={24} />
-                        <p className="text-sm font-light text-neutral-400">
-                          Bedrooms
+                    {property.bedroomNo ? (
+                      <div className="w-full h-full flex flex-col justify-start items-center gap-y-2">
+                        <div className="w-full h-full gap-x-2 flex justify-start items-center">
+                          <IoBedSharp size={24} />
+                          <p className="text-sm font-light text-neutral-400">
+                            Bedrooms
+                          </p>
+                        </div>
+                        <p className="text-lg font-semibold w-full h-full flex justify-start items-center">
+                          {property.bedroomNo}
                         </p>
                       </div>
-                      <p className="text-lg font-semibold w-full h-full flex justify-start items-center">
-                        04
-                      </p>
-                    </div>
-                    <div className="w-full h-full flex flex-col justify-start items-center gap-y-2 pl-[0.85rem] border-l border-neutral-800">
-                      <div className="w-full h-full gap-x-2 flex justify-start items-center">
-                        <FaBath size={24} />
-                        <p className="text-sm font-light text-neutral-400">
-                          Bathrooms
+                    ) : (
+                      ""
+                    )}
+                    {property.bedroomNo ? (
+                      <div className="w-full h-full flex flex-col justify-start items-center gap-y-2 pl-[0.85rem] border-l border-neutral-800">
+                        <div className="w-full h-full gap-x-2 flex justify-start items-center">
+                          <FaBath size={24} />
+                          <p className="text-sm font-light text-neutral-400">
+                            Bathrooms
+                          </p>
+                        </div>
+                        <p className="text-lg font-semibold w-full h-full flex justify-start items-center">
+                          {property.bathroomNo}
                         </p>
                       </div>
-                      <p className="text-lg font-semibold w-full h-full flex justify-start items-center">
-                        03
-                      </p>
-                    </div>
+                    ) : (
+                      ""
+                    )}
                     <div className="w-full h-full flex flex-col justify-start items-center gap-y-2 pl-[0.85rem] border-l border-neutral-800">
                       <div className="w-full h-full gap-x-2 flex justify-start items-center">
                         <BsTextarea size={24} />

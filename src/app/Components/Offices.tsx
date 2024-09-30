@@ -6,23 +6,25 @@ const offices = [
   {
     type: "main",
     title: "Main Headquarters",
-    address: "123 ORA EGBUNIKE & ASSOCIATES Plaza, City Center, Lagos",
+    address:
+      "Block 113, Plot 1C, Hakeem Dickson Street Lekki Phase 1 CORPORATE	Lekki, Lagos, Nigeria ",
     description:
       "Our main headquarters serve as the heart of ORA EGBUNIKE & ASSOCIATES. Located in the bustling city center, this is where our core team of experts operates, driving the excellence and innovation that define us.",
-    email: "info@OE&A.com",
-    phone: "+1 (123) 456-7890",
+    email: "OFFICE:	lagos@oraegbunike.com",
+    // phone: "+1 (123) 456-7890",
     location: "Lagos",
     button: "Get Direction",
   },
   {
     type: "regional",
     title: "Regional Offices",
-    address: "Urban Avenue, Downtown District, Abuja",
+    address:
+      "WW 19, Entrance 5 first floor, East Pavilion, Tafawa Balewa Square Complex Race Course, Lagos",
     description:
       "ORA EGBUNIKE & ASSOCIATES presence extends to multiple regions, each with its own dynamic real estate landscape. Discover our regional offices, staffed by local experts who understand the nuances of their respective markets.",
-    email: "info@OE&A.com",
-    phone: "+1 (123) 628-7890",
-    location: "Abuja",
+    email: "Nigeria lagos@oraegbunike.com",
+    // phone: "+1 (123) 628-7890",
+    location: "Lagos",
     button: "Get Direction",
   },
 ];
@@ -65,14 +67,14 @@ const Discover = () => {
           >
             Regional
           </button>
-          <button
+          {/* <button
             onClick={() => setFilter("international")}
             className={`py-3 w-full lg:w-[9rem] font-light border border-neutral-800 shadow-sm px-2 lg:px-7 rounded-md ${
               filter === "international" ? "bg-zinc-900" : "bg-neutral-900"
             } hover:bg-gray-600`}
           >
             International
-          </button>
+          </button> */}
         </div>
 
         {/* Office Cards */}

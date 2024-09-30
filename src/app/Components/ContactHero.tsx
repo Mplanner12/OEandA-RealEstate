@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { PiArrowUpRight } from "react-icons/pi";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa6";
 
 const ContactHero: React.FC = () => {
   return (
@@ -21,57 +23,53 @@ const ContactHero: React.FC = () => {
           </p>
         </div>
         {/* <!-- Conatact Links --> */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-2 gap-x-3 md:gap-x-2 text-center w-full border-t-2 border-zinc-800 shadow-md py-[1rem]">
-          <div className="w-full flex flex-col justify-start items-center md:w-full shadow-md bg-zinc-900 p-[1.75rem] rounded-lg border-[0.25px] border-neutral-700 gap-y-[1.25rem]">
-            <div className="w-full gap-x-[0.25rem] relative left-[1.25rem] lg:left-[2rem] h-full flex justify-center items-start">
-              <div className="w-full h-full flex justify-center items-center">
-                <img src="/CEmail.png" alt="" />
-              </div>
-              <div className="w-full h-full flex justify-center ml-[-1rem] md:ml-[-2rem] lg:ml-[-4rem] relative top-[-0.75rem] items-start">
-                <PiArrowUpRight size={40} className="text-neutral-600" />
-              </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-y-2 gap-x-3 md:gap-x-2 text-center w-full border-t-2 border-zinc-800 shadow-md py-[1rem]">
+          <div className="w-full flex justify-start items-center md:w-full shadow-md bg-stone-50 p-[2.65rem] rounded-md border-[0.25px] border-neutral-700 gap-x-[1.25rem]">
+            <div className="w-fit h-full flex justify-start items-start">
+              <FaFacebook className="text-black w-full" size={60} />
             </div>
-            <div className="md:text-sm w-full text-center text-sm text-white font-bold">
-              info@OE&A.com
-            </div>
-          </div>
-          <div className="w-full flex flex-col justify-start items-center md:w-full shadow-md bg-zinc-900 p-[1.75rem] rounded-lg border-[0.25px] border-neutral-700 gap-y-[1.25rem]">
-            <div className="w-full gap-x-[0.25rem] relative left-[1.25rem] lg:left-[2rem] h-full flex justify-center items-start">
-              <div className="w-full h-full flex justify-center items-center">
-                <img src="/CEmail.png" alt="" />
+            <div className="w-full mt-[0.5rem] gap-x-[0.25rem] h-full flex flex-col justify-start items-start">
+              <div className="w-full flex justify-start items-center text-center text-2xl text-black font-semibold">
+                Facebook
               </div>
-              <div className="w-full h-full flex justify-center ml-[-1rem] md:ml-[-2rem] lg:ml-[-4rem] relative top-[-0.75rem] items-start">
-                <PiArrowUpRight size={40} className="text-neutral-600" />
-              </div>
-            </div>
-            <div className="md:text-sm w-full text-center text-sm text-white font-bold">
-              info@OE&A.com
+              <p className="w-full text-[0.85rem] mt-[0.4rem] text-gray-700 flex justify-start items-center font-light">
+                <span className="text-gray-400 mr-[0.25rem] text-2xl">
+                  &#8226;
+                </span>{" "}
+                Ora Egbunike & Associates
+              </p>
             </div>
           </div>
-          <div className="w-full flex flex-col justify-start items-center md:w-full shadow-md bg-zinc-900 p-[1.75rem] rounded-lg border-[0.25px] border-neutral-700 gap-y-[1.25rem]">
-            <div className="w-full gap-x-[0.25rem] relative left-[1.25rem] lg:left-[2rem] h-full flex justify-center items-start">
-              <div className="w-full h-full flex justify-center items-center">
-                <img src="/CEmail.png" alt="" />
-              </div>
-              <div className="w-full h-full flex justify-center ml-[-1rem] md:ml-[-2rem] lg:ml-[-4rem] relative top-[-0.75rem] items-start">
-                <PiArrowUpRight size={40} className="text-neutral-600" />
-              </div>
+          <div className="w-full flex justify-start items-center md:w-full shadow-md bg-stone-50 p-[2.65rem] rounded-md border-[0.25px] border-neutral-700 gap-x-[1.25rem]">
+            <div className="w-fit h-full flex justify-start items-start">
+              <FaLinkedin className="text-black w-full" size={60} />
             </div>
-            <div className="md:text-sm w-full text-center text-sm text-white font-bold">
-              info@OE&A.com
+            <div className="w-full mt-[0.5rem] gap-x-[0.25rem] h-full flex flex-col justify-start items-start">
+              <div className="w-full flex justify-start items-center text-center text-2xl text-black font-semibold">
+                Linkedln
+              </div>
+              <p className="w-full text-[0.85rem] mt-[0.4rem] text-gray-700 flex justify-start items-center font-light">
+                <span className="text-gray-400 mr-[0.25rem] text-2xl">
+                  &#8226;
+                </span>{" "}
+                Oea_Associates
+              </p>
             </div>
           </div>
-          <div className="w-full flex flex-col justify-start items-center md:w-full shadow-md bg-zinc-900 p-[1.75rem] rounded-lg border-[0.25px] border-neutral-700 gap-y-[1.25rem]">
-            <div className="w-full gap-x-[0.25rem] relative left-[1.25rem] lg:left-[2rem] h-full flex justify-center items-start">
-              <div className="w-full h-full flex justify-center items-center">
-                <img src="/CEmail.png" alt="" />
-              </div>
-              <div className="w-full h-full flex justify-center ml-[-1rem] md:ml-[-2rem] lg:ml-[-4rem] relative top-[-0.75rem] items-start">
-                <PiArrowUpRight size={40} className="text-neutral-600" />
-              </div>
+          <div className="w-full flex justify-start items-center md:w-full shadow-md bg-stone-50 p-[2.65rem] rounded-md border-[0.25px] border-neutral-700 gap-x-[1.25rem]">
+            <div className="w-fit h-full flex justify-start items-start">
+              <FaYoutube className="text-black w-full" size={60} />
             </div>
-            <div className="md:text-sm w-full text-center text-sm text-white font-bold">
-              info@OE&A.com
+            <div className="w-full mt-[0.5rem] gap-x-[0.25rem] h-full flex flex-col justify-start items-start">
+              <div className="w-full flex justify-start items-center text-center text-2xl text-black font-semibold">
+                Youtube
+              </div>
+              <p className="w-full text-[0.85rem] mt-[0.4rem] text-gray-700 flex justify-start items-center font-light">
+                <span className="text-gray-400 mr-[0.25rem] text-2xl">
+                  &#8226;
+                </span>{" "}
+                Ora Egbunike & Associates
+              </p>
             </div>
           </div>
         </div>

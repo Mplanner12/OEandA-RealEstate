@@ -21,6 +21,8 @@ interface Property {
   price: string;
   imageUrl: string;
   imageUrls: string[] | any;
+  bedroomNo?: string;
+  bathroomNo?: string;
 }
 
 const properties: Property[] = [
@@ -47,6 +49,8 @@ LOCATION: LUGBE:EL-SALEM ESTATE...Read More`,
     price: "₦50 MILLION ",
     imageUrl: "/2Units.jpeg",
     imageUrls: ["/2Units.jpeg"],
+    bedroomNo: "3",
+    bathroomNo: "3",
   },
   {
     id: 3,
@@ -59,6 +63,8 @@ LOCATION: LUGBE:EL-SALEM ESTATE...Read More`,
     price: "N1.6 BILLION",
     imageUrl: "/DUPLEX.png",
     imageUrls: ["/DUPLEX.png"],
+    bedroomNo: "2",
+    bathroomNo: "2",
   },
 ];
 
@@ -75,7 +81,7 @@ const PropertyDetails = ({ params }: { params: { id: string } }) => {
   return (
     <div className="w-full h-full bg-neutral-950 text-white">
       <Header />
-      <div className="container mx-auto px-4 py-8 lg:px-[3.5rem]">
+      <div className="container mx-auto px-4 py-8 lg:px-[3.5rem] lg:pt-[6rem]">
         <header className="w-full h-full flex flex-col justify-start items-start gap-x-2">
           <div className="w-full h-full flex flex-col gap-y-2 justify-start items-start gap-x-2 lg:px-5 lg:gap-x-[2rem] lg:mb-[-2rem]">
             <p className="text-sm w-fit h-full flex justify-start items-center gap-x-2 p-[0.35rem] px-[0.65rem] rounded-full border border-neutral-800">

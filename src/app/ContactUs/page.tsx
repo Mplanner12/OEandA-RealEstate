@@ -6,6 +6,7 @@ import ExploreSection from "../Components/ExploreSection";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import SocialLinks from "../Components/SocialLinks";
+import FAQ from "../Components/Faq";
 
 const page: React.FC = () => {
   return (
@@ -14,7 +15,8 @@ const page: React.FC = () => {
       <ContactHero />
       <LetsConnect />
       <Discover />
-      <ExploreSection />
+      {/* <ExploreSection /> */}
+      <FAQ />
       <Footer />
       <SocialLinks />
     </div>

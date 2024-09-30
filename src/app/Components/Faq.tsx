@@ -54,7 +54,7 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <section className="faq-section py-12 pt-[1rem] px-[1rem] bg-white">
+    <section className="faq-section py-12 pt-[2.25rem] lg:pt-[4.5rem] lg:pb-[4rem] px-[1rem] bg-white">
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center md:items-start md:gap-x-[1.5rem] justify-start">
         <div className="w-full h-full md:w-1/2 mb-8 md:mb-0 flex flex-col items-center md:items-start justify-start">
           <h2 className="w-full text-[2.5rem] md:text-[2.25rem] md:w-[35rem] text-start font-bold mb-6">

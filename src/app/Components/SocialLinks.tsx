@@ -4,7 +4,7 @@ import { FaFacebookF, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa6";
 
 const SocialLinks: React.FC = () => {
   return (
-    <div className="w-full h-full flex flex-col md:flex-row-reverse justify-start md:pb-[4rem] md:justify-between items-center bg-neutral-900 py-[1.25rem]">
+    <div className="w-full h-full flex flex-col md:flex-row-reverse justify-start md:pb-[4rem] md:justify-between items-center bg-neutral-900 py-[1.25rem] lg:px-[1rem]">
       <div className="md:hidden px-[1.5rem] py-[1.25rem] w-full h-full flex justify-center items-center gap-x-[1.15rem]">
         <Link
           href="https://facebook.com/Ora Egbunike & Associates"

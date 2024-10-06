@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
             </div>
             <div className="w-full md:w-fit shadow-md bg-zinc-900 p-[1.75rem] rounded-lg border-[0.25px] border-neutral-700">
               <p className="text-2xl text-center md:text-start sm:text-xl font-bold">
-                10k+
+                500+
               </p>
               <p className="md:text-sm w-full text-center md:text-start font-light text-sm text-neutral-400">
                 Properties For Clients
@@ -96,7 +96,7 @@ const Hero: React.FC = () => {
           </div>
           <div className="w-full md:w-fit shadow-md bg-zinc-900 p-[1.75rem] rounded-lg border-[0.25px] border-neutral-700">
             <p className="text-2xl text-center md:text-start sm:text-xl font-bold">
-              16+
+              40+
             </p>
             <p className="md:text-sm w-full text-center md:text-start font-light text-sm text-neutral-400">
               Years of Experience

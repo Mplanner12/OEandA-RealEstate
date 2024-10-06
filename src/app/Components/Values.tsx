@@ -10,7 +10,7 @@ import { MdLeaderboard } from "react-icons/md";
 
 const ValuesSection = () => {
   return (
-    <div className="container mx-auto py-12 flex flex-col md:flex-row justify-between items-center gap-x-[4rem] px-[1.25rem] md:px-[4rem]">
+    <div className="container mx-auto py-12 pt-3 lg:pt-12 flex flex-col md:flex-row justify-between items-center gap-x-[4rem] px-[1.25rem] md:px-[4rem]">
       <div className="text-center md:text-left mb-8">
         <h2 className="text-3xl font-bold mb-4">Our Values</h2>
         <p className="text-gray-500 md:w-[28rem] text-start">
@@ -76,36 +76,6 @@ const ValuesSection = () => {
             <p className="text-gray-500">
               We believe in pushing the boundaries and always finding new ways
               to serve our customers.
-            </p>
-          </div>
-        </div>
-        <div className="flex items-start">
-          <div className="flex-shrink-0">
-            <div className="p-3 bg-gray-800 rounded-full">
-              <MdLeaderboard size={24} className="text-white" />
-            </div>
-          </div>
-          <div className="ml-4">
-            <h4 className="text-lg font-bold">Leadership </h4>
-            <p className="text-gray-500">
-              {/* We believe in pushing the boundaries and always finding new ways
-              to serve our customers. */}
-            </p>
-          </div>
-        </div>
-        <div className="flex items-start">
-          <div className="flex-shrink-0">
-            <div className="p-3 bg-gray-800 rounded-full">
-              <FaMoneyBillTransfer size={24} className="text-white" />
-            </div>
-          </div>
-          <div className="ml-4">
-            <h4 className="text-lg font-bold">
-              Wealth creation and knowledge sharing
-            </h4>
-            <p className="text-gray-500">
-              {/* We believe in pushing the boundaries and always finding new ways
-              to serve our customers. */}
             </p>
           </div>
         </div>

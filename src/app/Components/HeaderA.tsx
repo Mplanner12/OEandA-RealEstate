@@ -51,12 +51,12 @@ const HeaderA: React.FC = () => {
             <Link href="/AboutUs" className="hover:text-gray-400 text-white">
               About Us
             </Link>
-            {/* <Link href="/services" className="hover:text-gray-400 text-white">
-              Services
-            </Link> */}
-            <Link href="/blog" className="hover:text-gray-400 text-white">
-              AATC
+            <Link href="/Portfolio" className="text-white hover:text-gray-400">
+              Portfolio
             </Link>
+            {/* <Link href="/blog" className="hover:text-gray-400 text-white">
+              AATC
+            </Link> */}
             <Link href="/ContactUs" className="hover:text-gray-400 text-white">
               Contact Us
             </Link>
@@ -81,6 +81,9 @@ const HeaderA: React.FC = () => {
           </Link>
           <Link href={"/AboutUs"} className="hover:text-gray-400">
             About Us
+          </Link>
+          <Link href="/Portfolio" className="hover:text-gray-400">
+            Portfolio
           </Link>
           {/* <Link href="/services" className="hover:text-gray-400">
             Services

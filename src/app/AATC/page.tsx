@@ -81,13 +81,14 @@ const page: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-base mt-4 text-zinc-500 lg:pr-[2rem]"
           >
-            The Abuja-Afreximbank African Trade Centre is a planned premium
-            property development strategically located in the Centra lBusiness
-            District of Abuja Federal Capita lTerritory, Nigeria. TheAbuja-AATC
-            is the first self branded Afrexim bank African Trade Centre to be
-            developed as part of the Afreximbank’s strategy to grow
-            intra-African trade. This iconic property is a “One-stop-shop”
-            providing unique range of trade services and amenities focused on:
+            The Abuja-Afreximbank African Trade Centre(AATC) is a planned
+            premium property development strategically located in the Central
+            Business District of Abuja Federal Capital Territory(FCT), Nigeria.
+            The Abuja-AATC is the first self branded Afreximbank African Trade
+            Centre to be developed as part of the Afreximbank’s strategy to grow
+            intra-African trade. This iconic property is a “one-stop-shop”
+            providing a unique range of trade services and amenities focused on
+            the following:
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
@@ -108,8 +109,8 @@ const page: React.FC = () => {
               </div>
               <div className="w-full ml-[0.85rem] text-neutral-950">
                 Bridging the gap in trade and market information in Africa,
-                especially with regards to intra African trade between Nigeria
-                and other African countries.
+                especially with regards to intra-African trade between Nigeria
+                and other African countries.
               </div>
             </motion.div>
             <motion.div

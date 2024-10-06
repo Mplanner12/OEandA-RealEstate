@@ -55,6 +55,9 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
             <Link href="/AboutUs" className="hover:text-gray-400">
               About Us
             </Link>
+            <Link href="/Portfolio" className="hover:text-gray-400">
+              Portfolio
+            </Link>
             <div className="relative">
               <Link
                 href={"/Properties"}
@@ -116,6 +119,9 @@ const Header: React.FC<{ onSearch?: (term: string) => void }> = ({
           </Link>
           <Link href="/AboutUs" className="hover:text-gray-400">
             About Us
+          </Link>
+          <Link href="/Portfolio" className="hover:text-gray-400">
+            Portfolio
           </Link>
           <div className="relative">
             <Link

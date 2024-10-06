@@ -192,11 +192,11 @@ const AfricanFuture: React.FC = () => {
             className="w-full h-full"
           ></video>
         </div>
-        <div className="w-full lg:w-[38%] lg:pl-[2.25rem] mt-[2rem] lg:mt-0 h-full flex flex-col justify-center items-center">
+        <div className="w-full lg:w-[38%] lg:pl-[2.25rem] mt-[2rem] lg:mt-0 h-full flex flex-col justify-center items-start">
           <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
             KEY FEATURE
           </p>
-          <h1 className="w-full h-full my-[1rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] lg:w-[22rem] font-bold">
+          <h1 className="w-full h-full my-[1rem] mb-[1.75rem] lg:ml-[0.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] lg:w-[22rem] font-bold">
             Trade Facilitation Services{" "}
           </h1>
           <div className="w-full h-full flex justify-start items-center mt-4">

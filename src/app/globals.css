@@ -18,11 +18,48 @@
     left: 30.5rem;
   }
 }
+
+@media (width<= 1865px) {
+  #button {
+    margin-left: 32.5rem;
+  }
+}
+
+@media (width<= 1805px) {
+  #button {
+    margin-left: 31rem;
+  }
+}
+
+@media (width<= 1710px) {
+  #button {
+    margin-left: 29rem;
+  }
+}
+
+@media (width<= 1670px) {
+  #button {
+    margin-left: 27.75rem;
+  }
+}
+
+@media (width<= 1605px) {
+  #button {
+    margin-left: 26.5rem;
+  }
+}
+
 @media (width<= 1580px) {
   #blackbox {
     width: 17.5rem;
     top: 8rem;
     left: 21.5rem;
+  }
+}
+
+@media (width<= 1570px) {
+  #button {
+    margin-left: 25rem;
   }
 }
 
@@ -39,6 +76,13 @@
     left: 21.5rem;
   }
 }
+
+@media (width<= 1480px) {
+  #button {
+    margin-left: 23rem;
+  }
+}
+
 @media (width<= 1400px) {
   #button {
     margin-left: 22rem;
@@ -49,13 +93,30 @@
     left: 21.5rem;
   }
 }
+
+@media (width<= 1395px) {
+  #button {
+    margin-left: 21rem;
+  }
+}
+
+@media (width<= 1350px) {
+  #button {
+    margin-left: 19.5rem;
+  }
+}
+
 @media (width<= 1275px) {
   #blackbox {
     width: 17.5rem;
     top: 6rem;
     left: 13.5rem;
   }
+  #button {
+    margin-left: 17rem;
+  }
 }
+
 @media (width<= 1050px) {
   #blackbox {
     width: 17.5rem;

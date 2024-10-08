@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "OEandA - AATC",
   description: "created by Mustapha Planner @2024",
+  icons: {
+    icon: "/realLogo.png",
+  },
 };
 
 export default function RootLayout({

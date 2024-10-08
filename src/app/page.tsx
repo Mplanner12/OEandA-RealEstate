@@ -12,6 +12,7 @@ import SocialLinks from "./Components/SocialLinks";
 import FeaturedProperties from "./Components/FeaturedProperty";
 import { useState } from "react";
 import ClientLogos from "./Components/ClientLogos";
+import RootLayout from "./layout";
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");

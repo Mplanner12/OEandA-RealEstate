@@ -5,14 +5,14 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 const metadata: Metadata = {
-  title: "OEandA",
+  title: "AATC",
   description: "created by Mustapha Planner @2024",
   icons: {
     icon: "/realLogo.png",
   },
 };
 
-export default function RootLayout({
+export default function ARootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

@@ -6,7 +6,7 @@ import { TbMailPlus } from "react-icons/tb";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-neutral-900 w-full h-full flex flex-col justify-start items-start py-[3.25rem] pt-[0.5rem] lg:pb-[0.75rem] lg:px-[2rem]">
+    <footer className="bg-neutral-900 w-full h-full flex flex-col justify-start items-start py-[3.25rem] pt-[0.5rem] lg:pb-[0.75rem] xl:px-[2rem]">
       <div className="py-[3.25rem] px-[0.85rem] md:px-[3rem] border-y-[0.5px] border-zinc-900 w-full h-full flex flex-col md:flex-row justify-center items-center gap-x-[1rem]">
         <div className="w-full md:w-3/4 h-full flex flex-col justify-center items-start">
           <div className="text-white text-4xl font-bold">
@@ -54,8 +54,8 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Navigation Links  sm*/}
-          <div className="md:hidden w-full h-full flex justify-center items-start gap-x-2 mt-[2rem]">
-            <div className="w-[1/2] h-full flex pl-[0.85rem] pr-[1.5rem] flex-col justify-start items-center gap-y-[2rem]">
+          <div className="md:hidden w-full h-full flex justify-center items-start gap-x-2 mt-[2rem] px-[1rem]">
+            <div className="w-full h-full flex pl-[0.85rem] pr-[1.5rem] flex-col justify-start items-center gap-y-[2rem]">
               <div>
                 <Link
                   href={"/"}
@@ -65,44 +65,44 @@ const Footer: React.FC = () => {
                 </Link>
                 <ul>
                   <li className="mb-2">
-                    <a
-                      href="#hero"
+                    <Link
+                      href="/"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       Hero Section
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2">
-                    <a
-                      href="#features"
+                    <Link
+                      href="/"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       Features
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2">
-                    <a
-                      href="#properties"
+                    <Link
+                      href="/Properties"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       Properties
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2">
-                    <a
-                      href="#testimonials"
+                    <Link
+                      href="/Portfolio"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       Testimonials
-                    </a>
+                    </Link>
                   </li>
                   <li className="w-[6rem] border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
-                    <a
-                      href="#faqs"
+                    <Link
+                      href="/ContactUs"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       FAQs
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -142,73 +142,68 @@ const Footer: React.FC = () => {
                 </Link>
                 <ul>
                   <li className="mb-2">
-                    <a
-                      href="#contact-form"
+                    <Link
+                      href="/ContactU"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       Contact Form
-                    </a>
+                    </Link>
                   </li>
                   <li className="w-[6rem] border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
-                    <a
-                      href="#offices"
+                    <Link
+                      href="ContactUs"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       Our Offices
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="w-[1/2] h-full flex border-l border-zinc-800 flex-col justify-start items-center gap-y-[2rem]">
+            <div className="w-full h-full flex border-l border-zinc-800 flex-col justify-start items-center gap-y-[2rem]">
               <div className="w-fit pb-[1.5rem]">
-                <h3 className="w-fit text-lg font-light text-neutral-400 mb-4">
+                <Link
+                  href="/AboutUS"
+                  className="w-fit text-lg font-light text-neutral-400 mb-4"
+                >
                   About Us
-                </h3>
+                </Link>
                 <ul className="w-fit">
                   <li className="mb-2">
-                    <a
-                      href="#story"
+                    <Link
+                      href="/AboutUs"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       Our Story
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2">
-                    <a
-                      href="#clients"
+                    <Link
+                      href="/AboutUs"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       Our Works
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2">
-                    <a
-                      href="#how-it-works"
-                      className="text-white hover:text-gray-400 font-extralight"
-                    >
-                      How It Works
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a
-                      href="#team"
+                    <Link
+                      href="/AboutUs"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       Our Team
-                    </a>
+                    </Link>
                   </li>
                   <li className="border-b pb-[1rem] md:pb-0 border-zinc-800">
-                    <a
-                      href="#clients"
+                    <Link
+                      href="/AboutUs"
                       className="text-white hover:text-gray-400 font-extralight"
                     >
                       Our Clients
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
-              <div className="w-full pb-[1.5rem] px-[1rem] flex flex-col items-center">
+              {/* <div className="w-full pb-[1.5rem] px-[1rem] flex flex-col items-center">
                 <h3 className="w-fit text-lg font-light text-neutral-400 mb-4">
                   Services
                 </h3>
@@ -254,11 +249,11 @@ const Footer: React.FC = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* Navigation Links  md*/}
-          <div className="hidden w-fit h-full md:flex justify-start items-start gap-8 md:gap-x-[4rem] gap-x-14 mt-[2rem] md:mt-0 md:px-[2rem]">
+          <div className="hidden w-fit h-full md:flex justify-start items-start gap-8 md:gap-x-[2.5rem] lg:gap-x-[3rem] xl:gap-x-[6rem] gap-x-14 mt-[2rem] md:mt-0 md:px-[2rem] md:ml-[2rem] xl:ml-[5rem]">
             <div>
               <Link
                 href={"/"}
@@ -268,20 +263,20 @@ const Footer: React.FC = () => {
               </Link>
               <ul>
                 <li className="mb-2">
-                  <a
-                    href="#hero"
+                  <Link
+                    href="/"
                     className="text-white hover:text-gray-400 font-extralight"
                   >
                     Hero Section
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a
-                    href="#features"
+                  <Link
+                    href="/Properties"
                     className="text-white hover:text-gray-400 font-extralight"
                   >
                     Features
-                  </a>
+                  </Link>
                 </li>
                 {/* <li className="mb-2">
                   <a
@@ -292,20 +287,20 @@ const Footer: React.FC = () => {
                   </a>
                 </li> */}
                 <li className="mb-2">
-                  <a
-                    href="#testimonials"
+                  <Link
+                    href="/Portfolio"
                     className="text-white hover:text-gray-400 font-extralight"
                   >
                     Testimonials
-                  </a>
+                  </Link>
                 </li>
                 <li className="w-[6rem] border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
-                  <a
-                    href="#faqs"
+                  <Link
+                    href="/ContactUs"
                     className="text-white hover:text-gray-400 font-extralight"
                   >
                     FAQs
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -318,44 +313,36 @@ const Footer: React.FC = () => {
               </Link>
               <ul className="w-[7.5rem]">
                 <li className="mb-2">
-                  <a
-                    href="#story"
+                  <Link
+                    href="/AboutUs"
                     className="text-white hover:text-gray-400 font-extralight"
                   >
                     Our Story
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
                   <a
-                    href="#works"
+                    href="/Portfolio"
                     className="text-white hover:text-gray-400 font-extralight"
                   >
                     Our Works
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a
-                    href="#how-it-works"
-                    className="text-white hover:text-gray-400 font-extralight"
-                  >
-                    How It Works
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#team"
+                  <Link
+                    href="/AboutUs"
                     className="text-white hover:text-gray-400 font-extralight"
                   >
                     Our Team
-                  </a>
+                  </Link>
                 </li>
                 <li className="border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
-                  <a
-                    href="#clients"
+                  <Link
+                    href="/AboutUs"
                     className="text-white hover:text-gray-400 font-extralight"
                   >
                     Our Clients
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -385,7 +372,7 @@ const Footer: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-full h-full flex flex-col md:flex-row justify-start items-center gap-y-[2rem] md:gap-x-[3.5rem] md:gap-y-0">
+            {/* <div className="w-full h-full flex flex-col md:flex-row justify-start items-center gap-y-[2rem] md:gap-x-[3.5rem] md:gap-y-0">
               <div className="pb-[1.5rem] md:pb-0 pl-[1.5rem] md:pl-0 border-l md:border-none border-b border-zinc-800">
                 <Link
                   href={"/Services"}
@@ -436,7 +423,7 @@ const Footer: React.FC = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
             <div className="w-[6.5rem]">
               <Link
                 href="/ContactUs"
@@ -446,16 +433,16 @@ const Footer: React.FC = () => {
               </Link>
               <ul className="w-[6.5rem]">
                 <li className="mb-2">
-                  <a
-                    href="#contact-form"
+                  <Link
+                    href="/ContactUs"
                     className="text-white hover:text-gray-400 font-extralight"
                   >
                     Contact Form
-                  </a>
+                  </Link>
                 </li>
                 <li className="w-[6rem] border-b pb-[1rem] md:border-none md:pb-0 border-zinc-800">
                   <a
-                    href="#offices"
+                    href="/ContactUs"
                     className="text-white hover:text-gray-400 font-extralight"
                   >
                     Our Offices

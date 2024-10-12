@@ -1,17 +1,19 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AfricanFuture from "../Components/AfricanFuture";
 import WhyChooseUs from "../Components/WhyChooseUs";
-import Footer from "../Components/Footer";
 import HeaderA from "../Components/HeaderA";
 import FooterA from "../Components/FooterA";
 import SocialAATC from "../Components/SocialAATC";
 import { motion } from "framer-motion";
-import RootLayout from "../layout";
-import ARootLayout from "@/app/ALayout";
 
 const page: React.FC = () => {
+  const [title, setTitle] = useState("AATC");
+  useEffect(() => {
+    setTitle("AATC");
+  }, [title]);
+
   const features = [
     {
       title: "Grade A Office Spaces",
@@ -26,7 +28,10 @@ const page: React.FC = () => {
   ];
 
   return (
-    <ARootLayout>
+    <main>
+      <head>
+        <title>{title}</title>
+      </head>
       <div className="bg-white w-full h-full flex flex-col justify-start items-center lg:items-start text-white font-sans">
         <HeaderA />
         <div className="lg:w-full w-full bg-teal-700 lg:h-[35rem] h-[25rem] text-white md:p-5 xl:px-2 p-4 md:pr-0 flex flex-col md:flex-row-reverse items-center justify-between">
@@ -186,7 +191,7 @@ const page: React.FC = () => {
         <FooterA />
         <SocialAATC />
       </div>
-    </ARootLayout>
+    </main>
   );
 };
 

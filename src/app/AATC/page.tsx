@@ -5,6 +5,8 @@ import AfricanFuture from "../Components/AfricanFuture";
 import WhyChooseUs from "../Components/WhyChooseUs";
 import HeaderA from "../Components/HeaderA";
 import FooterA from "../Components/FooterA";
+import Gallery from "../Components/Gallery";
+import ImageCarousel from "../Components/ImageCarousel";
 import SocialAATC from "../Components/SocialAATC";
 import { motion } from "framer-motion";
 
@@ -34,30 +36,33 @@ const page: React.FC = () => {
       </head>
       <div className="bg-white w-full h-full flex flex-col justify-start items-center lg:items-start text-white font-sans">
         <HeaderA />
-        <div className="lg:w-full w-full bg-teal-700 lg:h-[35rem] h-[25rem] text-white md:p-5 xl:px-2 p-4 md:pr-0 flex flex-col md:flex-row-reverse items-center justify-between">
+        <div className="w-full bg-teal-700 lg:h-fit h-[25rem] text-white md:p-5 xl:px-2 py-[2.5rem] p-4 md:pr-0 flex flex-col justify-center items-center">
           {/* <!-- Text Content --> */}
-          <div className="w-full h-full flex-col md:px-[3rem] lg:px-[4.5rem] xl:px-[6rem] mt-[-2rem] lg:mt-[-13rem] pt-[1.25rem] md:pt-[5rem] justify-center items-center leading-[3rem]">
+          <div className="w-full md:w-[85%] lg:w-[70%] h-fit flex-col md:px-[3rem] lg:px-[4.5rem] xl:px-[6rem] mt-[-1rem] pt-[1.25rem] my-[3rem] md:py-[3rem] justify-center items-center">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.5 }} // Adjust duration as needed
-              className="flex-col mb-6 mt-[-0.35rem] h-full md:mt-0 w-full flex justify-center items-center"
+              transition={{ duration: 1.5 }}
+              className="flex-col mb-6 mt-[-0.35rem] h-fit md:mt-0 w-full flex justify-center items-center"
             >
-              <h1 className="z-40 uppercase md:text-[3rem] lg:leading-[2.95rem] text-2xl mt-[-10rem] lg:mt-[-14rem] 2xl:mt-[-16.5rem] font-bold mb-4 md:mb-3 w-[20rem] lg:w-[82rem] text-center">
+              <h1 className="w-full z-40 uppercase md:text-[3rem] lg:leading-[2.95rem] text-2xl font-bold mb-4 md:mb-3 text-center">
                 Abuja Afreximbank African Trade Centre{" "}
                 <span className="text-yellow-400">(AATC)</span>
               </h1>
             </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -60 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.9 }}
+              className="w-full flex justify-center items-center text-[1.2rem] text-center"
+            >
+              <p className="w-full md:w-[73%] lg:w-[60%]">
+                Building Legacies, Transforming Skylines, Premier Real Estate
+                Development & Consulting Firm
+              </p>
+            </motion.div>
           </div>
-        </div>
-        <div className="z-20 mx-auto lg:mt-[-28.2rem] p-[1rem] object-contain rounded-lg mb-[4rem] lg:mb-[1rem] border-3 h-[18rem] mt-[-15rem] border-teal-700 w-[94%] lg:w-[69%] lg:h-full xl:h-[42rem] lg:py-[0rem] bg-teal-700 lg:flex justify-center items-center">
-          <video
-            className="w-full lg:w-full h-full lg:h-[38rem] xl:mt-[2rem] rounded-lg flex justify-center object-contain items-center"
-            src="/Hvideo1.mp4"
-            controls
-            muted
-            autoPlay
-          />
+          <ImageCarousel />
         </div>
 
         <section className="lg:p-[5rem] lg:h-[68rem] px-[1rem] lg:px-[5rem] mt-[3rem] lg:mt-[1.85rem] w-full gap-x-[2rem] lg:gap-x-[2.75rem] h-full flex flex-col lg:flex-row  justify-center items-center lg:items-start">
@@ -179,6 +184,7 @@ const page: React.FC = () => {
         </section>
         <AfricanFuture />
         <WhyChooseUs />
+        <Gallery />
         <div className="w-full h-full flex justify-center gap-0 items-center bg-gradient-to-r from-sky-50 to-emerald-200 shadow-lg py-[3.5rem] lg:mb-6 rounded-lg text-center">
           <h2 className="w-full h-full flex justify-center items-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
             PRICING

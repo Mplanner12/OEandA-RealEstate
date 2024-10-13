@@ -68,13 +68,7 @@ const AfricanFuture: React.FC = () => {
           </div>
         </div>
         <div className="w-full lg:w-[40%] h-full flex justify-end items-center">
-          <video
-            src="video1.mp4"
-            controls
-            muted
-            autoPlay
-            className="w-full h-full"
-          ></video>
+          <img src="span1.png" className="w-full h-full" />
         </div>
       </motion.div>
       <motion.div
@@ -85,13 +79,7 @@ const AfricanFuture: React.FC = () => {
         className="w-full h-full lg:gap-x-[9.5rem] lg:px-[3.75rem] px-[1rem] lg:pl-[2rem] mb-[4rem] flex flex-col lg:flex-row justify-center items-center mt-10"
       >
         <div className="w-full lg:w-[40%] mb-[2.5rem] lg:mb-0 h-full flex justify-center items-center">
-          <video
-            src="Hvideo.mp4"
-            controls
-            muted
-            autoPlay
-            className="w-full h-full"
-          ></video>
+          <img src="span2.png" className="w-full h-full" />
         </div>
         <div className="w-full lg:w-[38%] h-full lg:pl-[2.25rem] flex justify-end flex-col items-center">
           <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
@@ -167,13 +155,7 @@ const AfricanFuture: React.FC = () => {
           </div>
         </div>
         <div className="w-full lg:w-[40%] mb-[2rem] lg:mb-0 h-full flex justify-center items-center">
-          <video
-            src="video3.mp4"
-            controls
-            muted
-            autoPlay
-            className="w-full h-full"
-          ></video>
+          <img src="span3.png" className="w-full h-full" />
         </div>
       </motion.div>
       <motion.div
@@ -184,13 +166,7 @@ const AfricanFuture: React.FC = () => {
         className="w-full h-full lg:gap-x-[9.5rem] px-[1rem] lg:px-[3.75rem] lg:pl-[2rem] mb-[4rem] flex flex-col mt-[5.5rem] lg:flex-row justify-center items-center lg:mt-10"
       >
         <div className="w-full lg:w-[40%] h-full flex justify-start items-center">
-          <video
-            src="video4.mp4"
-            controls
-            muted
-            autoPlay
-            className="w-full h-full"
-          ></video>
+          <img src="span4.png" className="w-full h-full" />
         </div>
         <div className="w-full lg:w-[38%] lg:pl-[2.25rem] mt-[2rem] lg:mt-0 h-full flex flex-col justify-center items-start">
           <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">

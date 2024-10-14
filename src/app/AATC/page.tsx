@@ -10,7 +10,7 @@ import ImageCarousel from "../Components/ImageCarousel";
 import SocialAATC from "../Components/SocialAATC";
 import { motion } from "framer-motion";
 
-const page: React.FC = () => {
+const Page: React.FC = () => {
   const [title, setTitle] = useState("AATC");
   useEffect(() => {
     setTitle("AATC");
@@ -201,4 +201,4 @@ const page: React.FC = () => {
   );
 };
 
-export default page;
+export default Page;

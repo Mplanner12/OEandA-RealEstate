@@ -25,21 +25,21 @@ const ImageCarousel = () => {
   };
 
   return (
-    <div className="relative flex justify-center items-center w-full h-[30rem] bg-teal-700 overflow-hidden mt-[-2rem]">
+    <div className="relative flex justify-center items-center w-full h-[37rem] md:h-[30rem] bg-teal-700 overflow-hidden mt-[-2rem]">
       {/* Previous Arrow */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg"
+        className="absolute z-20 left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg"
       >
         <BiChevronLeft color="black" />
       </button>
 
       {/* Carousel Items */}
-      <div className="flex justify-center items-center gap-x-4">
+      <div className="flex justify-center items-center gap-x-2.5 md:gap-x-4">
         {items.slice(0, 3).map((item, index) => (
           <div
             key={index}
-            className={`w-[23rem] h-[23rem] bg-white shadow-lg rounded-lg transform transition-all duration-500 ${
+            className={`w-[8rem] md:w-[19rem] lg:w-[23rem] h-[34rem] md:h-[23rem] bg-white shadow-lg rounded-lg transform transition-all duration-500 ${
               index === currentIndex
                 ? "scale-110 rotate-0"
                 : index === (currentIndex - 1 + items.length) % items.length

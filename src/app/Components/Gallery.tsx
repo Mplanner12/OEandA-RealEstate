@@ -13,7 +13,7 @@ const Gallery = () => {
       <div className="z-20 mx-auto mt-[2.75rem] object-contain rounded-lg mb-[4rem] lg:mb-[1rem] border-3 border-teal-700 w-full lg:h-[35rem] lg:py-[0rem] bg-teal-700 lg:flex justify-center items-center">
         <video
           className="w-full lg:w-full h-full rounded-lg flex justify-center object-cover items-center"
-          src="/Gvideo.mp4"
+          src="/GVideo.mp4"
           controls
           muted
           autoPlay

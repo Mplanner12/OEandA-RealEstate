@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 
-const ImageCarousel = () => {
+const ImageCarousel = ({ children }: { children: ReactNode }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const items = [
@@ -25,37 +25,43 @@ const ImageCarousel = () => {
   };
 
   return (
-    <div className="relative flex justify-center items-center w-full h-[37rem] md:h-[30rem] bg-teal-700 overflow-hidden mt-[-2rem]">
+    <div className="relative flex justify-center items-center w-full h-full overflow-hidden mt-[-2rem]">
       {/* Previous Arrow */}
       <button
         onClick={prevSlide}
-        className="absolute z-20 left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg"
+        className="absolute z-30 left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg"
       >
         <BiChevronLeft color="black" />
       </button>
 
       {/* Carousel Items */}
-      <div className="flex justify-center items-center gap-x-2.5 md:gap-x-4">
-        {items.slice(0, 3).map((item, index) => (
+      <div className="flex justify-center items-center w-full">
+        {items.map((item, index) => (
           <div
             key={index}
-            className={`w-[8rem] md:w-[19rem] lg:w-[23rem] h-[34rem] md:h-[23rem] bg-white shadow-lg rounded-lg transform transition-all duration-500 ${
-              index === currentIndex
-                ? "scale-110 rotate-0"
-                : index === (currentIndex - 1 + items.length) % items.length
-                ? "rotate-6"
-                : "rotate-[-6deg]"
+            onClick={() => setCurrentIndex(index)}
+            className={`w-screen h-full md:h-[23rem] bg-white shadow-lg transform transition-all duration-500 ${
+              index === currentIndex ? "opacity-100" : "opacity-0 hidden"
             }`}
           >
-            <img className="object-cover w-full h-full" src={item} />
+            <img
+              className="object-cover w-full h-full"
+              src={item}
+              alt={`Slide ${index + 1}`}
+            />
           </div>
         ))}
+      </div>
+
+      {/* Children Container (Floating) */}
+      <div className="absolute z-20 top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50">
+        {children}
       </div>
 
       {/* Next Arrow */}
       <button
         onClick={nextSlide}
-        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg"
+        className="absolute z-30 right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg"
       >
         <BiChevronRight color="black" />
       </button>

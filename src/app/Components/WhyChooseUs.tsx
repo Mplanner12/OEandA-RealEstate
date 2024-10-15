@@ -8,10 +8,10 @@ const WhyChooseUs: React.FC = () => {
       <h1 className="w-full h-full text-center text-[2.25rem] lg:text-[3rem] font-bold">
         Why Choose Us
       </h1>
-      <p className="text-sm text-center lg:w-[27rem] my-[1.5rem]">
+      {/* <p className="text-sm text-center lg:w-[27rem] my-[1.5rem]">
         AATC is a premier, purpose-built commercial property located in the
         heart of Abuja’s Central Business District.{" "}
-      </p>
+      </p> */}
       <div className="w-full h-full flex flex-col-reverse lg:flex-row justify-start items-center mt-[2.85rem] rounded-xl border-[0.5px] border-neutral-200 p-4 lg:p-[2.75rem]">
         <div className="w-full lg:w-[63%] h-full flex flex-col justify-center items-center">
           <h1 className="w-full h-full text-start font-bold text-2xl lg:text-[2rem]">

@@ -9,6 +9,8 @@ import Gallery from "../Components/Gallery";
 import ImageCarousel from "../Components/ImageCarousel";
 import SocialAATC from "../Components/SocialAATC";
 import { motion } from "framer-motion";
+import OtherBenefits from "../Components/OtherBenefits";
+import { TiTick } from "react-icons/ti";
 
 const Page: React.FC = () => {
   const [title, setTitle] = useState("AATC");
@@ -36,34 +38,24 @@ const Page: React.FC = () => {
       </head>
       <div className="bg-white w-full h-full flex flex-col justify-start items-center lg:items-start text-white font-sans">
         <HeaderA />
-        <div className="w-full bg-teal-700 lg:h-fit h-[25rem] text-white md:p-5 xl:px-2 py-[2.5rem] p-4 md:pr-0 flex flex-col justify-center items-center">
-          {/* <!-- Text Content --> */}
-          <div className="w-full md:w-[85%] lg:w-[70%] h-fit flex-col md:px-[3rem] lg:px-[4.5rem] xl:px-[6rem] mt-[-1rem] pt-[1.25rem] my-[3rem] md:py-[3rem] justify-center items-center">
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.5 }}
-              className="flex-col mb-6 mt-[-0.35rem] h-fit md:mt-0 w-full flex justify-center items-center"
-            >
-              <h1 className="w-full z-40 uppercase md:text-[3rem] lg:leading-[2.95rem] text-2xl font-bold mb-4 md:mb-3 text-center">
-                Abuja Afreximbank African Trade Centre{" "}
-                <span className="text-yellow-400">(AATC)</span>
-              </h1>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: -60 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1.9 }}
-              className="w-full flex justify-center items-center text-[1.2rem] text-center"
-            >
-              <p className="w-full md:w-[73%] lg:w-[60%]">
-                Building Legacies, Transforming Skylines, Premier Real Estate
-                Development & Consulting Firm
-              </p>
-            </motion.div>
+        <ImageCarousel>
+          <div className="w-full h-full text-white md:p-5 xl:px-2 py-[2.5rem] p-4 md:pr-0 flex flex-col justify-center items-center">
+            {/* <!-- Text Content --> */}
+            <div className="w-full md:w-[85%] lg:w-[70%] h-fit flex-col md:px-[3rem] lg:px-[4.5rem] xl:px-[6rem] mt-[-1rem] pt-[1.25rem] my-[3rem] md:py-[3rem] justify-center items-center">
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.5 }}
+                className="flex-col mb-6 mt-[-0.35rem] h-fit md:mt-0 w-full flex justify-center items-center"
+              >
+                <h1 className="w-full z-40 uppercase md:text-[3rem] lg:leading-[2.95rem] text-2xl font-bold mb-4 md:mb-3 text-center">
+                  Abuja Afreximbank African Trade Centre <br />
+                  <span className="text-yellow-400">(Abuja - AATC)</span>
+                </h1>
+              </motion.div>
+            </div>
           </div>
-          <ImageCarousel />
-        </div>
+        </ImageCarousel>
 
         <section className="lg:p-[5rem] lg:h-[68rem] px-[1rem] lg:px-[5rem] mt-[3rem] lg:mt-[1.85rem] w-full gap-x-[2rem] lg:gap-x-[2.75rem] h-full flex flex-col lg:flex-row  justify-center items-center lg:items-start">
           <div className="lg:w-[48%] w-full h-[96%] lg:mt-[1rem] fles justify-center items-center">
@@ -184,14 +176,41 @@ const Page: React.FC = () => {
         </section>
         <AfricanFuture />
         <WhyChooseUs />
+        <OtherBenefits />
         <Gallery />
-        <div className="w-full h-full flex justify-center gap-0 items-center bg-gradient-to-r from-sky-50 to-emerald-200 shadow-lg py-[3.5rem] lg:mb-6 rounded-lg text-center">
-          <h2 className="w-full h-full flex justify-center items-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
+        <div className="w-full h-full flex flex-col gap-y-4 justify-center items-center bg-gradient-to-r from-sky-50 to-emerald-200 shadow-lg py-[2rem] lg:mb-6 rounded-lg text-center">
+          <h2 className="w-full h-full flex justify-center items-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-[.25rem]">
             PRICING
-            <span className="flex justify-center items-center text-2xl ml-[1rem] md:text-3xl lg:text-4xl font-semibold text-emerald-800">
-              $200/Sqm
-            </span>
           </h2>
+          <div className="text-lg text-start md:text-xl lg:text-2xl font-semibold text-emerald-800">
+            <div className="w-full h-full flex justify-start items-center mt-4">
+              <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-white rounded-full">
+                <TiTick size={22} className="text-teal-800 rounded-full" />
+              </div>
+              <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+                Lettable Area: 2nd to 5th floor spaces of 705 SqM/ floor
+              </p>{" "}
+              <br />
+            </div>
+            <div className="w-full h-full flex justify-start items-center mt-4">
+              <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-white rounded-full">
+                <TiTick size={22} className="text-teal-800 rounded-full" />
+              </div>
+              <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+                Rent: $570/SqM/Annum
+              </p>{" "}
+              <br />
+            </div>
+            <div className="w-full h-full flex justify-start items-center mt-4">
+              <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-white rounded-full">
+                <TiTick size={22} className="text-teal-800 rounded-full" />
+              </div>
+              <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+                Service Charge: $120/SqM/Annum{" "}
+              </p>{" "}
+              <br />
+            </div>
+          </div>
         </div>
 
         <FooterA />

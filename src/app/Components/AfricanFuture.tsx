@@ -18,7 +18,7 @@ const AfricanFuture: React.FC = () => {
       >
         {" "}
         <h1 className="lg:text-[2.75rem] text-[1.75rem] px-[0.5rem] lg:px-0 font-bold text-neutral-900 lg:w-[33rem] text-center">
-          About the Abuja-AATC Building
+          Iconic Abuja-AATC Building
         </h1>
         <p className="text-base mt-4 text-zinc-500 lg:w-[44rem] text-center">
           Designed to be the epicenter of trade, business, and economic
@@ -34,9 +34,9 @@ const AfricanFuture: React.FC = () => {
         className="w-full h-full lg:gap-x-[3.5rem] px-[1rem] lg:px-[3.75rem] mb-[1rem] lg:mb-[4rem] mt-[5.85rem] flex flex-col-reverse lg:flex-row justify-center items-center"
       >
         <div className="w-full lg:w-2/4 h-full flex flex-col justify-center items-center my-[2rem] lg:my-0">
-          <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
+          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
             KEY FEATURE
-          </p>
+          </p> */}
           <h1 className="w-full h-full my-[1rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
             Grade A Office Spaces
           </h1>
@@ -82,9 +82,9 @@ const AfricanFuture: React.FC = () => {
           <img src="span2.png" className="w-full h-full" />
         </div>
         <div className="w-full lg:w-[38%] h-full lg:pl-[2.25rem] flex justify-end flex-col items-center">
-          <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
+          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
             KEY FEATURE
-          </p>
+          </p> */}
           <h1 className="w-full h-full my-[1rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
             4-Star Hotel
           </h1>
@@ -122,9 +122,9 @@ const AfricanFuture: React.FC = () => {
         className="w-full h-full lg:gap-x-[3.5rem] lg:px-[3.75rem] px-[1rem] mb-[1rem] lg:mb-[4rem flex flex-col-reverse lg:flex-row justify-center items-center mt-10"
       >
         <div className="w-full lg:w-2/4 h-full flex flex-col justify-center items-start">
-          <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
+          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
             KEY FEATURE
-          </p>
+          </p> */}
           <h1 className="w-full h-full my-[1rem] flex justify-start items-center text-start lg:w-[22rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
             Conference & Exhibition Centre{" "}
           </h1>
@@ -169,9 +169,9 @@ const AfricanFuture: React.FC = () => {
           <img src="span4.png" className="w-full h-full" />
         </div>
         <div className="w-full lg:w-[38%] lg:pl-[2.25rem] mt-[2rem] lg:mt-0 h-full flex flex-col justify-center items-start">
-          <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
+          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
             KEY FEATURE
-          </p>
+          </p> */}
           <h1 className="w-full h-full my-[1rem] mb-[1.75rem] lg:ml-[0.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] lg:w-[22rem] font-bold">
             Trade Facilitation Services{" "}
           </h1>

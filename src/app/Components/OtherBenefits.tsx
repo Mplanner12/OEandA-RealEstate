@@ -87,10 +87,10 @@ const OtherBenefits: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-full px-[1rem] lg:w-[37%] h-full flex mb-[1.5rem] lg:mb-0 justify-start items-center">
+        <div className="w-full px-[1rem] lg:w-[45%] h-full flex mb-[1.5rem] lg:mb-0 justify-start items-center">
           <div className="w-full h-full flex justify-center items-center">
             <img
-              className="lg:h-[18rem]"
+              className="lg:h-[22rem] w-full"
               src="/AATC SME HUB 0008.jpeg"
               alt=""
             />

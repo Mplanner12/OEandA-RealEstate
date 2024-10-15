@@ -41,7 +41,7 @@ const Page: React.FC = () => {
         <ImageCarousel>
           <div className="w-full h-full text-white md:p-5 xl:px-2 py-[2.5rem] p-4 md:pr-0 flex flex-col justify-center items-center">
             {/* <!-- Text Content --> */}
-            <div className="w-full md:w-[85%] lg:w-[70%] h-fit flex-col md:px-[3rem] lg:px-[4.5rem] xl:px-[6rem] mt-[-1rem] pt-[1.25rem] my-[3rem] md:py-[3rem] justify-center items-center">
+            <div className="w-full md:w-[85%] lg:w-[70%] h-fit flex-col md:px-[3rem] lg:px-[4.5rem] xl:px-[6rem] mt-[-5rem] md:mt-[-1rem] pt-[1.25rem] my-[3rem] md:py-[3rem] justify-center items-center">
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}

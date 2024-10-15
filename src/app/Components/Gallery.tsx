@@ -3,7 +3,7 @@ import React from "react";
 const Gallery = () => {
   return (
     <div className="w-full h-full flex flex-col justify-start items-center p-[2rem] md:p-[4rem] my-[1.5rem] mb-[4.5rem] md:px-[6rem]">
-      <div className="z-30 p-[2rem] text-black w-full h-full flex flex-col justify-start items-center ">
+      <div className="z-30 lg:p-[2rem] md:w-fit text-center text-black w-full h-full flex flex-col justify-start items-center ">
         <h1 className="text-[2.5rem] font-bold"> Abuja-AATC Full View Tour</h1>
         {/* <p className="text-center text-[0.8rem] py-[1rem] w-full md:w-[32%]">
           AATC is a premier, purpose-built commercial property located in the

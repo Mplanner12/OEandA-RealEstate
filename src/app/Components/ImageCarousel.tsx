@@ -40,7 +40,7 @@ const ImageCarousel = ({ children }: { children: ReactNode }) => {
           <div
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-screen h-full md:h-[23rem] bg-white shadow-lg transform transition-all duration-500 ${
+            className={`w-screen h-[21rem] md:h-[23rem] bg-white shadow-lg transform transition-all duration-500 ${
               index === currentIndex ? "opacity-100" : "opacity-0 hidden"
             }`}
           >

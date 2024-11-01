@@ -37,8 +37,8 @@ const AfricanFuture: React.FC = () => {
           {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
             KEY FEATURE
           </p> */}
-          <h1 className="w-full h-full my-[1rem] flex justify-start items-center text-start lg:w-[22rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
-            A One-Stop Hub for African Trade Excellene
+          <h1 className="w-full h-full my-[1rem] flex justify-start items-center text-start lg:w-fit mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
+            A One-Stop Hub for <br /> African Trade Excellene
           </h1>
           <p className="text-zinc-900 text-lg ml-3 mt-[-1rem] font-semibold w-full h-full flex justify-start items-start font-[400">
             AATC is an ecosystem for collaboration, growth, and innovation
@@ -90,6 +90,49 @@ const AfricanFuture: React.FC = () => {
         </div>
       </motion.div>
       <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.0, delay: 0.8 }}
+        viewport={{ once: true }}
+        className="w-full h-full lg:gap-x-[9.5rem] lg:px-[3.75rem] px-[1rem] lg:pl-[2rem] mb-[4rem] flex flex-col lg:flex-row justify-center items-center mt-10"
+      >
+        <div className="w-full lg:w-[40%] mb-[2.5rem] lg:mb-0 h-[26rem] flex justify-center items-center">
+          <img src="4-Star.jpg" className="w-full h-full" />
+        </div>
+        <div className="w-full lg:w-[38%] h-full lg:pl-[2.25rem] flex justify-end flex-col items-center">
+          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
+            KEY FEATURE
+          </p> */}
+          <h1 className="w-full h-full my-[1rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
+            4-Star Hotel
+          </h1>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400]">
+              148-key hotel offering luxurious accommodations
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400]">
+              Business services, fine dining, and relaxation amenities{" "}
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400]">
+              Perfect for hosting international clients and business travelers
+            </p>
+          </div>
+        </div>
+      </motion.div>
+      <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.0, delay: 0.2 }}
@@ -137,42 +180,45 @@ const AfricanFuture: React.FC = () => {
       <motion.div
         initial={{ opacity: 0, x: 20 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.0, delay: 0.8 }}
+        transition={{ duration: 1.0, delay: 0.4 }}
         viewport={{ once: true }}
-        className="w-full h-full lg:gap-x-[9.5rem] lg:px-[3.75rem] px-[1rem] lg:pl-[2rem] mb-[4rem] flex flex-col lg:flex-row justify-center items-center mt-10"
+        className="w-full h-full lg:gap-x-[9.5rem] px-[1rem] lg:px-[3.75rem] lg:pl-[2rem] mb-[4rem] flex flex-col mt-[5.5rem] lg:flex-row justify-center items-center lg:mt-10"
       >
-        <div className="w-full lg:w-[40%] mb-[2.5rem] lg:mb-0 h-[26rem] flex justify-center items-center">
-          <img src="4-Star.jpg" className="w-full h-full" />
+        <div className="w-full lg:w-[40%] h-[26rem] flex justify-start items-center">
+          <img src="TradeFacility.jpg" className="w-full h-full" />
         </div>
-        <div className="w-full lg:w-[38%] h-full lg:pl-[2.25rem] flex justify-end flex-col items-center">
+        <div className="w-full lg:w-[38%] lg:pl-[2.25rem] mt-[2rem] lg:mt-0 h-full flex flex-col justify-center items-start">
           {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
             KEY FEATURE
           </p> */}
-          <h1 className="w-full h-full my-[1rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
-            4-Star Hotel
+          <h1 className="w-full h-full my-[1rem] mb-[1.75rem] lg:ml-[0.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] lg:w-[22rem] font-bold">
+            Trade Facilitation Services{" "}
           </h1>
           <div className="w-full h-full flex justify-start items-center mt-4">
             <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
               <TiTick className="text-white rounded-full" />
             </div>
-            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400]">
-              148-key hotel offering luxurious accommodations
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              A one-stop shop for partnerships, trade information support, and
+              business services
             </p>
           </div>
           <div className="w-full h-full flex justify-start items-center mt-4">
             <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
               <TiTick className="text-white rounded-full" />
             </div>
-            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400]">
-              Business services, fine dining, and relaxation amenities{" "}
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              SME Incubation Hub and technology services to drive business
+              growth{" "}
             </p>
           </div>
           <div className="w-full h-full flex justify-start items-center mt-4">
             <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
               <TiTick className="text-white rounded-full" />
             </div>
-            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400]">
-              Perfect for hosting international clients and business travelers
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Dedicated spaces for networking and collaboration, focused on
+              boosting intra-African trade
             </p>
           </div>
         </div>
@@ -219,52 +265,6 @@ const AfricanFuture: React.FC = () => {
         </div>
         <div className="w-full lg:w-[40%] mb-[2rem] lg:mb-0 h-[26rem] flex justify-center items-center">
           <img src="Conference.jpg" className="w-full h-full" />
-        </div>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, x: 20 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.0, delay: 0.4 }}
-        viewport={{ once: true }}
-        className="w-full h-full lg:gap-x-[9.5rem] px-[1rem] lg:px-[3.75rem] lg:pl-[2rem] mb-[4rem] flex flex-col mt-[5.5rem] lg:flex-row justify-center items-center lg:mt-10"
-      >
-        <div className="w-full lg:w-[40%] h-[26rem] flex justify-start items-center">
-          <img src="TradeFacility.jpg" className="w-full h-full" />
-        </div>
-        <div className="w-full lg:w-[38%] lg:pl-[2.25rem] mt-[2rem] lg:mt-0 h-full flex flex-col justify-center items-start">
-          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
-            KEY FEATURE
-          </p> */}
-          <h1 className="w-full h-full my-[1rem] mb-[1.75rem] lg:ml-[0.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] lg:w-[22rem] font-bold">
-            Trade Facilitation Services{" "}
-          </h1>
-          <div className="w-full h-full flex justify-start items-center mt-4">
-            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
-              <TiTick className="text-white rounded-full" />
-            </div>
-            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-              A one-stop shop for partnerships, trade information support, and
-              business services
-            </p>
-          </div>
-          <div className="w-full h-full flex justify-start items-center mt-4">
-            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
-              <TiTick className="text-white rounded-full" />
-            </div>
-            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-              SME Incubation Hub and technology services to drive business
-              growth{" "}
-            </p>
-          </div>
-          <div className="w-full h-full flex justify-start items-center mt-4">
-            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
-              <TiTick className="text-white rounded-full" />
-            </div>
-            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-              Dedicated spaces for networking and collaboration, focused on
-              boosting intra-African trade
-            </p>
-          </div>
         </div>
       </motion.div>
       <motion.div

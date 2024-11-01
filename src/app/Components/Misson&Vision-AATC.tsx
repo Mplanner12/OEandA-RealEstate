@@ -13,7 +13,7 @@ const MissionVision: React.FC = () => {
         className="w-full h-full flex flex-col justify-start items-center"
       >
         <h1 className="lg:text-[2.75rem] text-[1.75rem] font-bold text-neutral-900 lg:w-[33rem] text-center">
-          Our Mission & Vision
+          Mission & Vision
         </h1>
       </motion.div>
 

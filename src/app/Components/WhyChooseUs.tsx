@@ -6,7 +6,7 @@ const WhyChooseUs: React.FC = () => {
   return (
     <div className="bg-white py-[4rem] px-[2.5rem] lg:px-[4.75rem] w-full h-full flex text-neutral-900 flex-col justify-start items-center">
       <h1 className="w-full h-full text-center text-[2.25rem] lg:text-[3rem] font-bold">
-        Why Choose AATC
+        Why Choose AATC?
       </h1>
       {/* <p className="text-sm text-center lg:w-[27rem] my-[1.5rem]">
         AATC is a premier, purpose-built commercial property located in the

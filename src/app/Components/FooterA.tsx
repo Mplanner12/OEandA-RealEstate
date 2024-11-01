@@ -37,7 +37,7 @@ const FooterA: React.FC = () => {
               download
               href={"/brochure.pdf"}
               id="button"
-              className="bg-emerald-700 mx-auto text-white py-[0.85rem] text-md px-5 w-full lg:ml-[19rem] xl:ml-[20.5rem] 2xl:ml-[33rem] lg:w-fit mb-[4rem] rounded-lg"
+              className="bg-emerald-700 mx-auto text-white py-[0.85rem] text-md text-center px-5 w-full lg:ml-[19rem] xl:ml-[20.5rem] 2xl:ml-[33rem] lg:w-fit mb-[4rem] rounded-lg"
             >
               Download Brochure
             </a>

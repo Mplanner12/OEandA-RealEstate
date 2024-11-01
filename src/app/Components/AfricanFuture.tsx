@@ -26,6 +26,7 @@ const AfricanFuture: React.FC = () => {
           services that cater to the needs of businesses of all sizes.
         </p>
       </motion.div>
+
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -67,8 +68,8 @@ const AfricanFuture: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="w-full lg:w-[40%] h-full flex justify-end items-center">
-          <img src="span1.png" className="w-full h-full" />
+        <div className="w-full lg:w-[40%] h-[27rem] flex justify-end items-center">
+          <img src="GradeA.jpeg" className="w-full h-full" />
         </div>
       </motion.div>
       <motion.div
@@ -202,6 +203,324 @@ const AfricanFuture: React.FC = () => {
               boosting intra-African trade
             </p>
           </div>
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.0, delay: 0.2 }}
+        viewport={{ once: true }} // Only animate once when in view
+        className="w-full h-full lg:gap-x-[3.5rem] px-[1rem] lg:px-[3.75rem] mb-[1rem] lg:mb-[4rem] mt-[5.85rem] flex flex-col-reverse lg:flex-row justify-center items-center"
+      >
+        <div className="w-full lg:w-2/4 h-full flex flex-col justify-center items-center my-[2rem] lg:my-0">
+          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
+            KEY FEATURE
+          </p> */}
+          <h1 className="w-full h-full my-[1rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
+            Meeting Board Room
+          </h1>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Spacious meeting room with flexible layout options for various
+              business needs
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Equipped with state-of-the-art technology for presentations and
+              video conferencing
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Ideal for teams looking to collaborate in a professional and
+              modern environment
+            </p>
+          </div>
+        </div>
+        <div className="w-full lg:w-[40%] h-full flex justify-end items-center">
+          <img src="span1.png" className="w-full h-full" />
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.0, delay: 0.8 }}
+        viewport={{ once: true }}
+        className="w-full h-full lg:gap-x-[9.5rem] lg:px-[3.75rem] px-[1rem] lg:pl-[2rem] mb-[4rem] flex flex-col lg:flex-row justify-center items-center mt-10"
+      >
+        <div className="w-full lg:w-[40%] mb-[2.5rem] lg:mb-0 h-[26rem] flex justify-center items-center">
+          <img src="Resturant.jpeg" className="w-full h-full" />
+        </div>
+        <div className="w-full lg:w-[38%] h-full lg:pl-[2.25rem] flex justify-end flex-col items-center">
+          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
+            KEY FEATURE
+          </p> */}
+          <h1 className="w-full h-full my-[1rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
+            Resturant
+          </h1>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Diverse menu featuring both local and international cuisines
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Elegant, comfortable dining space with seating for groups and
+              intimate gatherings
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Exceptional service with a focus on creating memorable dining
+              experiences
+            </p>
+          </div>
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.0, delay: 0.6 }}
+        viewport={{ once: true }}
+        className="w-full h-full lg:gap-x-[3.5rem] lg:px-[3.75rem] px-[1rem] mb-[1rem] lg:mb-[4rem flex flex-col-reverse lg:flex-row justify-center items-center mt-10"
+      >
+        <div className="w-full lg:w-2/4 h-full flex flex-col justify-center items-start">
+          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
+            KEY FEATURE
+          </p> */}
+          <h1 className="w-full h-full my-[1rem] flex justify-start items-center text-start lg:w-[22rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
+            Retail Services
+          </h1>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Wide selection of high-quality products tailored to meet diverse
+              customer needs
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Friendly, knowledgeable staff dedicated to delivering exceptional
+              customer service
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Convenient location with ample space, perfect for a pleasant
+              shopping experience
+            </p>
+          </div>
+        </div>
+        <div className="w-full lg:w-[40%] mb-[2rem] lg:mb-0 h-[26rem] flex justify-center items-center">
+          <img src="Reception4.jpeg" className="w-full h-full" />
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.0, delay: 0.4 }}
+        viewport={{ once: true }}
+        className="w-full h-full lg:gap-x-[9.5rem] px-[1rem] lg:px-[3.75rem] lg:pl-[2rem] mb-[4rem] flex flex-col mt-[5.5rem] lg:flex-row justify-center items-center lg:mt-10"
+      >
+        <div className="w-full lg:w-[40%] h-[26rem] flex justify-start items-center">
+          <img src="span4.png" className="w-full h-full" />
+        </div>
+        <div className="w-full lg:w-[38%] lg:pl-[2.25rem] mt-[2rem] lg:mt-0 h-full flex flex-col justify-center items-start">
+          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
+            KEY FEATURE
+          </p> */}
+          <h1 className="w-full h-full my-[1rem] mb-[1.75rem] lg:ml-[0.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] lg:w-[22rem] font-bold">
+            ATM Centers
+          </h1>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              24/7 access for convenient cash withdrawals, deposits, and balance
+              inquiries
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Enhanced security features for safe and secure transactions
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Multiple ATM locations across the city for easy accessibility
+            </p>
+          </div>
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.0, delay: 0.2 }}
+        viewport={{ once: true }} // Only animate once when in view
+        className="w-full h-full lg:gap-x-[3.5rem] px-[1rem] lg:px-[3.75rem] mb-[1rem] lg:mb-[4rem] mt-[5.85rem] flex flex-col-reverse lg:flex-row justify-center items-center"
+      >
+        <div className="w-full lg:w-2/4 h-full flex flex-col justify-center items-center my-[2rem] lg:my-0">
+          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
+            KEY FEATURE
+          </p> */}
+          <h1 className="w-full h-full my-[1rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
+            GYM
+          </h1>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              State-of-the-art equipment for cardio, strength training, and
+              flexibility
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Certified trainers available for personalized workout guidance and
+              support
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Spacious workout areas and dedicated zones for group classes and
+              relaxation
+            </p>
+          </div>
+        </div>
+        <div className="w-full lg:w-[40%] h-[26rem] flex justify-end items-center">
+          <img src="Reception3.jpeg" className="w-full h-full" />
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.0, delay: 0.8 }}
+        viewport={{ once: true }}
+        className="w-full h-full lg:gap-x-[9.5rem] lg:px-[3.75rem] px-[1rem] lg:pl-[2rem] mb-[4rem] flex flex-col lg:flex-row justify-center items-center mt-10"
+      >
+        <div className="w-full lg:w-[40%] mb-[2.5rem] lg:mb-0 h-[26rem] flex justify-center items-center">
+          <img src="Reception2.jpeg" className="w-full h-full" />
+        </div>
+        <div className="w-full lg:w-[38%] h-full lg:pl-[2.25rem] flex justify-end flex-col items-center">
+          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
+            KEY FEATURE
+          </p> */}
+          <h1 className="w-full h-full my-[1rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
+            Swimming Pool
+          </h1>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Crystal-clear, temperature-controlled pool for a comfortable swim
+              experience
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Professional lifeguards on duty for enhanced safety and peace of
+              mind
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Separate areas for lap swimming, leisure, and children’s play
+            </p>
+          </div>
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.0, delay: 0.6 }}
+        viewport={{ once: true }}
+        className="w-full h-full lg:gap-x-[3.5rem] lg:px-[3.75rem] px-[1rem] mb-[1rem] lg:mb-[4rem flex flex-col-reverse lg:flex-row justify-center items-center mt-10"
+      >
+        <div className="w-full lg:w-2/4 h-full flex flex-col justify-center items-start">
+          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
+            KEY FEATURE
+          </p> */}
+          <h1 className="w-full h-full my-[1rem] flex justify-start items-center text-start lg:w-[22rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
+            Business Center
+          </h1>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Fully equipped workstations with high-speed internet and modern
+              office tools
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Private meeting rooms available for client meetings and
+              presentations
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              On-site support staff to assist with administrative tasks and
+              technical needs
+            </p>
+          </div>
+        </div>
+        <div className="w-full lg:w-[40%] mb-[2rem] lg:mb-0 h-[26rem] flex justify-center items-center">
+          <img src="OpenSpace.jpeg" className="w-full h-full" />
         </div>
       </motion.div>
     </section>

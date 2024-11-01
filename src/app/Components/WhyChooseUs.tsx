@@ -100,6 +100,23 @@ const WhyChooseUs: React.FC = () => {
                 Ample parking with up to 12 dedicated slots per floor.
               </p>
             </div>
+            <div className="w-full h-full flex justify-start items-center mt-4">
+              <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-white rounded-full">
+                <TiTick size={22} className="text-teal-800 rounded-full" />
+              </div>
+              <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+                Professional Asset Managers and O&M Maintenance Services
+              </p>
+            </div>
+            <div className="w-full h-full flex justify-start items-center mt-4">
+              <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-white rounded-full">
+                <TiTick size={22} className="text-teal-800 rounded-full" />
+              </div>
+              <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+                LEED-comppliant features for Energy efficiency and environmental
+                sustainability
+              </p>
+            </div>
           </div>
         </div>
         <div className="w-full px-[1rem] lg:w-[37%] h-full flex mb-[1.5rem] lg:mb-0 justify-start items-center">

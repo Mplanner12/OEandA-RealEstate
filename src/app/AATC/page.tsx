@@ -11,6 +11,7 @@ import SocialAATC from "../Components/SocialAATC";
 import { motion } from "framer-motion";
 import OtherBenefits from "../Components/OtherBenefits";
 import { TiTick } from "react-icons/ti";
+import MissionVision from "../Components/Misson&Vision-AATC";
 
 const Page: React.FC = () => {
   const [title, setTitle] = useState("AATC");
@@ -176,6 +177,7 @@ const Page: React.FC = () => {
             </motion.div>
           </motion.div>
         </section>
+        <MissionVision />
         <AfricanFuture />
         <WhyChooseUs />
         <OtherBenefits />

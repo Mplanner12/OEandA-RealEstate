@@ -64,7 +64,7 @@ const HeaderA: React.FC = () => {
         </div>
       )}
       {/*  Larger screen */}
-      <div className="hidden lg:flex justify-between items-center  p-[2rem] px-[2rem] pr-[4rem]">
+      <div className="hidden lg:flex justify-between items-center p-[0.5rem] px-[2rem] pr-[4rem]">
         <div className="flex items-center">
           <Image
             src="/realLogo.png"

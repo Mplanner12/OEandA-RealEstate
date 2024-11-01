@@ -25,7 +25,7 @@ const ImageCarousel = ({ children }: { children: ReactNode }) => {
   };
 
   return (
-    <div className="relative flex justify-center items-center w-full h-full overflow-hidden mt-[-2rem]">
+    <div className="relative flex justify-center items-center w-full h-full md:h-[40rem] overflow-hidden mt-[-2rem]">
       {/* Previous Arrow */}
       <button
         onClick={prevSlide}
@@ -40,7 +40,7 @@ const ImageCarousel = ({ children }: { children: ReactNode }) => {
           <div
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-screen h-[21rem] md:h-[23rem] bg-white shadow-lg transform transition-all duration-500 ${
+            className={`w-screen h-[21rem] md:h-full bg-white shadow-lg transform transition-all duration-500 ${
               index === currentIndex ? "opacity-100" : "opacity-0 hidden"
             }`}
           >

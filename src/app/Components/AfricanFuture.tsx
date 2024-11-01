@@ -266,7 +266,7 @@ const AfricanFuture: React.FC = () => {
             KEY FEATURE
           </p> */}
           <h1 className="w-full h-full my-[1rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
-            Resturant
+            Restaurant
           </h1>
           <div className="w-full h-full flex justify-start items-center mt-4">
             <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">

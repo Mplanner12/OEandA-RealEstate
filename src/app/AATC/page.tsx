@@ -79,7 +79,7 @@ const Page: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-3xl lg:text-[3rem] mt-[1rem] lg:mt-0 lg:leading-[2.85rem] w-full font-bold text-neutral-900"
             >
-              Welcome to the Future of African Trade{" "}
+              Welcome to the Future of African Trade
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: -10 }}
@@ -94,7 +94,7 @@ const Page: React.FC = () => {
               sustainable economic transformation across the continent. Whether
               engaging with SMEs, multinational corporations, or government
               agencies, AATC offers the cutting-edge resources, partnerships,
-              and infrastructure needed to excel in today's dynamic
+              and infrastructure needed to excel in today&apos;s dynamic
               trade environment.
             </motion.p>
             <motion.div

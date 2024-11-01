@@ -27,7 +27,7 @@ const MissionVision: React.FC = () => {
           className="w-full lg:w-1/2 h-full flex flex-col justify-start items-center rounded-lg p-8 bg-gradient-to-r from-emerald-50 to-teal-50"
         >
           <h2 className="text-2xl lg:text-3xl font-bold text-teal-800 mb-4 text-center">
-            Our Mission
+            Mission
           </h2>
           <p className="text-zinc-900 text-base font-[400] text-center">
             To transform the Bank’s existing and future buildings into iconic
@@ -49,7 +49,7 @@ const MissionVision: React.FC = () => {
           className="w-full lg:w-1/2 h-full flex flex-col justify-start items-center rounded-lg p-8 bg-gradient-to-r from-emerald-50 to-teal-50"
         >
           <h2 className="text-2xl lg:text-3xl font-bold text-teal-800 mb-4 text-center">
-            Our Vision
+            Vision
           </h2>
           <p className="text-zinc-900 text-base font-[400] text-center">
             Create iconic branded beacons in pan-African commercial capitals.

@@ -26,7 +26,69 @@ const AfricanFuture: React.FC = () => {
           services that cater to the needs of businesses of all sizes.
         </p>
       </motion.div>
-
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.0, delay: 0.6 }}
+        viewport={{ once: true }}
+        className="w-full h-full lg:gap-x-[3.5rem] lg:px-[3.75rem] px-[1rem] mb-[1rem] lg:mb-[4rem flex flex-col-reverse lg:flex-row justify-center items-center mt-10"
+      >
+        <div className="w-full lg:w-2/4 h-full flex flex-col justify-center items-start">
+          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
+            KEY FEATURE
+          </p> */}
+          <h1 className="w-full h-full my-[1rem] flex justify-start items-center text-start lg:w-[22rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
+            A One-Stop Hub for African Trade Excellene
+          </h1>
+          <p className="text-zinc-900 text-lg ml-3 mt-[-1rem] font-semibold w-full h-full flex justify-start items-start font-[400">
+            AATC is an ecosystem for collaboration, growth, and innovation
+            offering:
+          </p>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Grade A Office Spaces
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Flexible Leasing
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Conference and Event Facilities
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              SME Incubation Hubs
+            </p>
+          </div>
+          <div className="w-full h-full flex justify-start items-center mt-4">
+            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
+              <TiTick className="text-white rounded-full" />
+            </div>
+            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
+              Strategic Trade Partnerships and Business Services{" "}
+            </p>
+          </div>
+        </div>
+        <div className="w-full lg:w-[40%] mb-[2rem] lg:mb-0 h-[26rem] flex justify-center items-center">
+          <img src="BussinessC.jpg" className="w-full h-full" />
+        </div>
+      </motion.div>
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -206,77 +268,6 @@ const AfricanFuture: React.FC = () => {
         </div>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, x: -20 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.0, delay: 0.6 }}
-        viewport={{ once: true }}
-        className="w-full h-full lg:gap-x-[3.5rem] lg:px-[3.75rem] px-[1rem] mb-[1rem] lg:mb-[4rem flex flex-col-reverse lg:flex-row justify-center items-center mt-10"
-      >
-        <div className="w-full lg:w-2/4 h-full flex flex-col justify-center items-start">
-          {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">
-            KEY FEATURE
-          </p> */}
-          <h1 className="w-full h-full my-[1rem] flex justify-start items-center text-start lg:w-[22rem] mb-[1.75rem] text-zinc-900 text-[1.75rem] lg:text-[2.35rem] font-bold">
-            Business Center
-          </h1>
-          <p className="text-zinc-900 text-lg ml-3 mt-[-1rem] font-semibold w-full h-full flex justify-start items-start font-[400">
-            AATC is an ecosystem for collaboration, growth, and innovation
-            offering:
-          </p>
-          <div className="w-full h-full flex justify-start items-center mt-4">
-            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
-              <TiTick className="text-white rounded-full" />
-            </div>
-            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-              Grade A Office Spaces
-            </p>
-          </div>
-          <div className="w-full h-full flex justify-start items-center mt-4">
-            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
-              <TiTick className="text-white rounded-full" />
-            </div>
-            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-              Flexible Leasing
-            </p>
-          </div>
-          <div className="w-full h-full flex justify-start items-center mt-4">
-            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
-              <TiTick className="text-white rounded-full" />
-            </div>
-            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-              Conference and Event Facilities
-            </p>
-          </div>
-          <div className="w-full h-full flex justify-start items-center mt-4">
-            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
-              <TiTick className="text-white rounded-full" />
-            </div>
-            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-              SME Incubation Hubs
-            </p>
-          </div>
-          <div className="w-full h-full flex justify-start items-center mt-4">
-            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
-              <TiTick className="text-white rounded-full" />
-            </div>
-            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-              Strategic Trade Partnerships and Business Services{" "}
-            </p>
-          </div>
-          <div className="w-full h-full flex justify-start items-center mt-4">
-            <div className="p-[0.15rem] w-fit h-full flex flex-col justify-start items-start bg-teal-800 rounded-full">
-              <TiTick className="text-white rounded-full" />
-            </div>
-            <p className="text-zinc-900 text-base ml-3 w-full h-full flex justify-start items-start font-[400">
-              148-Key 4-star Hotel{" "}
-            </p>
-          </div>
-        </div>
-        <div className="w-full lg:w-[40%] mb-[2rem] lg:mb-0 h-[26rem] flex justify-center items-center">
-          <img src="BussinessC.jpg" className="w-full h-full" />
-        </div>
-      </motion.div>
-      <motion.div
         initial={{ opacity: 0, x: 20 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.0, delay: 0.8 }}
@@ -284,7 +275,7 @@ const AfricanFuture: React.FC = () => {
         className="w-full h-full lg:gap-x-[9.5rem] lg:px-[3.75rem] px-[1rem] lg:pl-[2rem] mb-[4rem] flex flex-col lg:flex-row justify-center items-center mt-10"
       >
         <div className="w-full lg:w-[40%] mb-[2.5rem] lg:mb-0 h-[26rem] flex justify-center items-center">
-          <img src="leisure.jpg" className="w-full h-full" />
+          <img src="/Resturant.jpeg" className="w-full h-full" />
         </div>
         <div className="w-full lg:w-[38%] h-full lg:pl-[2.25rem] flex justify-end flex-col items-center">
           {/* <p className="w-full h-full hidden lg:flex justify-start items-start text-xs text-zinc-900">

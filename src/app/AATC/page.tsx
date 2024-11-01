@@ -62,7 +62,7 @@ const Page: React.FC = () => {
           <div className="lg:w-[48%] w-full h-[96%] lg:mt-[1rem] fles justify-center items-center">
             <img
               className="w-full h-full flex justify-center items-center"
-              src="/AboutAATC.png"
+              src="/Senario.jpeg"
               alt=""
             />
           </div>

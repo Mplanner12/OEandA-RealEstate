@@ -4,9 +4,9 @@ import { TiTick } from "react-icons/ti";
 
 const WhyChooseUs: React.FC = () => {
   return (
-    <div className="bg-white py-[4rem] px-[1rem] lg:px-[4.75rem] w-full h-full flex text-neutral-900 flex-col justify-start items-center">
+    <div className="bg-white py-[4rem] px-[2.5rem] lg:px-[4.75rem] w-full h-full flex text-neutral-900 flex-col justify-start items-center">
       <h1 className="w-full h-full text-center text-[2.25rem] lg:text-[3rem] font-bold">
-        Why Choose Us
+        Why Choose AATC
       </h1>
       {/* <p className="text-sm text-center lg:w-[27rem] my-[1.5rem]">
         AATC is a premier, purpose-built commercial property located in the
@@ -121,11 +121,11 @@ const WhyChooseUs: React.FC = () => {
         </div>
         <div className="w-full px-[1rem] lg:w-[37%] h-full flex mb-[1.5rem] lg:mb-0 justify-start items-center">
           <div className="w-full h-full flex justify-center items-center">
-            <img src="/WhyChooseUs1.png" alt="" />
+            <img className="h-[20rem] lg:w-[80%]" src="/execut.jpeg" alt="" />
             {/* <div className="w-full h-full ml-[3.5rem] z-20"> */}
             <img
-              className="w-[70%] lg:w-full h-full ml-[-9rem] mt-[11.75rem] lg:mt-0 z-20"
-              src="/WhyChooseUs2.png"
+              className="w-[80%] md:w-[75%] h-[18.5rem] ml-[-10rem] 2xl:ml-[-8.5rem] mt-[11.75rem] lg:mt-0 z-20"
+              src="/Choose.jpeg"
               alt=""
             />
             {/* </div> */}

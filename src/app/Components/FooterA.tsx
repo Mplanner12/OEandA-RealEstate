@@ -35,7 +35,7 @@ const FooterA: React.FC = () => {
           <div className="w-full h-full flex flex-col justify-center items-center lg:items-start">
             <a
               download
-              href={"/Brochure.pdf"}
+              href={"/brochure.pdf"}
               id="button"
               className="bg-emerald-700 mx-auto text-white py-[0.85rem] text-md px-5 w-full lg:ml-[19rem] xl:ml-[20.5rem] 2xl:ml-[33rem] lg:w-fit mb-[4rem] rounded-lg"
             >
